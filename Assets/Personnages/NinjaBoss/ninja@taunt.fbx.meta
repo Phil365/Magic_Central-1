@@ -1,0 +1,635 @@
+fileFormatVersion: 2
+guid: e47d21f8230b3a646960de4959200356
+timeCreated: 1455113440
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: chibiBaseMesh:Head
+    100002: chibiBaseMesh:HeadTop_End
+    100004: chibiBaseMesh:Hips
+    100006: chibiBaseMesh:LeftArm
+    100008: chibiBaseMesh:LeftFoot
+    100010: chibiBaseMesh:LeftForeArm
+    100012: chibiBaseMesh:LeftHand
+    100014: chibiBaseMesh:LeftHandIndex1
+    100016: chibiBaseMesh:LeftHandIndex2
+    100018: chibiBaseMesh:LeftHandIndex3
+    100020: chibiBaseMesh:LeftHandIndex4
+    100022: chibiBaseMesh:LeftHandThumb1
+    100024: chibiBaseMesh:LeftHandThumb2
+    100026: chibiBaseMesh:LeftHandThumb3
+    100028: chibiBaseMesh:LeftHandThumb4
+    100030: chibiBaseMesh:LeftLeg
+    100032: chibiBaseMesh:LeftShoulder
+    100034: chibiBaseMesh:LeftToe_End
+    100036: chibiBaseMesh:LeftToeBase
+    100038: chibiBaseMesh:LeftUpLeg
+    100040: chibiBaseMesh:Neck
+    100042: chibiBaseMesh:RightArm
+    100044: chibiBaseMesh:RightFoot
+    100046: chibiBaseMesh:RightForeArm
+    100048: chibiBaseMesh:RightHand
+    100050: chibiBaseMesh:RightHandIndex1
+    100052: chibiBaseMesh:RightHandIndex2
+    100054: chibiBaseMesh:RightHandIndex3
+    100056: chibiBaseMesh:RightHandIndex4
+    100058: chibiBaseMesh:RightHandThumb1
+    100060: chibiBaseMesh:RightHandThumb2
+    100062: chibiBaseMesh:RightHandThumb3
+    100064: chibiBaseMesh:RightHandThumb4
+    100066: chibiBaseMesh:RightLeg
+    100068: chibiBaseMesh:RightShoulder
+    100070: chibiBaseMesh:RightToe_End
+    100072: chibiBaseMesh:RightToeBase
+    100074: chibiBaseMesh:RightUpLeg
+    100076: chibiBaseMesh:Spine
+    100078: chibiBaseMesh:Spine1
+    100080: chibiBaseMesh:Spine2
+    100082: //RootNode
+    400000: chibiBaseMesh:Head
+    400002: chibiBaseMesh:HeadTop_End
+    400004: chibiBaseMesh:Hips
+    400006: chibiBaseMesh:LeftArm
+    400008: chibiBaseMesh:LeftFoot
+    400010: chibiBaseMesh:LeftForeArm
+    400012: chibiBaseMesh:LeftHand
+    400014: chibiBaseMesh:LeftHandIndex1
+    400016: chibiBaseMesh:LeftHandIndex2
+    400018: chibiBaseMesh:LeftHandIndex3
+    400020: chibiBaseMesh:LeftHandIndex4
+    400022: chibiBaseMesh:LeftHandThumb1
+    400024: chibiBaseMesh:LeftHandThumb2
+    400026: chibiBaseMesh:LeftHandThumb3
+    400028: chibiBaseMesh:LeftHandThumb4
+    400030: chibiBaseMesh:LeftLeg
+    400032: chibiBaseMesh:LeftShoulder
+    400034: chibiBaseMesh:LeftToe_End
+    400036: chibiBaseMesh:LeftToeBase
+    400038: chibiBaseMesh:LeftUpLeg
+    400040: chibiBaseMesh:Neck
+    400042: chibiBaseMesh:RightArm
+    400044: chibiBaseMesh:RightFoot
+    400046: chibiBaseMesh:RightForeArm
+    400048: chibiBaseMesh:RightHand
+    400050: chibiBaseMesh:RightHandIndex1
+    400052: chibiBaseMesh:RightHandIndex2
+    400054: chibiBaseMesh:RightHandIndex3
+    400056: chibiBaseMesh:RightHandIndex4
+    400058: chibiBaseMesh:RightHandThumb1
+    400060: chibiBaseMesh:RightHandThumb2
+    400062: chibiBaseMesh:RightHandThumb3
+    400064: chibiBaseMesh:RightHandThumb4
+    400066: chibiBaseMesh:RightLeg
+    400068: chibiBaseMesh:RightShoulder
+    400070: chibiBaseMesh:RightToe_End
+    400072: chibiBaseMesh:RightToeBase
+    400074: chibiBaseMesh:RightUpLeg
+    400076: chibiBaseMesh:Spine
+    400078: chibiBaseMesh:Spine1
+    400080: chibiBaseMesh:Spine2
+    400082: //RootNode
+    7400000: mixamo.com
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'mixamo.com' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar to
+      improve retargeting quality.\n\t'chibiBaseMesh:Spine2' is inbetween humanoid
+      transforms and has rotation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: chibiBaseMesh:Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chibiBaseMesh:LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chibiBaseMesh:RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chibiBaseMesh:LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chibiBaseMesh:RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chibiBaseMesh:LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chibiBaseMesh:RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chibiBaseMesh:Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chibiBaseMesh:Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chibiBaseMesh:Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chibiBaseMesh:Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chibiBaseMesh:LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chibiBaseMesh:RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chibiBaseMesh:LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chibiBaseMesh:RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chibiBaseMesh:LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chibiBaseMesh:RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chibiBaseMesh:LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chibiBaseMesh:RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chibiBaseMesh:LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chibiBaseMesh:RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chibiBaseMesh:LeftHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chibiBaseMesh:LeftHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chibiBaseMesh:LeftHandThumb3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chibiBaseMesh:LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chibiBaseMesh:LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chibiBaseMesh:LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chibiBaseMesh:RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chibiBaseMesh:RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chibiBaseMesh:RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chibiBaseMesh:RightHandThumb2
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chibiBaseMesh:RightHandThumb3
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: chibiBaseMesh:RightHandThumb4
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: ninja@taunt(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:Hips
+      position: {x: 0.00009947608, y: 0.088074684, z: -0.0012861737}
+      rotation: {x: -0.06678846, y: 0.066651784, z: -0.008998615, w: 0.9954978}
+      scale: {x: 1, y: 0.99999994, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:LeftUpLeg
+      position: {x: -0.017277999, y: -0.007657, z: -0.00023499998}
+      rotation: {x: -0.113152795, y: 0.03677395, z: 0.9907658, w: 0.06501786}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:LeftLeg
+      position: {x: -0, y: 0.042816, z: 0}
+      rotation: {x: -0.32918468, y: -0.0737181, z: 0.026995923, w: 0.9409965}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:LeftFoot
+      position: {x: -0, y: 0.031367, z: 0}
+      rotation: {x: 0.66133636, y: -0.04367238, z: -0.010105277, w: 0.7487489}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:LeftToeBase
+      position: {x: -0, y: 0.016164, z: 0}
+      rotation: {x: 0.28614712, y: 0.048616078, z: -0.014448597, w: 0.9568425}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:LeftToe_End
+      position: {x: -0, y: 0.006399, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:RightUpLeg
+      position: {x: 0.017277999, y: -0.007657, z: -0.00021999999}
+      rotation: {x: 0.15317298, y: 0.01833698, z: 0.97828, w: -0.1384555}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:RightLeg
+      position: {x: -0, y: 0.042821996, z: 0}
+      rotation: {x: -0.3003439, y: -0.054199044, z: 0.0033067896, w: 0.95228416}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:RightFoot
+      position: {x: -0, y: 0.031368997, z: 0}
+      rotation: {x: 0.66683745, y: 0.17266327, z: -0.052505746, w: 0.7230204}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:RightToeBase
+      position: {x: -0, y: 0.016148, z: 0}
+      rotation: {x: 0.2732012, y: -0.04781009, z: 0.013595522, w: 0.9606719}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:RightToe_End
+      position: {x: -0, y: 0.006377, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:Spine
+      position: {x: -0, y: 0.0137559995, z: -0.00033100002}
+      rotation: {x: 0.06942583, y: -0.06266619, z: 0.008952382, w: 0.9955767}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:Spine1
+      position: {x: -0, y: 0.016052999, z: 0}
+      rotation: {x: 0.019019932, y: -0.008974897, z: 0.0076096696, w: 0.9997499}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:Spine2
+      position: {x: -0, y: 0.018345999, z: 0}
+      rotation: {x: 0.019153917, y: -0.008905785, z: 0.007423972, w: 0.99974936}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:LeftShoulder
+      position: {x: -0.008304, y: 0.018227, z: -0.000044}
+      rotation: {x: 0.5570411, y: -0.43377984, z: 0.5759675, w: 0.4120701}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:LeftArm
+      position: {x: -0, y: 0.017176999, z: 0}
+      rotation: {x: -0.102136694, y: 0.47118294, z: -0.11138847, w: 0.8689922}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:LeftForeArm
+      position: {x: -0, y: 0.033478, z: 0}
+      rotation: {x: -0.021231497, y: 0.022351975, z: -0.0051248507, w: 0.9995116}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:LeftHand
+      position: {x: -0, y: 0.037458, z: 0}
+      rotation: {x: 0.13571893, y: -0.091554284, z: -0.07056745, w: 0.98398095}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:LeftHandIndex1
+      position: {x: -0, y: 0.008238, z: 0}
+      rotation: {x: -0.050471205, y: -0.13718282, z: 0.023199905, w: 0.988987}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:LeftHandIndex2
+      position: {x: -0.00083599996, y: 0.006934, z: 0}
+      rotation: {x: 0.0050694467, y: 0.0021657334, z: 0.12484574, w: 0.9921609}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:LeftHandIndex3
+      position: {x: 0.00061999995, y: 0.0046409997, z: 0}
+      rotation: {x: 0.019759892, y: -0.01071859, z: -0.0368063, w: 0.9990696}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:LeftHandIndex4
+      position: {x: 0.000216, y: 0.0031040001, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:LeftHandThumb1
+      position: {x: 0.001804, y: 0.006644, z: 0}
+      rotation: {x: 0.1751094, y: -0.0034598687, z: -0.25553483, w: 0.95080316}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:LeftHandThumb2
+      position: {x: 0.000052999996, y: 0.005508, z: 0}
+      rotation: {x: 0.0012246845, y: 0.06971607, z: 0.02290548, w: 0.9973032}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:LeftHandThumb3
+      position: {x: 0.000027999999, y: 0.004609, z: 0}
+      rotation: {x: -0.025605673, y: -0.08574318, z: 0.0013371924, w: 0.99598736}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:LeftHandThumb4
+      position: {x: -0.000080000005, y: 0.003034, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:Neck
+      position: {x: -0, y: 0.020639999, z: 0}
+      rotation: {x: 0.017244967, y: -0.11451288, z: -0.040800907, w: 0.9924337}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:Head
+      position: {x: -0, y: 0.013921999, z: 0.001204}
+      rotation: {x: 0.0702424, y: -0.17695189, z: 0.021784492, w: 0.981468}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:HeadTop_End
+      position: {x: -0, y: 0.086122, z: 0.00745}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:RightShoulder
+      position: {x: 0.008304, y: 0.018228, z: -0.000071999995}
+      rotation: {x: 0.6192487, y: 0.40569147, z: -0.47545058, w: 0.47528124}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:RightArm
+      position: {x: -0, y: 0.017176999, z: 0}
+      rotation: {x: -0.0976366, y: -0.11354494, z: -0.10946578, w: 0.9826454}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:RightForeArm
+      position: {x: -0, y: 0.033480998, z: 0}
+      rotation: {x: -0.0029294328, y: 0.0022295702, z: -0.002453639, w: 0.9999902}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:RightHand
+      position: {x: -0, y: 0.037399, z: 0}
+      rotation: {x: 0.0055876495, y: 0.30765143, z: 0.16975765, w: 0.9362167}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:RightHandIndex1
+      position: {x: -0, y: 0.008436999, z: 0}
+      rotation: {x: 0.09037172, y: 0.012683491, z: 0.024051955, w: 0.9955369}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:RightHandIndex2
+      position: {x: 0.001691, y: 0.0061419997, z: 0}
+      rotation: {x: 0.004282532, y: -0.00037276722, z: -0.261521, w: 0.9651882}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:RightHandIndex3
+      position: {x: -0.001306, y: 0.004785, z: 0}
+      rotation: {x: 0.020225842, y: -0.009364674, z: 0.06318166, w: 0.99775314}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:RightHandIndex4
+      position: {x: -0.000385, y: 0.0023299998, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:RightHandThumb1
+      position: {x: -0.002168, y: 0.0067079994, z: 0}
+      rotation: {x: -0.04185908, y: -0.033436317, z: 0.4697864, w: 0.881153}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:RightHandThumb2
+      position: {x: 0.000197, y: 0.005636, z: 0}
+      rotation: {x: 0.11752312, y: 0.023256915, z: -0.6185817, w: 0.7765334}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:RightHandThumb3
+      position: {x: -0.00070699997, y: 0.004435, z: 0}
+      rotation: {x: -0.0060358443, y: 0.08133308, z: 0.14404872, w: 0.986204}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:RightHandThumb4
+      position: {x: 0.00051, y: 0.0026499997, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 1e8b9e8f3c8681143aafea24f436ce03,
+    type: 3}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

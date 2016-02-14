@@ -1,0 +1,817 @@
+fileFormatVersion: 2
+guid: e40ad1dbafb79439f9d74a8439c82cf1
+timeCreated: 1454531493
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: chibiBaseMesh1:Chibi_basemesh
+    100002: chibiBaseMesh:Chibi_basemesh
+    100004: chibiBaseMesh:Chibi_basemesh1
+    100006: chibiBaseMesh:transform1
+    100008: chibiBaseMesh:transform2
+    100010: group
+    100012: group1
+    100014: mixamorig:chibiBaseMesh:Head
+    100016: mixamorig:chibiBaseMesh:HeadTop_End
+    100018: mixamorig:chibiBaseMesh:Hips
+    100020: mixamorig:chibiBaseMesh:LeftArm
+    100022: mixamorig:chibiBaseMesh:LeftFoot
+    100024: mixamorig:chibiBaseMesh:LeftForeArm
+    100026: mixamorig:chibiBaseMesh:LeftHand
+    100028: mixamorig:chibiBaseMesh:LeftHandIndex1
+    100030: mixamorig:chibiBaseMesh:LeftHandIndex2
+    100032: mixamorig:chibiBaseMesh:LeftHandIndex3
+    100034: mixamorig:chibiBaseMesh:LeftHandIndex4
+    100036: mixamorig:chibiBaseMesh:LeftHandThumb1
+    100038: mixamorig:chibiBaseMesh:LeftHandThumb2
+    100040: mixamorig:chibiBaseMesh:LeftHandThumb3
+    100042: mixamorig:chibiBaseMesh:LeftHandThumb4
+    100044: mixamorig:chibiBaseMesh:LeftLeg
+    100046: mixamorig:chibiBaseMesh:LeftShoulder
+    100048: mixamorig:chibiBaseMesh:LeftToe_End
+    100050: mixamorig:chibiBaseMesh:LeftToeBase
+    100052: mixamorig:chibiBaseMesh:LeftUpLeg
+    100054: mixamorig:chibiBaseMesh:Neck
+    100056: mixamorig:chibiBaseMesh:RightArm
+    100058: mixamorig:chibiBaseMesh:RightFoot
+    100060: mixamorig:chibiBaseMesh:RightForeArm
+    100062: mixamorig:chibiBaseMesh:RightHand
+    100064: mixamorig:chibiBaseMesh:RightHandIndex1
+    100066: mixamorig:chibiBaseMesh:RightHandIndex2
+    100068: mixamorig:chibiBaseMesh:RightHandIndex3
+    100070: mixamorig:chibiBaseMesh:RightHandIndex4
+    100072: mixamorig:chibiBaseMesh:RightHandThumb1
+    100074: mixamorig:chibiBaseMesh:RightHandThumb2
+    100076: mixamorig:chibiBaseMesh:RightHandThumb3
+    100078: mixamorig:chibiBaseMesh:RightHandThumb4
+    100080: mixamorig:chibiBaseMesh:RightLeg
+    100082: mixamorig:chibiBaseMesh:RightShoulder
+    100084: mixamorig:chibiBaseMesh:RightToe_End
+    100086: mixamorig:chibiBaseMesh:RightToeBase
+    100088: mixamorig:chibiBaseMesh:RightUpLeg
+    100090: mixamorig:chibiBaseMesh:Spine
+    100092: mixamorig:chibiBaseMesh:Spine1
+    100094: mixamorig:chibiBaseMesh:Spine2
+    100096: //RootNode
+    100098: pasted__group
+    400000: chibiBaseMesh1:Chibi_basemesh
+    400002: chibiBaseMesh:Chibi_basemesh
+    400004: chibiBaseMesh:Chibi_basemesh1
+    400006: chibiBaseMesh:transform1
+    400008: chibiBaseMesh:transform2
+    400010: group
+    400012: group1
+    400014: mixamorig:chibiBaseMesh:Head
+    400016: mixamorig:chibiBaseMesh:HeadTop_End
+    400018: mixamorig:chibiBaseMesh:Hips
+    400020: mixamorig:chibiBaseMesh:LeftArm
+    400022: mixamorig:chibiBaseMesh:LeftFoot
+    400024: mixamorig:chibiBaseMesh:LeftForeArm
+    400026: mixamorig:chibiBaseMesh:LeftHand
+    400028: mixamorig:chibiBaseMesh:LeftHandIndex1
+    400030: mixamorig:chibiBaseMesh:LeftHandIndex2
+    400032: mixamorig:chibiBaseMesh:LeftHandIndex3
+    400034: mixamorig:chibiBaseMesh:LeftHandIndex4
+    400036: mixamorig:chibiBaseMesh:LeftHandThumb1
+    400038: mixamorig:chibiBaseMesh:LeftHandThumb2
+    400040: mixamorig:chibiBaseMesh:LeftHandThumb3
+    400042: mixamorig:chibiBaseMesh:LeftHandThumb4
+    400044: mixamorig:chibiBaseMesh:LeftLeg
+    400046: mixamorig:chibiBaseMesh:LeftShoulder
+    400048: mixamorig:chibiBaseMesh:LeftToe_End
+    400050: mixamorig:chibiBaseMesh:LeftToeBase
+    400052: mixamorig:chibiBaseMesh:LeftUpLeg
+    400054: mixamorig:chibiBaseMesh:Neck
+    400056: mixamorig:chibiBaseMesh:RightArm
+    400058: mixamorig:chibiBaseMesh:RightFoot
+    400060: mixamorig:chibiBaseMesh:RightForeArm
+    400062: mixamorig:chibiBaseMesh:RightHand
+    400064: mixamorig:chibiBaseMesh:RightHandIndex1
+    400066: mixamorig:chibiBaseMesh:RightHandIndex2
+    400068: mixamorig:chibiBaseMesh:RightHandIndex3
+    400070: mixamorig:chibiBaseMesh:RightHandIndex4
+    400072: mixamorig:chibiBaseMesh:RightHandThumb1
+    400074: mixamorig:chibiBaseMesh:RightHandThumb2
+    400076: mixamorig:chibiBaseMesh:RightHandThumb3
+    400078: mixamorig:chibiBaseMesh:RightHandThumb4
+    400080: mixamorig:chibiBaseMesh:RightLeg
+    400082: mixamorig:chibiBaseMesh:RightShoulder
+    400084: mixamorig:chibiBaseMesh:RightToe_End
+    400086: mixamorig:chibiBaseMesh:RightToeBase
+    400088: mixamorig:chibiBaseMesh:RightUpLeg
+    400090: mixamorig:chibiBaseMesh:Spine
+    400092: mixamorig:chibiBaseMesh:Spine1
+    400094: mixamorig:chibiBaseMesh:Spine2
+    400096: //RootNode
+    400098: pasted__group
+    4300000: chibiBaseMesh:Chibi_basemesh1
+    7400000: mixamo.com
+    9500000: //RootNode
+    13700000: chibiBaseMesh:Chibi_basemesh1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: mixamo.com
+      takeName: mixamo.com
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: chibiBaseMesh:Chibi_basemesh1
+        weight: 0
+      - path: group
+        weight: 0
+      - path: group/chibiBaseMesh:Chibi_basemesh
+        weight: 0
+      - path: group/chibiBaseMesh:Chibi_basemesh/chibiBaseMesh:transform2
+        weight: 0
+      - path: group1
+        weight: 0
+      - path: group1/pasted__group
+        weight: 0
+      - path: group1/pasted__group/chibiBaseMesh1:Chibi_basemesh
+        weight: 0
+      - path: group1/pasted__group/chibiBaseMesh1:Chibi_basemesh/chibiBaseMesh:transform1
+        weight: 0
+      - path: mixamorig:chibiBaseMesh:Hips
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:LeftUpLeg
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:LeftUpLeg/mixamorig:chibiBaseMesh:LeftLeg
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:LeftUpLeg/mixamorig:chibiBaseMesh:LeftLeg/mixamorig:chibiBaseMesh:LeftFoot
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:LeftUpLeg/mixamorig:chibiBaseMesh:LeftLeg/mixamorig:chibiBaseMesh:LeftFoot/mixamorig:chibiBaseMesh:LeftToeBase
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:LeftUpLeg/mixamorig:chibiBaseMesh:LeftLeg/mixamorig:chibiBaseMesh:LeftFoot/mixamorig:chibiBaseMesh:LeftToeBase/mixamorig:chibiBaseMesh:LeftToe_End
+        weight: 0
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:RightUpLeg
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:RightUpLeg/mixamorig:chibiBaseMesh:RightLeg
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:RightUpLeg/mixamorig:chibiBaseMesh:RightLeg/mixamorig:chibiBaseMesh:RightFoot
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:RightUpLeg/mixamorig:chibiBaseMesh:RightLeg/mixamorig:chibiBaseMesh:RightFoot/mixamorig:chibiBaseMesh:RightToeBase
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:RightUpLeg/mixamorig:chibiBaseMesh:RightLeg/mixamorig:chibiBaseMesh:RightFoot/mixamorig:chibiBaseMesh:RightToeBase/mixamorig:chibiBaseMesh:RightToe_End
+        weight: 0
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:LeftShoulder
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:LeftShoulder/mixamorig:chibiBaseMesh:LeftArm
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:LeftShoulder/mixamorig:chibiBaseMesh:LeftArm/mixamorig:chibiBaseMesh:LeftForeArm
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:LeftShoulder/mixamorig:chibiBaseMesh:LeftArm/mixamorig:chibiBaseMesh:LeftForeArm/mixamorig:chibiBaseMesh:LeftHand
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:LeftShoulder/mixamorig:chibiBaseMesh:LeftArm/mixamorig:chibiBaseMesh:LeftForeArm/mixamorig:chibiBaseMesh:LeftHand/mixamorig:chibiBaseMesh:LeftHandIndex1
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:LeftShoulder/mixamorig:chibiBaseMesh:LeftArm/mixamorig:chibiBaseMesh:LeftForeArm/mixamorig:chibiBaseMesh:LeftHand/mixamorig:chibiBaseMesh:LeftHandIndex1/mixamorig:chibiBaseMesh:LeftHandIndex2
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:LeftShoulder/mixamorig:chibiBaseMesh:LeftArm/mixamorig:chibiBaseMesh:LeftForeArm/mixamorig:chibiBaseMesh:LeftHand/mixamorig:chibiBaseMesh:LeftHandIndex1/mixamorig:chibiBaseMesh:LeftHandIndex2/mixamorig:chibiBaseMesh:LeftHandIndex3
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:LeftShoulder/mixamorig:chibiBaseMesh:LeftArm/mixamorig:chibiBaseMesh:LeftForeArm/mixamorig:chibiBaseMesh:LeftHand/mixamorig:chibiBaseMesh:LeftHandIndex1/mixamorig:chibiBaseMesh:LeftHandIndex2/mixamorig:chibiBaseMesh:LeftHandIndex3/mixamorig:chibiBaseMesh:LeftHandIndex4
+        weight: 0
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:LeftShoulder/mixamorig:chibiBaseMesh:LeftArm/mixamorig:chibiBaseMesh:LeftForeArm/mixamorig:chibiBaseMesh:LeftHand/mixamorig:chibiBaseMesh:LeftHandThumb1
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:LeftShoulder/mixamorig:chibiBaseMesh:LeftArm/mixamorig:chibiBaseMesh:LeftForeArm/mixamorig:chibiBaseMesh:LeftHand/mixamorig:chibiBaseMesh:LeftHandThumb1/mixamorig:chibiBaseMesh:LeftHandThumb2
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:LeftShoulder/mixamorig:chibiBaseMesh:LeftArm/mixamorig:chibiBaseMesh:LeftForeArm/mixamorig:chibiBaseMesh:LeftHand/mixamorig:chibiBaseMesh:LeftHandThumb1/mixamorig:chibiBaseMesh:LeftHandThumb2/mixamorig:chibiBaseMesh:LeftHandThumb3
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:LeftShoulder/mixamorig:chibiBaseMesh:LeftArm/mixamorig:chibiBaseMesh:LeftForeArm/mixamorig:chibiBaseMesh:LeftHand/mixamorig:chibiBaseMesh:LeftHandThumb1/mixamorig:chibiBaseMesh:LeftHandThumb2/mixamorig:chibiBaseMesh:LeftHandThumb3/mixamorig:chibiBaseMesh:LeftHandThumb4
+        weight: 0
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:Neck
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:Neck/mixamorig:chibiBaseMesh:Head
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:Neck/mixamorig:chibiBaseMesh:Head/mixamorig:chibiBaseMesh:HeadTop_End
+        weight: 0
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:RightShoulder
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:RightShoulder/mixamorig:chibiBaseMesh:RightArm
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:RightShoulder/mixamorig:chibiBaseMesh:RightArm/mixamorig:chibiBaseMesh:RightForeArm
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:RightShoulder/mixamorig:chibiBaseMesh:RightArm/mixamorig:chibiBaseMesh:RightForeArm/mixamorig:chibiBaseMesh:RightHand
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:RightShoulder/mixamorig:chibiBaseMesh:RightArm/mixamorig:chibiBaseMesh:RightForeArm/mixamorig:chibiBaseMesh:RightHand/mixamorig:chibiBaseMesh:RightHandIndex1
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:RightShoulder/mixamorig:chibiBaseMesh:RightArm/mixamorig:chibiBaseMesh:RightForeArm/mixamorig:chibiBaseMesh:RightHand/mixamorig:chibiBaseMesh:RightHandIndex1/mixamorig:chibiBaseMesh:RightHandIndex2
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:RightShoulder/mixamorig:chibiBaseMesh:RightArm/mixamorig:chibiBaseMesh:RightForeArm/mixamorig:chibiBaseMesh:RightHand/mixamorig:chibiBaseMesh:RightHandIndex1/mixamorig:chibiBaseMesh:RightHandIndex2/mixamorig:chibiBaseMesh:RightHandIndex3
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:RightShoulder/mixamorig:chibiBaseMesh:RightArm/mixamorig:chibiBaseMesh:RightForeArm/mixamorig:chibiBaseMesh:RightHand/mixamorig:chibiBaseMesh:RightHandIndex1/mixamorig:chibiBaseMesh:RightHandIndex2/mixamorig:chibiBaseMesh:RightHandIndex3/mixamorig:chibiBaseMesh:RightHandIndex4
+        weight: 0
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:RightShoulder/mixamorig:chibiBaseMesh:RightArm/mixamorig:chibiBaseMesh:RightForeArm/mixamorig:chibiBaseMesh:RightHand/mixamorig:chibiBaseMesh:RightHandThumb1
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:RightShoulder/mixamorig:chibiBaseMesh:RightArm/mixamorig:chibiBaseMesh:RightForeArm/mixamorig:chibiBaseMesh:RightHand/mixamorig:chibiBaseMesh:RightHandThumb1/mixamorig:chibiBaseMesh:RightHandThumb2
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:RightShoulder/mixamorig:chibiBaseMesh:RightArm/mixamorig:chibiBaseMesh:RightForeArm/mixamorig:chibiBaseMesh:RightHand/mixamorig:chibiBaseMesh:RightHandThumb1/mixamorig:chibiBaseMesh:RightHandThumb2/mixamorig:chibiBaseMesh:RightHandThumb3
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:RightShoulder/mixamorig:chibiBaseMesh:RightArm/mixamorig:chibiBaseMesh:RightForeArm/mixamorig:chibiBaseMesh:RightHand/mixamorig:chibiBaseMesh:RightHandThumb1/mixamorig:chibiBaseMesh:RightHandThumb2/mixamorig:chibiBaseMesh:RightHandThumb3/mixamorig:chibiBaseMesh:RightHandThumb4
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: mixamorig:chibiBaseMesh:Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:chibiBaseMesh:LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:chibiBaseMesh:RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:chibiBaseMesh:LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:chibiBaseMesh:RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:chibiBaseMesh:LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:chibiBaseMesh:RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:chibiBaseMesh:Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:chibiBaseMesh:Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:chibiBaseMesh:Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:chibiBaseMesh:Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:chibiBaseMesh:LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:chibiBaseMesh:RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:chibiBaseMesh:LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:chibiBaseMesh:RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:chibiBaseMesh:LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:chibiBaseMesh:RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:chibiBaseMesh:LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:chibiBaseMesh:RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:chibiBaseMesh:LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:chibiBaseMesh:RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:chibiBaseMesh:LeftHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:chibiBaseMesh:LeftHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:chibiBaseMesh:LeftHandThumb3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:chibiBaseMesh:LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:chibiBaseMesh:LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:chibiBaseMesh:LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:chibiBaseMesh:RightHandThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:chibiBaseMesh:RightHandThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:chibiBaseMesh:RightHandThumb3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:chibiBaseMesh:RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:chibiBaseMesh:RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:chibiBaseMesh:RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Nakiya(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:Chibi_basemesh1
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: group
+      position: {x: -0, y: -0.0024352479, z: -0.00020712703}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh:Chibi_basemesh
+      position: {x: -0, y: 0.0024140382, z: 0.00020712703}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 5.6423426, y: 5.6423426, z: 5.6423426}
+      transformModified: 1
+    - name: chibiBaseMesh:transform2
+      position: {x: -0, y: 0.025551222, z: 0.00059392647}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: group1
+      position: {x: 0.23674974, y: 0.13040705, z: 0.0035214238}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: pasted__group
+      position: {x: -0, y: -0.13284229, z: -0.0037285509}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: chibiBaseMesh1:Chibi_basemesh
+      position: {x: -0.23456576, y: 0.0024140382, z: 0.0015846275}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 5.6423426, y: 5.6423426, z: 5.6423426}
+      transformModified: 1
+    - name: chibiBaseMesh:transform1
+      position: {x: -0, y: 0.025551222, z: 0.00059392647}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:Hips
+      position: {x: -0.0000029168498, y: 0.09241677, z: -0.0004394377}
+      rotation: {x: -0.0000005687049, y: -0.0000037321724, z: 0.00006845198, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:Spine
+      position: {x: -0, y: 0.013617744, z: -0.0006020474}
+      rotation: {x: -0.022088496, y: 0.00000524327, z: -0.00006835283, w: 0.99975604}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:Spine1
+      position: {x: -0, y: 0.015902894, z: -1.110223e-18}
+      rotation: {x: 4.941723e-26, y: -7.271813e-14, z: 6.7957234e-13, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:Spine2
+      position: {x: -0, y: 0.018174741, z: -1.110223e-18}
+      rotation: {x: 0, y: 2.3665827e-30, z: -1.13398755e-30, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:Neck
+      position: {x: -0, y: 0.020446569, z: -1.4800398e-10}
+      rotation: {x: 0.022089068, y: 3.7600053e-14, z: 2.2826e-13, w: 0.99975604}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:Head
+      position: {x: -0, y: 0.011713467, z: 0.0005559808}
+      rotation: {x: 0, y: 0, z: 5.0036027e-31, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:HeadTop_End
+      position: {x: -0, y: 0.09363962, z: 0.0044446117}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:LeftShoulder
+      position: {x: -0.011655903, y: 0.01993577, z: -0.00004773998}
+      rotation: {x: 0.49582425, y: -0.50353616, z: 0.49726695, w: 0.50332415}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:LeftArm
+      position: {x: -0, y: 0.022151466, z: 0}
+      rotation: {x: 0.0068779127, y: -0.0037436902, z: -0.0008482035, w: 0.999969}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:LeftForeArm
+      position: {x: 5.551115e-19, y: 0.029567532, z: 0}
+      rotation: {x: 0.00000010376357, y: 0.00924608, z: 0.00000037527704, w: 0.99995726}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:LeftHand
+      position: {x: 3.330669e-18, y: 0.031892203, z: 0}
+      rotation: {x: -0.0000004240267, y: -0.21282034, z: -0.0000001711482, w: 0.9770914}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:LeftHandIndex1
+      position: {x: -0, y: 0.007962529, z: 3.4905995e-10}
+      rotation: {x: 0.0050188084, y: -0.12090302, z: -0.041172594, w: 0.9917974}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:LeftHandIndex2
+      position: {x: -0.00059455924, y: 0.0071537965, z: 0}
+      rotation: {x: 0.0000006283113, y: 0.00034732142, z: 0.0852295, w: 0.9963613}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:LeftHandIndex3
+      position: {x: 0.00042419974, y: 0.004823342, z: 0}
+      rotation: {x: -0.000090062815, y: -0.0012042538, z: -0.013458017, w: 0.99990875}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:LeftHandIndex4
+      position: {x: 0.00017035948, y: 0.0027935994, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:LeftHandThumb1
+      position: {x: 0.0016077365, y: 0.0071084914, z: 2.1052494e-10}
+      rotation: {x: -0.042069566, y: 0.04872849, z: -0.33717763, w: 0.9392375}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:LeftHandThumb2
+      position: {x: 0.00017213747, y: 0.0058278916, z: -1.7763568e-17}
+      rotation: {x: 0.0000063189373, y: 0.0008222202, z: -0.021591479, w: 0.9997665}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:LeftHandThumb3
+      position: {x: -0.00006274765, y: 0.004603657, z: 1.7763568e-17}
+      rotation: {x: -0.000062125786, y: 0.0025617515, z: -0.010675291, w: 0.99993974}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:LeftHandThumb4
+      position: {x: -0.00010938983, y: 0.0031095278, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:RightShoulder
+      position: {x: 0.011655903, y: 0.01993355, z: 0.0000024761612}
+      rotation: {x: 0.4969733, y: 0.50232273, z: -0.4962131, w: 0.5044422}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:RightArm
+      position: {x: -0, y: 0.022151466, z: -3.5527136e-17}
+      rotation: {x: 0.006777688, y: 0.0035075196, z: -0.0014210785, w: 0.9999699}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:RightForeArm
+      position: {x: -0, y: 0.029554846, z: 0}
+      rotation: {x: -0.000000078578196, y: -0.009270067, z: -0.00000013170624, w: 0.999957}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:RightHand
+      position: {x: 1.110223e-18, y: 0.031843446, z: -1.7763568e-17}
+      rotation: {x: 0.00000063137935, y: 0.382668, z: -0.00000046747772, w: 0.92388594}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:RightHandIndex1
+      position: {x: 1.7763568e-17, y: 0.008920044, z: 7.612396e-11}
+      rotation: {x: -0.0014970608, y: -0.009878575, z: 0.14979851, w: 0.98866606}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:RightHandIndex2
+      position: {x: 0.0018821596, y: 0.0060680364, z: 0}
+      rotation: {x: -0.000076804004, y: -0.004818059, z: -0.28090143, w: 0.95972455}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:RightHandIndex3
+      position: {x: -0.0012690506, y: 0.004607997, z: -8.881784e-18}
+      rotation: {x: 0.0018084715, y: -0.0074929083, z: 0.03191786, w: 0.99946076}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:RightHandIndex4
+      position: {x: -0.000613109, y: 0.0029503591, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:RightHandThumb1
+      position: {x: -0.0021242208, y: 0.0070239967, z: 1.4530843e-10}
+      rotation: {x: -0.16154109, y: -0.059328787, z: 0.3275391, w: 0.9290332}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:RightHandThumb2
+      position: {x: 0.000106366555, y: 0.0058695804, z: 0}
+      rotation: {x: 0.0007402657, y: -0.00913361, z: -0.09872115, w: 0.99507296}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:RightHandThumb3
+      position: {x: -0.00081506965, y: 0.0044862446, z: 1.7763568e-17}
+      rotation: {x: -0.00011695656, y: -0.0034831713, z: 0.21173479, w: 0.97732097}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:RightHandThumb4
+      position: {x: 0.00070870307, y: 0.0028121169, z: 1.7763568e-17}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:LeftUpLeg
+      position: {x: -0.017392604, y: -0.0075742053, z: -0.0002680333}
+      rotation: {x: 0.0053362814, y: 0.015310063, z: 0.999855, w: 0.005212764}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:LeftLeg
+      position: {x: 4.440892e-18, y: 0.042737212, z: -1.110223e-18}
+      rotation: {x: -0.06942905, y: -0.00007261255, z: 0.012596037, w: 0.9975074}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:LeftFoot
+      position: {x: 4.440892e-18, y: 0.031921826, z: 0}
+      rotation: {x: 0.5024134, y: -0.00552424, z: -0.073593095, w: 0.8614722}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:LeftToeBase
+      position: {x: 4.440892e-18, y: 0.016107196, z: 5.551115e-19}
+      rotation: {x: 0.2720058, y: 0.042645805, z: -0.012067213, w: 0.96127445}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:LeftToe_End
+      position: {x: -4.440892e-18, y: 0.006431503, z: -6.938894e-20}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:RightUpLeg
+      position: {x: 0.017392604, y: -0.0075742053, z: 0.000020845979}
+      rotation: {x: -0.0050366116, y: 0.018098969, z: 0.99981046, w: -0.0051127477}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:RightLeg
+      position: {x: -0, y: 0.042723235, z: -5.551115e-19}
+      rotation: {x: -0.080340564, y: 0.00020446673, z: -0.01265587, w: 0.9966871}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:RightFoot
+      position: {x: 4.440892e-18, y: 0.032009695, z: 0}
+      rotation: {x: 0.50954944, y: 0.0055687707, z: 0.07377335, w: 0.85725486}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:RightToeBase
+      position: {x: 4.440892e-18, y: 0.0161202, z: 2.220446e-18}
+      rotation: {x: 0.27183363, y: -0.042879898, z: 0.012125306, w: 0.96131206}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: mixamorig:chibiBaseMesh:RightToe_End
+      position: {x: -0, y: 0.0064524743, z: 6.938894e-20}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

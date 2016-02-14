@@ -1,0 +1,141 @@
+fileFormatVersion: 2
+guid: 009a5e0648c04ba40940bb509aaf1fa2
+timeCreated: 1454888840
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: chibiBaseMesh:Head
+    100002: chibiBaseMesh:HeadTop_End
+    100004: chibiBaseMesh:Hips
+    100006: chibiBaseMesh:LeftArm
+    100008: chibiBaseMesh:LeftFoot
+    100010: chibiBaseMesh:LeftForeArm
+    100012: chibiBaseMesh:LeftHand
+    100014: chibiBaseMesh:LeftHandIndex1
+    100016: chibiBaseMesh:LeftHandIndex2
+    100018: chibiBaseMesh:LeftHandIndex3
+    100020: chibiBaseMesh:LeftHandIndex4
+    100022: chibiBaseMesh:LeftLeg
+    100024: chibiBaseMesh:LeftShoulder
+    100026: chibiBaseMesh:LeftToe_End
+    100028: chibiBaseMesh:LeftToeBase
+    100030: chibiBaseMesh:LeftUpLeg
+    100032: chibiBaseMesh:Neck
+    100034: chibiBaseMesh:RightArm
+    100036: chibiBaseMesh:RightFoot
+    100038: chibiBaseMesh:RightForeArm
+    100040: chibiBaseMesh:RightHand
+    100042: chibiBaseMesh:RightHandIndex1
+    100044: chibiBaseMesh:RightHandIndex2
+    100046: chibiBaseMesh:RightHandIndex3
+    100048: chibiBaseMesh:RightHandIndex4
+    100050: chibiBaseMesh:RightLeg
+    100052: chibiBaseMesh:RightShoulder
+    100054: chibiBaseMesh:RightToe_End
+    100056: chibiBaseMesh:RightToeBase
+    100058: chibiBaseMesh:RightUpLeg
+    100060: chibiBaseMesh:Spine
+    100062: chibiBaseMesh:Spine1
+    100064: chibiBaseMesh:Spine2
+    100066: //RootNode
+    400000: chibiBaseMesh:Head
+    400002: chibiBaseMesh:HeadTop_End
+    400004: chibiBaseMesh:Hips
+    400006: chibiBaseMesh:LeftArm
+    400008: chibiBaseMesh:LeftFoot
+    400010: chibiBaseMesh:LeftForeArm
+    400012: chibiBaseMesh:LeftHand
+    400014: chibiBaseMesh:LeftHandIndex1
+    400016: chibiBaseMesh:LeftHandIndex2
+    400018: chibiBaseMesh:LeftHandIndex3
+    400020: chibiBaseMesh:LeftHandIndex4
+    400022: chibiBaseMesh:LeftLeg
+    400024: chibiBaseMesh:LeftShoulder
+    400026: chibiBaseMesh:LeftToe_End
+    400028: chibiBaseMesh:LeftToeBase
+    400030: chibiBaseMesh:LeftUpLeg
+    400032: chibiBaseMesh:Neck
+    400034: chibiBaseMesh:RightArm
+    400036: chibiBaseMesh:RightFoot
+    400038: chibiBaseMesh:RightForeArm
+    400040: chibiBaseMesh:RightHand
+    400042: chibiBaseMesh:RightHandIndex1
+    400044: chibiBaseMesh:RightHandIndex2
+    400046: chibiBaseMesh:RightHandIndex3
+    400048: chibiBaseMesh:RightHandIndex4
+    400050: chibiBaseMesh:RightLeg
+    400052: chibiBaseMesh:RightShoulder
+    400054: chibiBaseMesh:RightToe_End
+    400056: chibiBaseMesh:RightToeBase
+    400058: chibiBaseMesh:RightUpLeg
+    400060: chibiBaseMesh:Spine
+    400062: chibiBaseMesh:Spine1
+    400064: chibiBaseMesh:Spine2
+    400066: //RootNode
+    7400000: mixamo.com
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
