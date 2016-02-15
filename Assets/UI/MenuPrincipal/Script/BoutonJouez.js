@@ -18,6 +18,13 @@ public var ChoisirPerso: GameObject;
  */   
 public var lancerBouton: Button;
 
+/*
+ *  GameObject pour afficher le panneau avertisemment 
+ * @access public
+ * @var panneauAvertissement
+ */   
+public var panneauAvertissement: GameObject;
+
 function Start () {
 //Time.timeScale = 1;
 ChoisirPerso.SetActive(false); // on ne peut pas choisir de perso sans avoir fait nouvelle partit
@@ -34,19 +41,15 @@ function Update () {
 	}else lancerBouton.interactable=false; // le bouton lancer n'est pas sélectionnable
 }
 
-function Jouez () {
+function Jouez () {//fonction pour supprimer les players pref désactiver le panneau d'avertisement et choisir le perso
+panneauAvertissement.SetActive(false);
 ChoisirPerso.SetActive(true);
 PlayerPrefs.DeleteAll();//suprime tout les playerpref
 
-
 }
 
-function Rejouez () {
-Application.LoadLevel (0);
-}
-
-function Quitter () {
-Application.Quit();
+function Annuler () {
+panneauAvertissement.SetActive(false);
 }
 
 function Continuer () {
@@ -55,4 +58,10 @@ Application.LoadLevel (1);
 
 function Lancer () {
 Application.LoadLevel (1);
+}
+function Nouvelle (){ //quand on clique sur nouvelle partit
+if (continuerBouton.interactable==true){//si le bouton continuer est actif
+panneauAvertissement.SetActive(true);//affiche le panneau d'Avertissement
+}else Jouez ();//vas fans la fonction jouer
+
 }
