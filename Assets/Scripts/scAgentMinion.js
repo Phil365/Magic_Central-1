@@ -17,7 +17,7 @@ public var animateur:Animator;
  * @var tempEntreAttaque
  */          
 
-var tempEntreAttaque : float= 5f;
+var tempEntreAttaque : float= 31f;
 
 /*
  * Cibles de l'agent / GameObject
@@ -123,6 +123,7 @@ function Update () {
     	exclamation.SetActive (false);
     }
 
+    //regarde le héros
     if (distance <= porteeMaxi && distance >= porteeMini){
     	agent.gameObject.transform.LookAt(cible.transform);
     	animateur.SetBool('court', false);
@@ -133,6 +134,7 @@ function Update () {
 		animateur.SetBool('court', true);
 
 		if(timer > tempEntreAttaque && distance <= 1){
+
 		Attaque();
 		}
 
@@ -142,15 +144,19 @@ function Update () {
 		agent.Stop();
 
 	}
-
-
 }
 
+//attaque du minion
 function Attaque()
 { timer= 0f;
+	animateur.SetBool('attaque', true);
 	if(santeHero.Viedisponible>0)
 	{
 		santeHero.PrendDamage(degatMinion);
-
 	}
+}
+
+//fonction qui arrete la course du minion quand il décède
+function stopAgent() {
+	agent.Stop();
 }

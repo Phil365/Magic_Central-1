@@ -300,6 +300,7 @@ function Tourner ()
 					if (heroEnregistrer == 3) 
 					{
 						Debug.Log("Coup de poing");
+						//instancier hitbox ici
 					}
 
 					Manadisponible-=10;
