@@ -19,10 +19,17 @@ public var ChoisirPerso: GameObject;
 public var lancerBouton: Button;
 
 /*
- *  GameObject pour afficher le panneau avertisemment 
+ *  Bouton lancer la partie
  * @access public
- * @var panneauAvertissement
+ * @var lancerBouton
  */   
+public var ContinuerTexte: Text;
+/*
+ * Texte continuer sur le bouton
+ * @access public
+ * @var ContinuerTexte
+ */   
+
 public var panneauAvertissement: GameObject;
 
 function Start () {
@@ -34,8 +41,9 @@ lancerBouton.interactable=false; //lancer est a false on ne peut démarrer sans 
 function Update () {
 	if (PlayerPrefs.HasKey("nbPotionsVie") || PlayerPrefs.HasKey("nbPotionsMana") ||  PlayerPrefs.HasKey("Or") ){ // si le joueur a des playerPrefs il peut continuer
 	continuerBouton.interactable=true; //il peut lancer la partit 
+	ContinuerTexte.enabled=true;//il peut lancer la partit 
 	ChoisirPerso.SetActive(false); //il ne peut pas choisir d'autre perso
-	}else{continuerBouton.interactable=false;} // il ne peut pas continuer
+	}else{continuerBouton.interactable=false; ContinuerTexte.enabled=false;} // il ne peut pas continuer
 	if (PlayerPrefs.HasKey("heroChoisi")){ // si le joueur a des playerPrefs il peut continuer
 	lancerBouton.interactable=true;// le bouton lancer est  sélectionnable
 	}else lancerBouton.interactable=false; // le bouton lancer n'est pas sélectionnable

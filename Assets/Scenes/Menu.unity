@@ -3153,7 +3153,7 @@ Prefab:
     - target: {fileID: 9582112, guid: 5847e2ac9382d5048b4b6a3e13ab29c0, type: 2}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: f514cda68580e12478e427755768213d, type: 2}
+      objectReference: {fileID: 9100000, guid: a032dff28f4c6ae458f33dc389a1d70f, type: 2}
     - target: {fileID: 424218, guid: 5847e2ac9382d5048b4b6a3e13ab29c0, type: 2}
       propertyPath: m_LocalScale.x
       value: 174.94995
@@ -3583,6 +3583,8 @@ MonoBehaviour:
   continuerBouton: {fileID: 1388441875}
   ChoisirPerso: {fileID: 2061329028}
   lancerBouton: {fileID: 196507509}
+  ContinuerTexte: {fileID: 2110038873}
+  LancerPartit: {fileID: 1323261176}
   panneauAvertissement: {fileID: 1107484821}
 --- !u!1 &1009260861
 GameObject:
