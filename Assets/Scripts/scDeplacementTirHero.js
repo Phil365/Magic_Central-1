@@ -83,7 +83,15 @@ public var mana:int = 60;
  * @var projectile
  */
 
-public var projectile:GameObject;
+public var projectileElectrique:GameObject;
+
+ /*
+ * Projectile (attaque magique du personnage)
+ * @access public
+ * @var projectile
+ */
+
+public var projectileFeu:GameObject;
 
  /*
  * Projectile (attaque magique du personnage)
@@ -107,9 +115,8 @@ private var force:int=100;
  * @var force
  */
 
-private var coupPouvoir:int=10;
 private var loopHandle: boolean = true;
-private var saut= false;
+
 private var gestionPotion:scGestionInventaire;
 private var manatotal:int=0;
 private var vieTotal:int=0;
@@ -121,22 +128,53 @@ var flashColour : Color = new Color(1f,0f,0f,0.1f);
 private var estMort: boolean;
 private var endommage : boolean;
 
+private var heroEnregistrer:int;
+
  /*
  * Source : https://unity3d.com/learn/tutorials/projects/survival-shooter/player-character?playlist=17144
  * Rotation suivant l'endroit du curseur de la souris
  */
 
 function Start ()
- {//Time.timeScale = 1;
-	 while(loopHandle){
+ {
+
+ 	 if (PlayerPrefs.HasKey("heroChoisi"))
+	 {
+		 heroEnregistrer = PlayerPrefs.GetInt('heroChoisi');
+	 }
+	 else 
+	 {
+	 	heroEnregistrer = 1;
+	 }
+
+ //Time.timeScale = 1;
+	 while(loopHandle)
+	 {
 	 regenMana();
-	
 	  yield WaitForSeconds(2);
 	 }
+
+	     // Mise en place des HP et points de mana en fonction du niveau.
+	 if (PlayerPrefs.HasKey("niveau"))
+	 {
+		if (PlayerPrefs.GetInt('niveau') == 2)
+		{
+			Viedisponible = 200;
+			Manadisponible = 120; 
+		}
+		// lvl 3
+		if (PlayerPrefs.GetInt('niveau') == 3) 
+		{
+			Viedisponible = 300;
+			Manadisponible = 200; 
+		}
+
+	 }
+
  }
 
 function Awake ()
-{//playerAudio = GetComponent(AudioSource);	
+{
 	gestionPotion = GetComponent(scGestionInventaire);
     // On récupere le layer qui corresponds au sol
     masqueSol = LayerMask.GetMask ("sol");
@@ -184,6 +222,19 @@ function Update(){
     if(Input.GetKeyDown (KeyCode.P)){ // pour reset les player pref pour test
     PlayerPrefs.DeleteAll();
     }
+
+
+    	 // Mise en place des HP et points de mana en fonction du niveau.
+	 if (PlayerPrefs.HasKey("niveau"))
+	{
+		if (PlayerPrefs.GetInt('niveau') == 2)
+		{
+			Viedisponible = 200;
+			Manadisponible = 120; 
+		}
+
+	}
+
 }
 
 
@@ -227,13 +278,30 @@ function Tourner ()
    if (Input.GetButtonDown('Fire1'))
         {
 			if(Manadisponible>=10){
-				if(this.projectile){					// Vecteur qui part de la position du joueur
+				if(this.projectileElectrique){
+					// Vecteur qui part de la position du joueur
 					var position:Vector3=transform.position;
 					position.y +=0.75;
-					Debug.Log("joueurSouris:" + joueurSouris);
-					//Instantiation des projectiles 
-					nouveauProjectile = Instantiate(projectile, position, transform.rotation);
-					nouveauProjectile.GetComponent.<Rigidbody>().AddForce(joueurSouris * force);
+
+					//Instantiation des projectiles en fonction des personnages
+					// Nakiya
+					if (heroEnregistrer == 1) 
+					{
+						nouveauProjectile = Instantiate(projectileFeu, position, transform.rotation);
+						nouveauProjectile.GetComponent.<Rigidbody>().AddForce(joueurSouris * force);
+					}
+					//Kaseem
+					if (heroEnregistrer == 2) 
+					{
+						nouveauProjectile = Instantiate(projectileElectrique, position, transform.rotation);
+						nouveauProjectile.GetComponent.<Rigidbody>().AddForce(joueurSouris * force);
+					}
+					//Kayden
+					if (heroEnregistrer == 3) 
+					{
+						Debug.Log("Coup de poing");
+					}
+
 					Manadisponible-=10;
 	        		if(Manadisponible <=0)
 		        	{

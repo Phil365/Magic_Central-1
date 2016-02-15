@@ -4508,9 +4508,19 @@ Prefab:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 107398, guid: 0d0445292dce5ee4f95d3d56a83a510a, type: 2}
+      propertyPath: m_Name
+      value: xpSlider
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0d0445292dce5ee4f95d3d56a83a510a, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &519948666 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11425966, guid: 0d0445292dce5ee4f95d3d56a83a510a,
+    type: 2}
+  m_PrefabInternal: {fileID: 519948665}
+  m_Script: {fileID: -113659843, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1 &520400261 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 601a1de40ba01194bace0d54653b0035, type: 3}
@@ -12389,7 +12399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   experienceJoueur: 0
   niveauJoueur: 0
-  prefabBouleElec: {fileID: 138682, guid: 4d1444fa553faa34cb3bcf5fd3d7674e, type: 2}
+  XPSlider: {fileID: 519948666}
 --- !u!4 &1239308139 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400456, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
@@ -16319,6 +16329,14 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11476310, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: projectileFeu
+      value: 
+      objectReference: {fileID: 178704, guid: a70e913cc134dc540bf8854502947ec1, type: 2}
+    - target: {fileID: 11476310, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: projectileElectrique
+      value: 
+      objectReference: {fileID: 138682, guid: 4d1444fa553faa34cb3bcf5fd3d7674e, type: 2}
     m_RemovedComponents:
     - {fileID: 8212844, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
