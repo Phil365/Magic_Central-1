@@ -84,6 +84,13 @@ function OnTriggerEnter (autre : Collider) {
 		autre.gameObject.SendMessageUpwards("diminuerVie", degat, SendMessageOptions.DontRequireReceiver);
 	}
 
+
+	if (autre.gameObject.tag == 'boss') {
+
+		autre.gameObject.SendMessageUpwards("diminuerVieBoss", degat, SendMessageOptions.DontRequireReceiver);
+	}
+
+
 }
 
 function augmenterDegats(degatUp:int) 
