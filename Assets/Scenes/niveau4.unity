@@ -8448,7 +8448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   experienceJoueur: 0
   niveauJoueur: 0
-  XPSlider: {fileID: 0}
+  XPSlider: {fileID: 2013931625}
 --- !u!1 &1239986428
 GameObject:
   m_ObjectHideFlags: 0
@@ -12319,7 +12319,12 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 11461544, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: sourceSonore
+      value: 
+      objectReference: {fileID: 1959125794}
+    m_RemovedComponents:
+    - {fileID: 11430886, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1619254559
@@ -14440,7 +14445,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   Priority: 128
@@ -15058,6 +15063,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 22470654, guid: 0d0445292dce5ee4f95d3d56a83a510a,
     type: 2}
   m_PrefabInternal: {fileID: 2013931617}
+--- !u!114 &2013931625 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11425966, guid: 0d0445292dce5ee4f95d3d56a83a510a,
+    type: 2}
+  m_PrefabInternal: {fileID: 2013931617}
+  m_Script: {fileID: -113659843, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &2017925021
 Prefab:
   m_ObjectHideFlags: 0

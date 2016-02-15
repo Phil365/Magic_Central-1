@@ -3584,7 +3584,6 @@ MonoBehaviour:
   ChoisirPerso: {fileID: 2061329028}
   lancerBouton: {fileID: 196507509}
   ContinuerTexte: {fileID: 2110038873}
-  LancerPartit: {fileID: 1323261176}
   panneauAvertissement: {fileID: 1107484821}
 --- !u!1 &1009260861
 GameObject:
@@ -4771,7 +4770,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   Priority: 128
