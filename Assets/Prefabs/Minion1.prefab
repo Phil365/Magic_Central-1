@@ -345,6 +345,8 @@ GameObject:
   - 114: {fileID: 11430820}
   - 54: {fileID: 5453844}
   - 114: {fileID: 11464568}
+  - 114: {fileID: 11431842}
+  - 136: {fileID: 13689348}
   m_Layer: 0
   m_Name: Minion1
   m_TagString: ennemi
@@ -1199,6 +1201,20 @@ MonoBehaviour:
   porteeMaxi: 10
   exclamation: {fileID: 120564}
   degatMinion: 2
+--- !u!114 &11431842
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 155562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41f05eeb0380cf44887f771951be9487, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potionVie: {fileID: 178128, guid: 65e6bc916f60ca54883d2eac27b78e9c, type: 2}
+  potionMana: {fileID: 179694, guid: 68a0bc6349b05e642a640bb9bed05aaa, type: 2}
+  tasOr: {fileID: 150606, guid: 3db78ccee7976804c88c38a21d332b5b, type: 2}
 --- !u!114 &11464568
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1216,6 +1232,19 @@ MonoBehaviour:
   xpGagnee: 10
   Hero: {fileID: 0}
   animateur: {fileID: 9567286}
+--- !u!136 &13689348
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 155562}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!137 &13781970
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

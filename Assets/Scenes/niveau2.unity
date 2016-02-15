@@ -176,6 +176,34 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 10003708}
+--- !u!1 &11229613
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 129764, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 11229614}
+  m_Layer: 0
+  m_Name: chibiBaseMesh:LeftArm
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &11229614
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 441996, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 11229613}
+  m_LocalRotation: {x: -0.1495608, y: 0.005359791, z: -0.0058963965, w: 0.9887204}
+  m_LocalPosition: {x: 1.110223e-18, y: 0.017204149, z: 1.7763568e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1773006878}
+  m_Father: {fileID: 913537203}
+  m_RootOrder: 0
 --- !u!1001 &12047604
 Prefab:
   m_ObjectHideFlags: 0
@@ -604,6 +632,77 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &27809437
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 132392, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 27809438}
+  - 222: {fileID: 27809440}
+  - 114: {fileID: 27809439}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &27809438
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 22471736, guid: 4cb30891e3a5c49c98518ac7e6d57e2f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 27809437}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5397578, y: 0.30956522, z: 0.53975785}
+  m_Children:
+  - {fileID: 753305865}
+  m_Father: {fileID: 953532913}
+  m_RootOrder: 0
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 15, y: 167}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &27809439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11492382, guid: 4cb30891e3a5c49c98518ac7e6d57e2f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 27809437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.484}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &27809440
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 22267892, guid: 4cb30891e3a5c49c98518ac7e6d57e2f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 27809437}
 --- !u!1001 &28270602
 Prefab:
   m_ObjectHideFlags: 0
@@ -1817,6 +1916,34 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &110568237
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 179386, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 110568238}
+  m_Layer: 0
+  m_Name: chibiBaseMesh:RightForeArm
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &110568238
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 417738, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 110568237}
+  m_LocalRotation: {x: 0.000000023836625, y: 0.0051082605, z: 0.000000091712195, w: 0.99998695}
+  m_LocalPosition: {x: 1.110223e-18, y: 0.0356898, z: 1.7763568e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 481476378}
+  m_Father: {fileID: 2033702194}
+  m_RootOrder: 0
 --- !u!1001 &111032412
 Prefab:
   m_ObjectHideFlags: 0
@@ -3016,6 +3143,52 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 167895152}
+--- !u!1 &168906735
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 169318, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 168906736}
+  - 54: {fileID: 168906737}
+  m_Layer: 0
+  m_Name: Minion1
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &168906736
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 422760, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 168906735}
+  m_LocalRotation: {x: 0, y: 0.99972683, z: 0, w: -0.023374178}
+  m_LocalPosition: {x: -1.83, y: 0, z: -2.91}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_Children:
+  - {fileID: 823251941}
+  - {fileID: 302101594}
+  m_Father: {fileID: 665683468}
+  m_RootOrder: 1
+--- !u!54 &168906737
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5491296, guid: 4cb30891e3a5c49c98518ac7e6d57e2f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 168906735}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &170259828
 Prefab:
   m_ObjectHideFlags: 0
@@ -3648,6 +3821,33 @@ CapsuleCollider:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
   m_PrefabInternal: {fileID: 203148479}
+--- !u!1 &204297121
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 184924, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 204297122}
+  m_Layer: 0
+  m_Name: chibiBaseMesh:HeadTop_End
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &204297122
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 481930, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 204297121}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0.084465824, z: -0.0012104039}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2049334487}
+  m_RootOrder: 0
 --- !u!1 &207089189
 GameObject:
   m_ObjectHideFlags: 0
@@ -4107,6 +4307,34 @@ CapsuleCollider:
   m_Height: 0.41116884
   m_Direction: 1
   m_Center: {x: 0.019334301, y: 0.21431448, z: -0.0038315915}
+--- !u!1 &237725069
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 173716, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 237725070}
+  m_Layer: 0
+  m_Name: chibiBaseMesh:RightHandIndex3
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &237725070
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 497520, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 237725069}
+  m_LocalRotation: {x: 0.096207894, y: 0.0057371156, z: -0.10727821, w: 0.98954666}
+  m_LocalPosition: {x: -0.0020940185, y: 0.004186546, z: -0.0016538139}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1307889169}
+  m_Father: {fileID: 876891353}
+  m_RootOrder: 0
 --- !u!1 &239527725 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
@@ -5007,6 +5235,100 @@ CapsuleCollider:
   m_Height: 0.41116884
   m_Direction: 1
   m_Center: {x: 0.019334301, y: 0.21431448, z: -0.0038315915}
+--- !u!1 &295973567
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 177542, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 295973568}
+  m_Layer: 0
+  m_Name: chibiBaseMesh:LeftHandIndex2
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &295973568
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 425920, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 295973567}
+  m_LocalRotation: {x: -0.1432899, y: 0.00000009251474, z: -0.07537705, w: 0.9868061}
+  m_LocalPosition: {x: -0, y: 0.0030942191, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1459485453}
+  m_Father: {fileID: 1106681050}
+  m_RootOrder: 0
+--- !u!1 &302101593
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 134040, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 302101594}
+  - 65: {fileID: 302101596}
+  - 114: {fileID: 302101595}
+  m_Layer: 0
+  m_Name: triggerDialogue1
+  m_TagString: triggerTag1
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &302101594
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 433926, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 302101593}
+  m_LocalRotation: {x: 0, y: -0.02195941, z: 0, w: 0.9997589}
+  m_LocalPosition: {x: 2.8, y: 2.7142289, z: -1.23}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_Children: []
+  m_Father: {fileID: 168906736}
+  m_RootOrder: 1
+--- !u!114 &302101595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11498060, guid: 4cb30891e3a5c49c98518ac7e6d57e2f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 302101593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb7f4624ff77c46f5bd24dbd97cb42d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panneauDialogue: {fileID: 27809437}
+  textDialogue: {fileID: 753305863}
+  numMessage: 0
+  nmbMax: 0
+  messageUn: 
+  messageDeux: 
+  messageTrois: 
+  messageQuatre: 
+  messageCinq: 
+  messageSix: 
+  messageSept: 
+  messageHuit: 
+--- !u!65 &302101596
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6542240, guid: 4cb30891e3a5c49c98518ac7e6d57e2f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 302101593}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.041972, y: 1.8308282, z: 2.80517}
+  m_Center: {x: -1.3142486, y: -0.63748884, z: 1.4703646}
 --- !u!1001 &304212654
 Prefab:
   m_ObjectHideFlags: 0
@@ -7725,7 +8047,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   experienceJoueur: 80
   niveauJoueur: 0
-  prefabBouleElec: {fileID: 138682, guid: 4d1444fa553faa34cb3bcf5fd3d7674e, type: 2}
   XPSlider: {fileID: 1595362577}
 --- !u!1 &451990227 stripped
 GameObject:
@@ -8155,6 +8476,34 @@ CapsuleCollider:
   m_Height: 0.41116884
   m_Direction: 1
   m_Center: {x: 0.019334301, y: 0.21431448, z: -0.0038315915}
+--- !u!1 &481476377
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 197044, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 481476378}
+  m_Layer: 0
+  m_Name: chibiBaseMesh:RightHand
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &481476378
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 440638, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 481476377}
+  m_LocalRotation: {x: 0.0000027190554, y: -0.69867355, z: 0.0000026195917, w: 0.71544063}
+  m_LocalPosition: {x: 4.440892e-18, y: 0.035368428, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2011003837}
+  m_Father: {fileID: 110568238}
+  m_RootOrder: 0
 --- !u!1 &482131881 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
@@ -9659,6 +10008,34 @@ CapsuleCollider:
   m_Height: 0.41116884
   m_Direction: 1
   m_Center: {x: 0.019334301, y: 0.21431448, z: -0.0038315915}
+--- !u!1 &565578189
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 121364, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 565578190}
+  m_Layer: 0
+  m_Name: chibiBaseMesh:Neck
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &565578190
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 423610, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 565578189}
+  m_LocalRotation: {x: 0.014328039, y: 3.937073e-14, z: 2.279612e-13, w: 0.99989736}
+  m_LocalPosition: {x: -0, y: 0.02224154, z: 3.7251244e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2049334487}
+  m_Father: {fileID: 1401721188}
+  m_RootOrder: 1
 --- !u!1001 &568690932
 Prefab:
   m_ObjectHideFlags: 0
@@ -10337,6 +10714,34 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 65e6bc916f60ca54883d2eac27b78e9c, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &607383832
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 166162, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 607383833}
+  m_Layer: 0
+  m_Name: chibiBaseMesh:Spine
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &607383833
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 439798, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 607383832}
+  m_LocalRotation: {x: -0.014328057, y: 0.0000034895713, z: 0.0000027197768, w: 0.99989736}
+  m_LocalPosition: {x: -0, y: 0.014821606, z: -0.00042485967}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1122308799}
+  m_Father: {fileID: 1527470810}
+  m_RootOrder: 2
 --- !u!1001 &609294303
 Prefab:
   m_ObjectHideFlags: 0
@@ -11374,6 +11779,35 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &665683467
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 126746, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 665683468}
+  m_Layer: 0
+  m_Name: PNJ et Dialogues 1
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &665683468
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 421264, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 665683467}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -92.77145, y: 0.65, z: 278.49707}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 953532913}
+  - {fileID: 168906736}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
 --- !u!1001 &666351689
 Prefab:
   m_ObjectHideFlags: 0
@@ -12561,6 +12995,82 @@ CapsuleCollider:
   m_Height: 0.41116884
   m_Direction: 1
   m_Center: {x: 0.019334301, y: 0.21431448, z: -0.0038315915}
+--- !u!1 &753305862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 162934, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 753305865}
+  - 222: {fileID: 753305864}
+  - 114: {fileID: 753305863}
+  m_Layer: 5
+  m_Name: TexteDialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &753305863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11405180, guid: 4cb30891e3a5c49c98518ac7e6d57e2f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 753305862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &753305864
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 22241042, guid: 4cb30891e3a5c49c98518ac7e6d57e2f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 753305862}
+--- !u!224 &753305865
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 22464634, guid: 4cb30891e3a5c49c98518ac7e6d57e2f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 753305862}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.8405972, y: 5.297198, z: 0.98179454}
+  m_Children: []
+  m_Father: {fileID: 27809438}
+  m_RootOrder: 0
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 3, y: -5}
+  m_SizeDelta: {x: 350, y: 90}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &753576031
 Prefab:
   m_ObjectHideFlags: 0
@@ -14416,6 +14926,55 @@ CapsuleCollider:
   m_Height: 0.41116884
   m_Direction: 1
   m_Center: {x: 0.019334301, y: 0.21431448, z: -0.0038315915}
+--- !u!1 &823251940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 112846, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 823251941}
+  - 95: {fileID: 823251942}
+  m_Layer: 0
+  m_Name: minion
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &823251941
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 495424, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 823251940}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: -1.14}
+  m_LocalScale: {x: 8.613622, y: 8.613637, z: 8.613637}
+  m_Children:
+  - {fileID: 1527470810}
+  - {fileID: 1824250277}
+  - {fileID: 1258161534}
+  m_Father: {fileID: 168906736}
+  m_RootOrder: 0
+--- !u!95 &823251942
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9554868, guid: 4cb30891e3a5c49c98518ac7e6d57e2f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 823251940}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 543c9cec7060e8748b915b9eb5542737, type: 3}
+  m_Controller: {fileID: 9100000, guid: 5ee0aad82ae9c504d91a92befd41efc6, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &824983993
 Prefab:
   m_ObjectHideFlags: 0
@@ -15180,6 +15739,34 @@ CapsuleCollider:
   m_Height: 0.41116884
   m_Direction: 1
   m_Center: {x: 0.019334301, y: 0.21431448, z: -0.0038315915}
+--- !u!1 &876891352
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 187788, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 876891353}
+  m_Layer: 0
+  m_Name: chibiBaseMesh:RightHandIndex2
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &876891353
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 448476, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 876891352}
+  m_LocalRotation: {x: 0.17350057, y: -0.0000000450574, z: -0.21965551, w: 0.96002555}
+  m_LocalPosition: {x: -0, y: 0.0031591335, z: 8.881784e-18}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 237725070}
+  m_Father: {fileID: 2011003837}
+  m_RootOrder: 0
 --- !u!1001 &882961700
 Prefab:
   m_ObjectHideFlags: 0
@@ -15494,6 +16081,34 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 100, y: 10, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &894466005
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 187040, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 894466006}
+  m_Layer: 0
+  m_Name: chibiBaseMesh:LeftToeBase
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &894466006
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 416644, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 894466005}
+  m_LocalRotation: {x: 0.33212668, y: 0.089249864, z: -0.03158569, w: 0.93847144}
+  m_LocalPosition: {x: -0, y: 0.014691777, z: 1.110223e-18}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1077226335}
+  m_Father: {fileID: 1890901566}
+  m_RootOrder: 0
 --- !u!1 &899913986 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
@@ -15892,6 +16507,34 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &913537202
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 190194, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 913537203}
+  m_Layer: 0
+  m_Name: chibiBaseMesh:LeftShoulder
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &913537203
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 463294, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 913537202}
+  m_LocalRotation: {x: 0.5662752, y: -0.4216403, z: 0.5720559, w: 0.41749725}
+  m_LocalPosition: {x: -0.008062317, y: 0.019666705, z: -0.00008315843}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 11229614}
+  m_Father: {fileID: 1401721188}
+  m_RootOrder: 0
 --- !u!1001 &925141433
 Prefab:
   m_ObjectHideFlags: 0
@@ -16168,6 +16811,101 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &953532912
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 101534, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 953532913}
+  - 223: {fileID: 953532916}
+  - 114: {fileID: 953532915}
+  - 114: {fileID: 953532914}
+  m_Layer: 5
+  m_Name: DialoguesUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &953532913
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 22458266, guid: 4cb30891e3a5c49c98518ac7e6d57e2f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 953532912}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 27809438}
+  m_Father: {fileID: 665683468}
+  m_RootOrder: 0
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &953532914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11413138, guid: 4cb30891e3a5c49c98518ac7e6d57e2f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 953532912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &953532915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11429910, guid: 4cb30891e3a5c49c98518ac7e6d57e2f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 953532912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &953532916
+Canvas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 22387540, guid: 4cb30891e3a5c49c98518ac7e6d57e2f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 953532912}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1001 &956469398
 Prefab:
   m_ObjectHideFlags: 0
@@ -17325,6 +18063,34 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1061061873
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 149718, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1061061874}
+  m_Layer: 0
+  m_Name: chibiBaseMesh:LeftLeg
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1061061874
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 429340, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1061061873}
+  m_LocalRotation: {x: -0.103378735, y: 0.00007378452, z: -0.003583743, w: 0.99463564}
+  m_LocalPosition: {x: -0, y: 0.039425597, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1890901566}
+  m_Father: {fileID: 2107734914}
+  m_RootOrder: 0
 --- !u!1 &1061284844 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
@@ -17640,6 +18406,33 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 426942, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
   m_PrefabInternal: {fileID: 1073555946}
+--- !u!1 &1077226334
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 111502, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1077226335}
+  m_Layer: 0
+  m_Name: chibiBaseMesh:LeftToe_End
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1077226335
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 445260, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1077226334}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.440892e-18, y: 0.0053746467, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 894466006}
+  m_RootOrder: 0
 --- !u!1 &1077466342 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
@@ -18135,6 +18928,34 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1106681049
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 157334, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1106681050}
+  m_Layer: 0
+  m_Name: chibiBaseMesh:LeftHandIndex1
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1106681050
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 401524, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1106681049}
+  m_LocalRotation: {x: -0.000000020041421, y: 0.99874073, z: -0.0000003989711, w: -0.050169505}
+  m_LocalPosition: {x: -1.7763568e-17, y: 0.007938965, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 295973568}
+  m_Father: {fileID: 1227389328}
+  m_RootOrder: 0
 --- !u!1001 &1108534243
 Prefab:
   m_ObjectHideFlags: 0
@@ -18301,6 +19122,34 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 426942, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
   m_PrefabInternal: {fileID: 1121162539}
+--- !u!1 &1122308798
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 197820, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1122308799}
+  m_Layer: 0
+  m_Name: chibiBaseMesh:Spine1
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1122308799
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 485214, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1122308798}
+  m_LocalRotation: {x: 4.2307054e-26, y: -6.2159635e-14, z: 6.8061946e-13, w: 1}
+  m_LocalPosition: {x: -0, y: 0.017298972, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1401721188}
+  m_Father: {fileID: 607383833}
+  m_RootOrder: 0
 --- !u!1 &1127650080 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
@@ -18636,6 +19485,34 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 426942, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
   m_PrefabInternal: {fileID: 1136094917}
+--- !u!1 &1137217978
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 158924, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1137217979}
+  m_Layer: 0
+  m_Name: chibiBaseMesh:RightFoot
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1137217979
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 431872, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1137217978}
+  m_LocalRotation: {x: 0.48194906, y: 0.036899865, z: 0.04671242, w: 0.8741748}
+  m_LocalPosition: {x: -0, y: 0.028302237, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1599340920}
+  m_Father: {fileID: 1250669742}
+  m_RootOrder: 0
 --- !u!1001 &1140244614
 Prefab:
   m_ObjectHideFlags: 0
@@ -20155,6 +21032,34 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1227389327
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 195732, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1227389328}
+  m_Layer: 0
+  m_Name: chibiBaseMesh:LeftHand
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1227389328
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 417902, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1227389327}
+  m_LocalRotation: {x: 0.0000002272648, y: 0.6176705, z: -0.00000021347988, w: 0.78643703}
+  m_LocalPosition: {x: -0, y: 0.035340246, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1106681050}
+  m_Father: {fileID: 1773006878}
+  m_RootOrder: 0
 --- !u!1001 &1229124734
 Prefab:
   m_ObjectHideFlags: 0
@@ -20271,6 +21176,33 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1231070735
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 147094, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1231070736}
+  m_Layer: 0
+  m_Name: chibiBaseMesh:RightToe_End
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1231070736
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 454408, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1231070735}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0.0055186725, z: -1.3877787e-19}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1599340920}
+  m_RootOrder: 0
 --- !u!1001 &1233777257
 Prefab:
   m_ObjectHideFlags: 0
@@ -20582,6 +21514,34 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 426942, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
   m_PrefabInternal: {fileID: 1248657883}
+--- !u!1 &1250669741
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 194008, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1250669742}
+  m_Layer: 0
+  m_Name: chibiBaseMesh:RightLeg
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1250669742
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 488492, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1250669741}
+  m_LocalRotation: {x: -0.10342562, y: -0.00007022621, z: 0.003471696, w: 0.9946311}
+  m_LocalPosition: {x: 4.440892e-18, y: 0.039457586, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1137217979}
+  m_Father: {fileID: 2064269617}
+  m_RootOrder: 0
 --- !u!1 &1250846428
 GameObject:
   m_ObjectHideFlags: 0
@@ -20705,6 +21665,33 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 426942, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
   m_PrefabInternal: {fileID: 1257173367}
+--- !u!1 &1258161533
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 162458, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1258161534}
+  m_Layer: 0
+  m_Name: Minion_Reference
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1258161534
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 463642, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1258161533}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 823251941}
+  m_RootOrder: 2
 --- !u!1 &1261513142 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
@@ -21709,6 +22696,33 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1307889168
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 192232, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1307889169}
+  m_Layer: 0
+  m_Name: chibiBaseMesh:RightHandIndex4
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1307889169
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 457120, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1307889168}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0012769095, y: 0.0014439329, z: -0.0010678818}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 237725070}
+  m_RootOrder: 0
 --- !u!1001 &1309606129
 Prefab:
   m_ObjectHideFlags: 0
@@ -23415,6 +24429,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1160258733}
   m_RootOrder: 14
+--- !u!1 &1401721187
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 159546, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1401721188}
+  m_Layer: 0
+  m_Name: chibiBaseMesh:Spine2
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1401721188
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 468012, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1401721187}
+  m_LocalRotation: {x: 0, y: -0, z: -7.888609e-31, w: 1}
+  m_LocalPosition: {x: -0, y: 0.019770252, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 913537203}
+  - {fileID: 565578190}
+  - {fileID: 2130042605}
+  m_Father: {fileID: 1122308799}
+  m_RootOrder: 0
 --- !u!1 &1405159213 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
@@ -23757,6 +24801,100 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1430442759
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 182868, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1430442760}
+  - 137: {fileID: 1430442761}
+  m_Layer: 0
+  m_Name: chibiBaseMesh:Chibi_basemesh
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1430442760
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 441420, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1430442759}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.3771725, y: -0.54965687, z: -0.08362953}
+  m_LocalScale: {x: 5.6423426, y: 5.6423426, z: 5.6423426}
+  m_Children: []
+  m_Father: {fileID: 1824250277}
+  m_RootOrder: 0
+--- !u!137 &1430442761
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13722458, guid: 4cb30891e3a5c49c98518ac7e6d57e2f,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1430442759}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 3eb3271dca78c4a6789ef016b45705e1, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_Mesh: {fileID: 4300000, guid: 543c9cec7060e8748b915b9eb5542737, type: 3}
+  m_Bones:
+  - {fileID: 607383833}
+  - {fileID: 1122308799}
+  - {fileID: 1401721188}
+  - {fileID: 2049334487}
+  - {fileID: 565578190}
+  - {fileID: 1527470810}
+  - {fileID: 2064269617}
+  - {fileID: 2107734914}
+  - {fileID: 913537203}
+  - {fileID: 11229614}
+  - {fileID: 1773006878}
+  - {fileID: 1061061874}
+  - {fileID: 894466006}
+  - {fileID: 1890901566}
+  - {fileID: 1227389328}
+  - {fileID: 1106681050}
+  - {fileID: 295973568}
+  - {fileID: 1459485453}
+  - {fileID: 2130042605}
+  - {fileID: 2033702194}
+  - {fileID: 110568238}
+  - {fileID: 1250669742}
+  - {fileID: 1137217979}
+  - {fileID: 1599340920}
+  - {fileID: 481476378}
+  - {fileID: 2011003837}
+  - {fileID: 876891353}
+  - {fileID: 237725070}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 1527470810}
+  m_AABB:
+    m_Center: {x: 0.0028432943, y: 0.044738255, z: -0.010382913}
+    m_Extent: {x: 0.11931062, y: 0.14183244, z: 0.06124071}
+  m_DirtyAABB: 0
 --- !u!114 &1436698798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24022,6 +25160,34 @@ CapsuleCollider:
   m_Height: 0.41116884
   m_Direction: 1
   m_Center: {x: 0.019334301, y: 0.21431448, z: -0.0038315915}
+--- !u!1 &1459485452
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 161058, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1459485453}
+  m_Layer: 0
+  m_Name: chibiBaseMesh:LeftHandIndex3
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1459485453
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 493492, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1459485452}
+  m_LocalRotation: {x: -0.016317314, y: 0.028841065, z: -0.10522127, w: 0.9938966}
+  m_LocalPosition: {x: -0.0007166422, y: 0.0045673437, z: 0.0013632226}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1766601540}
+  m_Father: {fileID: 295973568}
+  m_RootOrder: 0
 --- !u!1001 &1461053723
 Prefab:
   m_ObjectHideFlags: 0
@@ -25034,6 +26200,37 @@ CapsuleCollider:
   m_Height: 0.41116884
   m_Direction: 1
   m_Center: {x: 0.019334301, y: 0.21431448, z: -0.0038315915}
+--- !u!1 &1527470809
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 159038, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1527470810}
+  m_Layer: 0
+  m_Name: chibiBaseMesh:Hips
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1527470810
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 449446, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1527470809}
+  m_LocalRotation: {x: 0.000000021559577, y: -0.0000035281807, z: -0.0000026695016,
+    w: 1}
+  m_LocalPosition: {x: -0.00000046354313, y: 0.08533911, z: 0.0008639002}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2107734914}
+  - {fileID: 2064269617}
+  - {fileID: 607383833}
+  m_Father: {fileID: 823251941}
+  m_RootOrder: 0
 --- !u!1001 &1529456808
 Prefab:
   m_ObjectHideFlags: 0
@@ -26103,6 +27300,34 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 100, y: 10, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1599340919
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 103014, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1599340920}
+  m_Layer: 0
+  m_Name: chibiBaseMesh:RightToeBase
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1599340920
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 439036, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1599340919}
+  m_LocalRotation: {x: 0.34053546, y: -0.0870781, z: 0.031692464, w: 0.9356541}
+  m_LocalPosition: {x: -0, y: 0.014392237, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1231070736}
+  m_Father: {fileID: 1137217979}
+  m_RootOrder: 0
 --- !u!1001 &1600083742
 Prefab:
   m_ObjectHideFlags: 0
@@ -29081,6 +30306,33 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 426942, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
   m_PrefabInternal: {fileID: 1763647022}
+--- !u!1 &1766601539
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 137928, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1766601540}
+  m_Layer: 0
+  m_Name: chibiBaseMesh:LeftHandIndex4
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1766601540
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400952, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1766601539}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.00063786865, y: 0.0015694409, z: 0.00052934804}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1459485453}
+  m_RootOrder: 0
 --- !u!1001 &1771124372
 Prefab:
   m_ObjectHideFlags: 0
@@ -29139,6 +30391,35 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1773006877
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 187790, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1773006878}
+  m_Layer: 0
+  m_Name: chibiBaseMesh:LeftForeArm
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1773006878
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 404198, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1773006877}
+  m_LocalRotation: {x: -0.00000025447838, y: -0.0050734305, z: -0.00000032363377,
+    w: 0.9999871}
+  m_LocalPosition: {x: -0, y: 0.035688445, z: -1.7763568e-17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1227389328}
+  m_Father: {fileID: 11229614}
+  m_RootOrder: 0
 --- !u!1 &1778608089 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
@@ -29535,6 +30816,34 @@ CapsuleCollider:
   m_Height: 0.41116884
   m_Direction: 1
   m_Center: {x: 0.019334301, y: 0.21431448, z: -0.0038315915}
+--- !u!1 &1824250276
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 155350, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1824250277}
+  m_Layer: 0
+  m_Name: group
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1824250277
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 450910, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1824250276}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: -0.0024352479, z: -0.00020712703}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1430442760}
+  m_Father: {fileID: 823251941}
+  m_RootOrder: 1
 --- !u!1001 &1830240165
 Prefab:
   m_ObjectHideFlags: 0
@@ -29635,56 +30944,6 @@ CapsuleCollider:
   m_Height: 0.41116884
   m_Direction: 1
   m_Center: {x: 0.019334301, y: 0.21431448, z: -0.0038315915}
---- !u!1001 &1836223389
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 421264, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -92.77145
-      objectReference: {fileID: 0}
-    - target: {fileID: 421264, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 421264, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 278.49707
-      objectReference: {fileID: 0}
-    - target: {fileID: 421264, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 421264, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 421264, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 421264, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 421264, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 126746, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000,
-        type: 0}
-    m_RemovedComponents:
-    - {fileID: 19548140, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
-    - {fileID: 11422666, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
-    - {fileID: 11476732, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
-  m_ParentPrefab: {fileID: 100100000, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1001 &1837576747
 Prefab:
   m_ObjectHideFlags: 0
@@ -30801,6 +32060,34 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1890901565
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 136422, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1890901566}
+  m_Layer: 0
+  m_Name: chibiBaseMesh:LeftFoot
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1890901566
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 466612, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1890901565}
+  m_LocalRotation: {x: 0.48746055, y: -0.036912076, z: -0.046253633, w: 0.8711374}
+  m_LocalPosition: {x: -8.881784e-18, y: 0.02832425, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 894466006}
+  m_Father: {fileID: 1061061874}
+  m_RootOrder: 0
 --- !u!1 &1893452394 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
@@ -33388,6 +34675,34 @@ CapsuleCollider:
   m_Height: 0.41116884
   m_Direction: 1
   m_Center: {x: 0.019334301, y: 0.21431448, z: -0.0038315915}
+--- !u!1 &2011003836
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 173958, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2011003837}
+  m_Layer: 0
+  m_Name: chibiBaseMesh:RightHandIndex1
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2011003837
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 435474, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2011003836}
+  m_LocalRotation: {x: 0.00000035853796, y: 0.016247282, z: -0.0000003709341, w: 0.99986804}
+  m_LocalPosition: {x: -0, y: 0.0070981854, z: -8.881784e-18}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 876891353}
+  m_Father: {fileID: 481476378}
+  m_RootOrder: 0
 --- !u!1001 &2011254326
 Prefab:
   m_ObjectHideFlags: 0
@@ -33604,6 +34919,34 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &2033702193
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 143594, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2033702194}
+  m_Layer: 0
+  m_Name: chibiBaseMesh:RightArm
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2033702194
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 495914, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2033702193}
+  m_LocalRotation: {x: -0.14958751, y: -0.0055325776, z: 0.0047749253, w: 0.9887215}
+  m_LocalPosition: {x: -0, y: 0.017204149, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 110568238}
+  m_Father: {fileID: 2130042605}
+  m_RootOrder: 0
 --- !u!1 &2041332376
 GameObject:
   m_ObjectHideFlags: 0
@@ -33729,6 +35072,34 @@ CapsuleCollider:
   m_Height: 0.41116884
   m_Direction: 1
   m_Center: {x: 0.019334301, y: 0.21431448, z: -0.0038315915}
+--- !u!1 &2049334486
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 107014, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2049334487}
+  m_Layer: 0
+  m_Name: chibiBaseMesh:Head
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2049334487
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 415380, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2049334486}
+  m_LocalRotation: {x: 0, y: -0, z: -1.1284746e-36, w: 1}
+  m_LocalPosition: {x: -0, y: 0.012872295, z: -0.00018446134}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 204297122}
+  m_Father: {fileID: 565578190}
+  m_RootOrder: 0
 --- !u!1001 &2049476297
 Prefab:
   m_ObjectHideFlags: 0
@@ -34029,6 +35400,34 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 100, y: 10, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &2064269616
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 153862, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2064269617}
+  m_Layer: 0
+  m_Name: chibiBaseMesh:RightUpLeg
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2064269617
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 401514, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2064269616}
+  m_LocalRotation: {x: -0.0058624507, y: 0.026727252, z: 0.999624, w: 0.0017886956}
+  m_LocalPosition: {x: 0.020059714, y: -0.008239097, z: -0.0014599604}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1250669742}
+  m_Father: {fileID: 1527470810}
+  m_RootOrder: 1
 --- !u!1001 &2066074585
 Prefab:
   m_ObjectHideFlags: 0
@@ -34812,6 +36211,34 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2106326950}
+--- !u!1 &2107734913
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 117150, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2107734914}
+  m_Layer: 0
+  m_Name: chibiBaseMesh:LeftUpLeg
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2107734914
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 442994, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2107734913}
+  m_LocalRotation: {x: 0.005379954, y: 0.029164024, z: 0.99955857, w: -0.0018078268}
+  m_LocalPosition: {x: -0.020059714, y: -0.008239097, z: -0.0017842787}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1061061874}
+  m_Father: {fileID: 1527470810}
+  m_RootOrder: 0
 --- !u!1 &2108185100
 GameObject:
   m_ObjectHideFlags: 0
@@ -34935,6 +36362,34 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 475342, guid: 65e6bc916f60ca54883d2eac27b78e9c, type: 2}
   m_PrefabInternal: {fileID: 598532517}
+--- !u!1 &2130042604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 175678, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2130042605}
+  m_Layer: 0
+  m_Name: chibiBaseMesh:RightShoulder
+  m_TagString: ennemi
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2130042605
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 409288, guid: 4cb30891e3a5c49c98518ac7e6d57e2f, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2130042604}
+  m_LocalRotation: {x: -0.56693256, y: -0.42114687, z: 0.57142663, w: -0.4179646}
+  m_LocalPosition: {x: 0.008062317, y: 0.019666169, z: -0.000064470965}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2033702194}
+  m_Father: {fileID: 1401721188}
+  m_RootOrder: 2
 --- !u!1 &2133641436 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
