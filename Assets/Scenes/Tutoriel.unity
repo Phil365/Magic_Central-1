@@ -22551,7 +22551,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   experienceJoueur: 0
   niveauJoueur: 0
-  prefabBouleElec: {fileID: 138682, guid: 4d1444fa553faa34cb3bcf5fd3d7674e, type: 2}
+  XPSlider: {fileID: 0}
 --- !u!1 &1046057361
 GameObject:
   m_ObjectHideFlags: 0
@@ -28232,6 +28232,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 11476310, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: projectileFeu
+      value: 
+      objectReference: {fileID: 178704, guid: a70e913cc134dc540bf8854502947ec1, type: 2}
+    - target: {fileID: 11476310, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: projectileElectrique
+      value: 
+      objectReference: {fileID: 138682, guid: 4d1444fa553faa34cb3bcf5fd3d7674e, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
   m_IsPrefabParent: 0
