@@ -57,6 +57,13 @@ public var Hero:GameObject;
  private var scGestionXP:scGestionXP;
 
  /*
+ * Référence au script de gestion d'agent NavMesh
+ * @access public
+ * @var scAgent
+ */   
+ private var scAgentMinion:scAgentMinion;
+
+ /*
  * Animateur
  * @access public
  * @var animateur
@@ -69,7 +76,7 @@ function Start () {
 
 	scObjetRamasse = GetComponent.<scObjetRamasse>();
 	scGestionXP = Hero.GetComponent.<scGestionXP>();
-
+	scAgentMinion = this.gameObject.GetComponent.<scAgentMinion>();
 
 
 		 if (Application.loadedLevel == 3) 
@@ -99,11 +106,23 @@ function Update () {
 	if (vieMinion <=0) {
 
 		scGestionXP.SendMessageUpwards("augmenterExperience", xpGagnee , SendMessageOptions.DontRequireReceiver);
+		scAgentMinion.SendMessageUpwards("stopAgent", SendMessageOptions.DontRequireReceiver);
+		mourir();
+	
+	}
+}
 
-		animateur.SetBool('mort', true);
-		Destroy(this.gameObject);
+function diminuerVie(nbDegat:float) {
+	vieMinion-=nbDegat;
+}
 
-		//Si l'ennemi meurt on définit l'objet gagné aléatoirement
+function mourir() {
+	
+	animateur.SetBool('mort', true);
+	yield WaitForSeconds (2.6);
+	Destroy(this.gameObject);
+
+	//Si l'ennemi meurt on définit l'objet gagné aléatoirement
 		var hasard = Random.Range(1, 6);
 		switch (hasard) {
 			case 1:
@@ -125,10 +144,4 @@ function Update () {
 			scObjetRamasse.SendMessageUpwards("InstancierObjet", "potionMana", SendMessageOptions.DontRequireReceiver);
 			break;
 		}
-
-	}
-}
-
-function diminuerVie(nbDegat:float) {
-	vieMinion-=nbDegat;
 }

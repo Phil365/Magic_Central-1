@@ -73,7 +73,7 @@ ModelImporter:
     400062: chibiBaseMesh:Spine1
     400064: chibiBaseMesh:Spine2
     400066: //RootNode
-    7400000: mixamo.com
+    7400000: punching
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -95,7 +95,103 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: punching
+      takeName: mixamo.com
+      firstFrame: 0
+      lastFrame: 31
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: chibiBaseMesh:Hips
+        weight: 1
+      - path: chibiBaseMesh:Hips/chibiBaseMesh:LeftUpLeg
+        weight: 1
+      - path: chibiBaseMesh:Hips/chibiBaseMesh:LeftUpLeg/chibiBaseMesh:LeftLeg
+        weight: 1
+      - path: chibiBaseMesh:Hips/chibiBaseMesh:LeftUpLeg/chibiBaseMesh:LeftLeg/chibiBaseMesh:LeftFoot
+        weight: 1
+      - path: chibiBaseMesh:Hips/chibiBaseMesh:LeftUpLeg/chibiBaseMesh:LeftLeg/chibiBaseMesh:LeftFoot/chibiBaseMesh:LeftToeBase
+        weight: 1
+      - path: chibiBaseMesh:Hips/chibiBaseMesh:LeftUpLeg/chibiBaseMesh:LeftLeg/chibiBaseMesh:LeftFoot/chibiBaseMesh:LeftToeBase/chibiBaseMesh:LeftToe_End
+        weight: 1
+      - path: chibiBaseMesh:Hips/chibiBaseMesh:RightUpLeg
+        weight: 1
+      - path: chibiBaseMesh:Hips/chibiBaseMesh:RightUpLeg/chibiBaseMesh:RightLeg
+        weight: 1
+      - path: chibiBaseMesh:Hips/chibiBaseMesh:RightUpLeg/chibiBaseMesh:RightLeg/chibiBaseMesh:RightFoot
+        weight: 1
+      - path: chibiBaseMesh:Hips/chibiBaseMesh:RightUpLeg/chibiBaseMesh:RightLeg/chibiBaseMesh:RightFoot/chibiBaseMesh:RightToeBase
+        weight: 1
+      - path: chibiBaseMesh:Hips/chibiBaseMesh:RightUpLeg/chibiBaseMesh:RightLeg/chibiBaseMesh:RightFoot/chibiBaseMesh:RightToeBase/chibiBaseMesh:RightToe_End
+        weight: 1
+      - path: chibiBaseMesh:Hips/chibiBaseMesh:Spine
+        weight: 1
+      - path: chibiBaseMesh:Hips/chibiBaseMesh:Spine/chibiBaseMesh:Spine1
+        weight: 1
+      - path: chibiBaseMesh:Hips/chibiBaseMesh:Spine/chibiBaseMesh:Spine1/chibiBaseMesh:Spine2
+        weight: 1
+      - path: chibiBaseMesh:Hips/chibiBaseMesh:Spine/chibiBaseMesh:Spine1/chibiBaseMesh:Spine2/chibiBaseMesh:LeftShoulder
+        weight: 1
+      - path: chibiBaseMesh:Hips/chibiBaseMesh:Spine/chibiBaseMesh:Spine1/chibiBaseMesh:Spine2/chibiBaseMesh:LeftShoulder/chibiBaseMesh:LeftArm
+        weight: 1
+      - path: chibiBaseMesh:Hips/chibiBaseMesh:Spine/chibiBaseMesh:Spine1/chibiBaseMesh:Spine2/chibiBaseMesh:LeftShoulder/chibiBaseMesh:LeftArm/chibiBaseMesh:LeftForeArm
+        weight: 1
+      - path: chibiBaseMesh:Hips/chibiBaseMesh:Spine/chibiBaseMesh:Spine1/chibiBaseMesh:Spine2/chibiBaseMesh:LeftShoulder/chibiBaseMesh:LeftArm/chibiBaseMesh:LeftForeArm/chibiBaseMesh:LeftHand
+        weight: 1
+      - path: chibiBaseMesh:Hips/chibiBaseMesh:Spine/chibiBaseMesh:Spine1/chibiBaseMesh:Spine2/chibiBaseMesh:LeftShoulder/chibiBaseMesh:LeftArm/chibiBaseMesh:LeftForeArm/chibiBaseMesh:LeftHand/chibiBaseMesh:LeftHandIndex1
+        weight: 1
+      - path: chibiBaseMesh:Hips/chibiBaseMesh:Spine/chibiBaseMesh:Spine1/chibiBaseMesh:Spine2/chibiBaseMesh:LeftShoulder/chibiBaseMesh:LeftArm/chibiBaseMesh:LeftForeArm/chibiBaseMesh:LeftHand/chibiBaseMesh:LeftHandIndex1/chibiBaseMesh:LeftHandIndex2
+        weight: 1
+      - path: chibiBaseMesh:Hips/chibiBaseMesh:Spine/chibiBaseMesh:Spine1/chibiBaseMesh:Spine2/chibiBaseMesh:LeftShoulder/chibiBaseMesh:LeftArm/chibiBaseMesh:LeftForeArm/chibiBaseMesh:LeftHand/chibiBaseMesh:LeftHandIndex1/chibiBaseMesh:LeftHandIndex2/chibiBaseMesh:LeftHandIndex3
+        weight: 1
+      - path: chibiBaseMesh:Hips/chibiBaseMesh:Spine/chibiBaseMesh:Spine1/chibiBaseMesh:Spine2/chibiBaseMesh:LeftShoulder/chibiBaseMesh:LeftArm/chibiBaseMesh:LeftForeArm/chibiBaseMesh:LeftHand/chibiBaseMesh:LeftHandIndex1/chibiBaseMesh:LeftHandIndex2/chibiBaseMesh:LeftHandIndex3/chibiBaseMesh:LeftHandIndex4
+        weight: 1
+      - path: chibiBaseMesh:Hips/chibiBaseMesh:Spine/chibiBaseMesh:Spine1/chibiBaseMesh:Spine2/chibiBaseMesh:Neck
+        weight: 1
+      - path: chibiBaseMesh:Hips/chibiBaseMesh:Spine/chibiBaseMesh:Spine1/chibiBaseMesh:Spine2/chibiBaseMesh:Neck/chibiBaseMesh:Head
+        weight: 1
+      - path: chibiBaseMesh:Hips/chibiBaseMesh:Spine/chibiBaseMesh:Spine1/chibiBaseMesh:Spine2/chibiBaseMesh:Neck/chibiBaseMesh:Head/chibiBaseMesh:HeadTop_End
+        weight: 1
+      - path: chibiBaseMesh:Hips/chibiBaseMesh:Spine/chibiBaseMesh:Spine1/chibiBaseMesh:Spine2/chibiBaseMesh:RightShoulder
+        weight: 1
+      - path: chibiBaseMesh:Hips/chibiBaseMesh:Spine/chibiBaseMesh:Spine1/chibiBaseMesh:Spine2/chibiBaseMesh:RightShoulder/chibiBaseMesh:RightArm
+        weight: 1
+      - path: chibiBaseMesh:Hips/chibiBaseMesh:Spine/chibiBaseMesh:Spine1/chibiBaseMesh:Spine2/chibiBaseMesh:RightShoulder/chibiBaseMesh:RightArm/chibiBaseMesh:RightForeArm
+        weight: 1
+      - path: chibiBaseMesh:Hips/chibiBaseMesh:Spine/chibiBaseMesh:Spine1/chibiBaseMesh:Spine2/chibiBaseMesh:RightShoulder/chibiBaseMesh:RightArm/chibiBaseMesh:RightForeArm/chibiBaseMesh:RightHand
+        weight: 1
+      - path: chibiBaseMesh:Hips/chibiBaseMesh:Spine/chibiBaseMesh:Spine1/chibiBaseMesh:Spine2/chibiBaseMesh:RightShoulder/chibiBaseMesh:RightArm/chibiBaseMesh:RightForeArm/chibiBaseMesh:RightHand/chibiBaseMesh:RightHandIndex1
+        weight: 1
+      - path: chibiBaseMesh:Hips/chibiBaseMesh:Spine/chibiBaseMesh:Spine1/chibiBaseMesh:Spine2/chibiBaseMesh:RightShoulder/chibiBaseMesh:RightArm/chibiBaseMesh:RightForeArm/chibiBaseMesh:RightHand/chibiBaseMesh:RightHandIndex1/chibiBaseMesh:RightHandIndex2
+        weight: 1
+      - path: chibiBaseMesh:Hips/chibiBaseMesh:Spine/chibiBaseMesh:Spine1/chibiBaseMesh:Spine2/chibiBaseMesh:RightShoulder/chibiBaseMesh:RightArm/chibiBaseMesh:RightForeArm/chibiBaseMesh:RightHand/chibiBaseMesh:RightHandIndex1/chibiBaseMesh:RightHandIndex2/chibiBaseMesh:RightHandIndex3
+        weight: 1
+      - path: chibiBaseMesh:Hips/chibiBaseMesh:Spine/chibiBaseMesh:Spine1/chibiBaseMesh:Spine2/chibiBaseMesh:RightShoulder/chibiBaseMesh:RightArm/chibiBaseMesh:RightForeArm/chibiBaseMesh:RightHand/chibiBaseMesh:RightHandIndex1/chibiBaseMesh:RightHandIndex2/chibiBaseMesh:RightHandIndex3/chibiBaseMesh:RightHandIndex4
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []

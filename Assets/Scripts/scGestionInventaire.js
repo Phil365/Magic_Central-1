@@ -78,6 +78,23 @@ private var gestionMana:scDeplacementTirHero;
 //private var scOuvrirPorte:scOuvrirPorte;
 //public var Trigger:GameObject;
 
+/*
+ * Source des effets sonores 
+ * @access public
+ * @var sourceSonore
+ */
+
+ public var sourceSonore:AudioSource;
+
+ /*
+ * Effets sonores 
+ * @access public
+ * @var sonOr sonBoire
+ */
+
+public var sonOr:AudioClip;
+public var sonBoire:AudioClip;
+public var sonPotion:AudioClip;
 
 function Start () {
 
@@ -164,6 +181,8 @@ function augmenterOr(nbOr:int)
 
 function OnTriggerEnter (autre : Collider) {
 	if (autre.gameObject.tag == "tasOr") {
+		sourceSonore.clip = sonOr;
+		sourceSonore.Play();
 		augmenterOr(25);
 		Destroy(autre.gameObject);
 	}
@@ -177,12 +196,16 @@ function OnTriggerEnter (autre : Collider) {
 
 	if (autre.gameObject.tag == "potionVie") {
 		if (nbPotionsVie <= nbPotionsVieMax){
+			sourceSonore.clip = sonPotion;
+			sourceSonore.Play();
 			augmenterPotionVie(1);
 			Destroy(autre.gameObject);
 		}
 	}
 	if (autre.gameObject.tag == "potionMana") {
 		if (nbPotionsMana <= nbPotionsManaMax){
+			sourceSonore.clip = sonPotion;
+			sourceSonore.Play();
 			augmenterPotionMana(1);
 			Destroy(autre.gameObject);
 		}
