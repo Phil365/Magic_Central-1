@@ -23,6 +23,8 @@ TagManager:
   - teleportNiveau4
   - teleportNiveau5
   - Clef
+  - triggerTag1
+  - boss
   layers:
   - Default
   - TransparentFX
