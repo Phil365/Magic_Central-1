@@ -23,7 +23,7 @@ public var Kaseem: GameObject;
  */   
 
 public var Kayden: GameObject;
-var heroEnregistrer : int =1; // si le joueur ne sélectionne personne il à par defaut le héros 1
+var heroEnregistrer : int; // si le joueur ne sélectionne personne il à par defaut le héros 1
 function Start () {
 
 }

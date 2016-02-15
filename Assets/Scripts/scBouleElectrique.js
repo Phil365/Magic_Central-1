@@ -49,16 +49,6 @@ function Start () {
 	planes = GeometryUtility.CalculateFrustumPlanes(cam);
 	projectileCollider = GetComponent.<Collider>();
 
-	if (PlayerPrefs.HasKey("degatsSpell"))
-	{
-		degat = PlayerPrefs.GetInt('degatsSpell'); 
-	}
-	else 
-	{
-		degat = 10; 
-	}
-
-
 
 }
 
@@ -74,6 +64,26 @@ function Update () {
 		Destroy(this.gameObject);
 
 	}
+
+	// Verifications des niveaux dans le update pour set les dmgs de la boule
+	if (PlayerPrefs.HasKey("niveau"))
+	{
+		if (PlayerPrefs.GetInt('niveau') == 2)
+		{
+			degat = 20; 
+		}
+		if (PlayerPrefs.GetInt('niveau') == 3) 
+		{
+			degat = 40;
+		}
+
+	}
+	else 
+	{
+		degat = 10; 
+	}
+
+	Debug.Log(degat);
 
 }
 
@@ -91,10 +101,4 @@ function OnTriggerEnter (autre : Collider) {
 	}
 
 
-}
-
-function augmenterDegats(degatUp:int) 
-{
-	degat = degat+degatUp;
-	PlayerPrefs.SetInt("degatsSpell", degat);
 }

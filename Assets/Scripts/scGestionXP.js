@@ -18,22 +18,6 @@ public var niveauJoueur:int;
 
 
 /*
- * Référence au script des dmgs de la boule
- * @access public
- * @var scBouleElectrique
- */   
-
-public var prefabBouleElec:GameObject;
-
-/*
- * Référence au script des dmgs de la boule
- * @access public
- * @var scBouleElectrique
- */   
-
-private var scBouleElectrique:scBouleElectrique;
-
-/*
  * degatUp (augementation des dégats)
  * @access public
  * @var degatUp
@@ -42,10 +26,24 @@ private var scBouleElectrique:scBouleElectrique;
 private var degatUp:int;
 
 
+/*
+ * Référence au slider de VieSlider
+ * @access public
+ * @var VieSlider
+ */                               
+var XPSlider: Slider; 
+
+
+
+                              
+private var check: boolean = true;  
+private var check2: boolean = true;  
+
+
+
 
 function Start () {
 
-	scBouleElectrique = prefabBouleElec.GetComponent.<scBouleElectrique>();
 
 	if (PlayerPrefs.HasKey("experienceJoueur"))
 	{
@@ -60,12 +58,25 @@ function Start () {
 
 function Update () 
 {
-	if (experienceJoueur == 10) 
+	if ((experienceJoueur >= 100)&&(check==true)) 
 	{
 		for (var i = 0; i <=1; i++) {
-			niveauJoueur=1;
-			degatUp = 10; 
-			scBouleElectrique.SendMessageUpwards("augmenterDegats", degatUp , SendMessageOptions.DontRequireReceiver);
+			niveauJoueur=2;
+			XPSlider.value = 0; 
+			PlayerPrefs.SetInt("niveau", niveauJoueur);
+			check = false;
+
+		}
+	}
+
+	if ((experienceJoueur >= 400)&&(check2==true)) 
+	{
+		for (var y = 0; y <=1; y++) {
+			niveauJoueur=3;
+			XPSlider.value = 0; 
+			PlayerPrefs.SetInt("niveau", niveauJoueur);
+			check2 = false;
+
 		}
 	}
 
@@ -75,5 +86,6 @@ function augmenterExperience(xpGagnee:int)
 {
 	experienceJoueur = experienceJoueur+xpGagnee;
 	PlayerPrefs.SetInt("experienceJoueur", experienceJoueur);
+	XPSlider.value = experienceJoueur;
 
 }
