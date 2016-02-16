@@ -19902,9 +19902,40 @@ Prefab:
       propertyPath: XPSlider
       value: 
       objectReference: {fileID: 1595362577}
+    - target: {fileID: 8279072, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400470, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: controllerNakiya
+      value: 
+      objectReference: {fileID: 1144760965}
+    - target: {fileID: 11400470, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: controllerKaseem
+      value: 
+      objectReference: {fileID: 1144760964}
+    - target: {fileID: 11400470, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: controllerKayden
+      value: 
+      objectReference: {fileID: 1144760963}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
   m_IsPrefabParent: 0
+--- !u!95 &1144760963 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9512766, guid: e9a07119597bbb74db009a9a14b10939,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144760962}
+--- !u!95 &1144760964 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9525122, guid: e9a07119597bbb74db009a9a14b10939,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144760962}
+--- !u!95 &1144760965 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9516782, guid: e9a07119597bbb74db009a9a14b10939,
+    type: 2}
+  m_PrefabInternal: {fileID: 1144760962}
 --- !u!1 &1146494887 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
