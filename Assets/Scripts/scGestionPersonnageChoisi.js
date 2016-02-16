@@ -25,11 +25,11 @@ public var controllerKayden:Animator;
 
 /*
  *  Controller du héros choisi
- * @access private
+ * @access public
  * @var controllerChoisi
  */   
 
- private var controllerChoisi:Animator;
+ public var controllerChoisi:Animator;
 
 var heroEnregistrer : int; // si le joueur ne sélectionne personne il à par defaut le héros 1
 function Start () {

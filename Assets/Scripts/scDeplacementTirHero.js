@@ -216,6 +216,14 @@ private var endommage : boolean;
 
 private var heroEnregistrer:int;
 
+/*
+ * hitbox du coup de poing de Kayden
+ * @access public
+ * @var coupDePoing
+ */
+
+public var coupDePoing:GameObject;
+
  /*
  * Source : https://unity3d.com/learn/tutorials/projects/survival-shooter/player-character?playlist=17144
  * Rotation suivant l'endroit du curseur de la souris
@@ -233,15 +241,15 @@ function Start ()
 
 		 switch(heroEnregistrer){
 		 	case "1":
-		 	animateur = scGestionPerso.controllerNakiya;
+		 	animateur = scGestionPerso.controllerChoisi;
 		 	break;
 
 		 	case "2":
-		 	animateur = scGestionPerso.controllerKaseem;
+		 	animateur = scGestionPerso.controllerChoisi;
 		 	break;
 
 		 	case "3":
-		 	animateur = scGestionPerso.controllerKayden;
+		 	animateur = scGestionPerso.controllerChoisi;
 		 	break;
 		 }
 
@@ -249,7 +257,7 @@ function Start ()
 	 else 
 	 {
 	 	heroEnregistrer = 1;
-	 	animateur = scGestionPerso.controllerNakiya;
+	 	animateur = scGestionPerso.controllerChoisi;
 	 }
 
  //Time.timeScale = 1;
@@ -431,9 +439,7 @@ function Tourner ()
 					//Kayden
 					if (heroEnregistrer == 3) 
 					{
-						animateur.SetBool('attaque', true);
-						//Debug.Log("Coup de poing");
-						//instancier hitbox ici
+						coupPoing();
 					}
 
 					Manadisponible-=10;
@@ -487,16 +493,25 @@ public function PrendDamage(quantite:int)
 	{
 		Mort();
 	}
-
-
 }
 
 function Mort()
 {
-	//animateur.setBool('mort', true);
+	animateur.setBool('mort', true);
 	yield WaitForSeconds (3);
 	Application.LoadLevel (8);
 	estMort=true;
 	//playerAudio.clip = deathclip;
 	//playerAudio.Play ();
+}
+
+function coupPoing()
+{
+	animateur.SetBool('attaque', true);
+	//instancier la hitbox
+	coupDePoing.SetActive(true);
+	yield WaitForSeconds(1.2); // le temps de l'animation
+	animateur.SetBool('attaque', false);
+	//retire la hitbox
+	coupDePoing.SetActive(false);
 }
