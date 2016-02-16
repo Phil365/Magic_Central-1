@@ -19918,6 +19918,10 @@ Prefab:
       propertyPath: controllerKayden
       value: 
       objectReference: {fileID: 1144760963}
+    - target: {fileID: 9512766, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a032dff28f4c6ae458f33dc389a1d70f, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
   m_IsPrefabParent: 0
