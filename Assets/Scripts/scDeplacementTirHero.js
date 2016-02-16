@@ -223,8 +223,12 @@ private var heroEnregistrer:int;
  */
 
 public var coupDePoing:GameObject;
-
-
+/*
+ * Verifie le heroActif
+ * @access private
+ * @var checkHeroActif
+ */
+private var checkHeroActif : boolean = true; 
  /*
  * Source : https://unity3d.com/learn/tutorials/projects/survival-shooter/player-character?playlist=17144
  * Rotation suivant l'endroit du curseur de la souris
@@ -235,8 +239,11 @@ function Start ()
 
 	scGestionPerso = GetComponent.<scGestionPersonnageChoisi>();
 	verifNiveau = true;
-	animateur = this.gameObject.GetComponentInChildren(Animator);
- 	 
+
+ 	 if ((PlayerPrefs.HasKey("heroChoisi"))) 
+ 	 {
+ 	 	heroEnregistrer = PlayerPrefs.GetInt('heroChoisi');
+ 	 }
 
  //Time.timeScale = 1;
 	 while(loopHandle)
@@ -294,6 +301,14 @@ function FixedUpdate ()
 }
 
 function Update(){
+
+	if(checkHeroActif == true) 
+	{
+		animateur = this.gameObject.GetComponentInChildren(Animator);
+		checkHeroActif = false;
+	}
+
+	Debug.Log(animateur);
 
   Tourner();
 
@@ -356,7 +371,6 @@ function Deplacer (haut : float, bas : float)
     deplacement = deplacement.normalized * vitesse * Time.deltaTime;
     var vitessePerso:float = deplacement.magnitude;
     // Déplacement du hero
-    Debug.Log(vitessePerso);
     animateur.SetFloat('court', vitessePerso);
 
     joueurRigidbody.MovePosition (transform.position + deplacement);
@@ -397,6 +411,8 @@ function Tourner ()
 					var position:Vector3=transform.position;
 					position.y +=0.75;
 
+
+
 					//Instantiation des projectiles en fonction des personnages
 					// Nakiya
 					if (heroEnregistrer == 1) 
@@ -409,7 +425,7 @@ function Tourner ()
 					//Kaseem
 					if (heroEnregistrer == 2) 
 					{
-
+						
 						nouveauProjectile = Instantiate(projectileElectrique, position, transform.rotation);
 						nouveauProjectile.GetComponent.<Rigidbody>().AddForce(joueurSouris * force);
 						electricite();
@@ -418,6 +434,7 @@ function Tourner ()
 					//Kayden
 					if (heroEnregistrer == 3) 
 					{
+						
 						coupPoing();
 					}
 
