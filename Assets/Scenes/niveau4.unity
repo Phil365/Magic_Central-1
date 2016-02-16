@@ -950,6 +950,10 @@ Prefab:
       propertyPath: PotionSanteTexte
       value: 
       objectReference: {fileID: 2013931621}
+    - target: {fileID: 11413252, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: sourceSonore
+      value: 
+      objectReference: {fileID: 87697133}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
   m_IsPrefabParent: 0
@@ -968,6 +972,11 @@ GameObject:
 --- !u!1 &87697132 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 168110, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+  m_PrefabInternal: {fileID: 87697128}
+--- !u!82 &87697133 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 8204890, guid: e9a07119597bbb74db009a9a14b10939,
+    type: 2}
   m_PrefabInternal: {fileID: 87697128}
 --- !u!1001 &91119586
 Prefab:

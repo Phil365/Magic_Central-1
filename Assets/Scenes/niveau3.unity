@@ -27353,6 +27353,10 @@ Prefab:
       propertyPath: XPSlider
       value: 
       objectReference: {fileID: 74673503}
+    - target: {fileID: 11413252, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: sourceSonore
+      value: 
+      objectReference: {fileID: 2052022259}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
   m_IsPrefabParent: 0
@@ -27371,6 +27375,11 @@ GameObject:
 --- !u!1 &2052022258 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 168110, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+  m_PrefabInternal: {fileID: 2052022254}
+--- !u!82 &2052022259 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 8204890, guid: e9a07119597bbb74db009a9a14b10939,
+    type: 2}
   m_PrefabInternal: {fileID: 2052022254}
 --- !u!1001 &2052678660
 Prefab:
