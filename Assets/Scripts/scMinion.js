@@ -70,6 +70,23 @@ public var Hero:GameObject;
  */   
 public var animateur:Animator;
 
+ /*
+ * gameObject hit 
+ * @access private
+ * @var hit
+ */
+
+public var hit : GameObject;
+
+
+ /*
+ * gameObject hit 
+ * @access private
+ * @var hit
+ */
+
+private var nouveauHit : GameObject;
+
 
 
 function Start () {
@@ -114,6 +131,8 @@ function Update () {
 
 function diminuerVie(nbDegat:float) {
 	vieMinion-=nbDegat;
+	nouveauHit = Instantiate(hit, transform.position, transform.rotation);
+
 }
 
 function mourir() {

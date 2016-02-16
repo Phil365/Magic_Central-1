@@ -6644,31 +6644,12 @@ MonoBehaviour:
   chaseSpeed: 3
   attackDistance: 3
   attaqueCooldown: 5
-  agent: {fileID: 634091387}
   bossMesh: {fileID: 445848237}
   fumee: {fileID: 150308, guid: 95bcb605218a5664f9b9beb6a2061cb0, type: 2}
   aoeBoss: {fileID: 112868, guid: 8b434d30c5ba79944bc43a87f4e30d53, type: 2}
   animateur: {fileID: 634091388}
---- !u!195 &634091387
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 634091385}
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
+  distanceMin: 1
+  hit: {fileID: 127118, guid: a68cdd8b2fa005c4a8172de50b9e6d0e, type: 2}
 --- !u!95 &634091388 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9500000, guid: de7180273ec46234a80819bb7d0215b6,
@@ -13307,20 +13288,6 @@ BoxCollider:
 GameObject:
   m_PrefabParentObject: {fileID: 137040, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
   m_PrefabInternal: {fileID: 1617820518}
---- !u!114 &1239308128
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1239308127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f1a657da3ec3b046b0547269c38fb5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  experienceJoueur: 0
-  niveauJoueur: 0
-  XPSlider: {fileID: 519948666}
 --- !u!4 &1239308139 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400456, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
@@ -17602,6 +17569,14 @@ Prefab:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: a032dff28f4c6ae458f33dc389a1d70f, type: 2}
+    - target: {fileID: 11430886, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: XPSlider
+      value: 
+      objectReference: {fileID: 519948666}
+    - target: {fileID: 11476310, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: animateur
+      value: 
+      objectReference: {fileID: 1617820520}
     m_RemovedComponents:
     - {fileID: 8212844, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
