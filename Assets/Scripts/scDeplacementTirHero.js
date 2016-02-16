@@ -198,7 +198,7 @@ var flashColour : Color = new Color(1f,0f,0f,0.1f);
  * @var estMort
  */
 
-private var estMort: boolean;
+private var estMort: boolean = false;
 
  /*
  * Vérification des dmgs
@@ -215,6 +215,14 @@ private var endommage : boolean;
  */
 
 private var heroEnregistrer:int;
+
+/*
+ * hitbox du coup de poing de Kayden
+ * @access public
+ * @var coupDePoing
+ */
+
+public var coupDePoing:GameObject;
 
  /*
  * Source : https://unity3d.com/learn/tutorials/projects/survival-shooter/player-character?playlist=17144
@@ -233,15 +241,15 @@ function Start ()
 
 		 switch(heroEnregistrer){
 		 	case "1":
-		 	animateur = scGestionPerso.controllerNakiya;
+		 	animateur = scGestionPerso.controllerChoisi;
 		 	break;
 
 		 	case "2":
-		 	animateur = scGestionPerso.controllerKaseem;
+		 	animateur = scGestionPerso.controllerChoisi;
 		 	break;
 
 		 	case "3":
-		 	animateur = scGestionPerso.controllerKayden;
+		 	animateur = scGestionPerso.controllerChoisi;
 		 	break;
 		 }
 
@@ -249,7 +257,7 @@ function Start ()
 	 else 
 	 {
 	 	heroEnregistrer = 1;
-	 	animateur = scGestionPerso.controllerNakiya;
+	 	animateur = scGestionPerso.controllerChoisi;
 	 }
 
  //Time.timeScale = 1;
@@ -431,9 +439,7 @@ function Tourner ()
 					//Kayden
 					if (heroEnregistrer == 3) 
 					{
-						animateur.SetBool('attaque', true);
-						//Debug.Log("Coup de poing");
-						//instancier hitbox ici
+						coupPoing();
 					}
 
 					Manadisponible-=10;
@@ -485,18 +491,29 @@ public function PrendDamage(quantite:int)
 
 	if(Viedisponible <= 0 && !estMort)
 	{
+		
 		Mort();
 	}
-
-
 }
 
 function Mort()
 {
-	//animateur.setBool('mort', true);
+	animateur.SetBool('mort', true);
 	yield WaitForSeconds (3);
 	Application.LoadLevel (8);
 	estMort=true;
 	//playerAudio.clip = deathclip;
 	//playerAudio.Play ();
+}
+
+function coupPoing()
+{
+	animateur.SetBool('attaque', true);
+	yield WaitForSeconds(0.8); // le temps de l'animation divisé en 2
+	//instancier la hitbox
+	coupDePoing.SetActive(true);
+	yield WaitForSeconds(0.4); // le temps de l'animation divisé en 2
+	animateur.SetBool('attaque', false);
+	//retire la hitbox
+	coupDePoing.SetActive(false);
 }
