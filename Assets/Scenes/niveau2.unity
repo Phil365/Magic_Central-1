@@ -807,11 +807,11 @@ Prefab:
     - target: {fileID: 11464568, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: Hero
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11430820, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 155562, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: m_Name
       value: Minion2 (22)
@@ -885,6 +885,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &39610698 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 167452, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+  m_PrefabInternal: {fileID: 447797677}
 --- !u!1001 &45412168
 Prefab:
   m_ObjectHideFlags: 0
@@ -1201,7 +1205,7 @@ RectTransform:
   - {fileID: 781081928}
   - {fileID: 1756817152}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -2203,17 +2207,24 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _EmissionMap
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 16, y: 320}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
           name: _ParallaxMap
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _OcclusionMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _EmissionMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 16, y: 320}
           m_Offset: {x: 0, y: 0}
       data:
         first:
@@ -2225,13 +2236,6 @@ Material:
       data:
         first:
           name: _DetailAlbedoMap
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _OcclusionMap
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -2671,11 +2675,11 @@ Prefab:
     - target: {fileID: 11464568, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: Hero
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11430820, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 155562, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: m_Name
       value: Minion2 (13)
@@ -3376,6 +3380,10 @@ CapsuleCollider:
   m_Height: 0.41116884
   m_Direction: 1
   m_Center: {x: 0.019334301, y: 0.21431448, z: -0.0038315915}
+--- !u!1 &187761821 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 131226, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+  m_PrefabInternal: {fileID: 447797677}
 --- !u!1001 &189797575
 Prefab:
   m_ObjectHideFlags: 0
@@ -3958,11 +3966,11 @@ Prefab:
     - target: {fileID: 11418580, guid: ca968dbf30e7da843ac41c99d972c14f, type: 2}
       propertyPath: Hero
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11426048, guid: ca968dbf30e7da843ac41c99d972c14f, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11418580, guid: ca968dbf30e7da843ac41c99d972c14f, type: 2}
       propertyPath: hit
       value: 
@@ -4626,11 +4634,11 @@ Prefab:
     - target: {fileID: 11464568, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: Hero
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11430820, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 155562, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: m_Name
       value: Minion2 (29)
@@ -4853,11 +4861,11 @@ Prefab:
     - target: {fileID: 11464568, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: Hero
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11430820, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 155562, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: m_Name
       value: Minion2 (3)
@@ -5017,11 +5025,11 @@ Prefab:
     - target: {fileID: 11464568, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: Hero
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11430820, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 155562, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: m_Name
       value: Minion2 (21)
@@ -6094,11 +6102,11 @@ Prefab:
     - target: {fileID: 11464568, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: Hero
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11430820, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 155562, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: m_Name
       value: Minion2 (24)
@@ -6404,11 +6412,11 @@ Prefab:
     - target: {fileID: 11464568, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: Hero
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11430820, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 155562, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: m_Name
       value: Minion2 (16)
@@ -7007,11 +7015,11 @@ Prefab:
     - target: {fileID: 11498542, guid: dfcc47e2611b4d74091fa7930b7b2db2, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11463484, guid: dfcc47e2611b4d74091fa7930b7b2db2, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 169910, guid: dfcc47e2611b4d74091fa7930b7b2db2, type: 2}
       propertyPath: m_TagString
       value: MainCamera
@@ -8094,6 +8102,104 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &445165544 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 112932, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+  m_PrefabInternal: {fileID: 447797677}
+--- !u!1001 &447797677
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 490686, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 12.83705
+      objectReference: {fileID: 0}
+    - target: {fileID: 490686, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.293
+      objectReference: {fileID: 0}
+    - target: {fileID: 490686, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 15.535721
+      objectReference: {fileID: 0}
+    - target: {fileID: 490686, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 490686, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.055807862
+      objectReference: {fileID: 0}
+    - target: {fileID: 490686, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 490686, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: -0.9984416
+      objectReference: {fileID: 0}
+    - target: {fileID: 490686, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 131226, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 112932, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11475142, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: XPSlider
+      value: 
+      objectReference: {fileID: 1595362577}
+    - target: {fileID: 11413252, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: ArgentTexte
+      value: 
+      objectReference: {fileID: 1587605151}
+    - target: {fileID: 11438814, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: ManaSlider
+      value: 
+      objectReference: {fileID: 62027029}
+    - target: {fileID: 11438814, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: VieSlider
+      value: 
+      objectReference: {fileID: 1975951054}
+    - target: {fileID: 11438814, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: DamageImage
+      value: 
+      objectReference: {fileID: 1436698798}
+    - target: {fileID: 11429648, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: Nakiya
+      value: 
+      objectReference: {fileID: 835320999}
+    - target: {fileID: 11429648, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: Kayden
+      value: 
+      objectReference: {fileID: 187761821}
+    - target: {fileID: 11429648, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: Kaseem
+      value: 
+      objectReference: {fileID: 445165544}
+    - target: {fileID: 11413252, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: PotionSanteTexte
+      value: 
+      objectReference: {fileID: 809450316}
+    - target: {fileID: 11413252, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: PotionManaTexte
+      value: 
+      objectReference: {fileID: 105285421}
+    - target: {fileID: 11413252, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: ClefsTexte
+      value: 
+      objectReference: {fileID: 1756817153}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &448125193 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
@@ -8136,10 +8242,6 @@ CapsuleCollider:
   m_Height: 0.41116884
   m_Direction: 1
   m_Center: {x: 0.019334301, y: 0.21431448, z: -0.0038315915}
---- !u!1 &451925439 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 137040, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-  m_PrefabInternal: {fileID: 1144760962}
 --- !u!1 &451990227 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
@@ -9467,17 +9569,24 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _EmissionMap
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 128, y: 128}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
           name: _ParallaxMap
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _OcclusionMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _EmissionMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 128, y: 128}
           m_Offset: {x: 0, y: 0}
       data:
         first:
@@ -9489,13 +9598,6 @@ Material:
       data:
         first:
           name: _DetailAlbedoMap
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _OcclusionMap
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -11899,7 +12001,7 @@ Transform:
   - {fileID: 953532913}
   - {fileID: 168906736}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!1001 &666351689
 Prefab:
   m_ObjectHideFlags: 0
@@ -14458,11 +14560,11 @@ Prefab:
     - target: {fileID: 11464568, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: Hero
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11430820, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 155562, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: m_Name
       value: Minion2 (17)
@@ -15317,6 +15419,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &835320999 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 168110, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+  m_PrefabInternal: {fileID: 447797677}
 --- !u!1001 &839561172
 Prefab:
   m_ObjectHideFlags: 0
@@ -15421,11 +15527,11 @@ Prefab:
     - target: {fileID: 11464568, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: Hero
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11430820, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 155562, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: m_Name
       value: Minion2 (14)
@@ -15487,11 +15593,11 @@ Prefab:
     - target: {fileID: 11464568, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: Hero
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11430820, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 155562, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: m_Name
       value: Minion2 (2)
@@ -17555,11 +17661,11 @@ Prefab:
     - target: {fileID: 11464568, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: Hero
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11430820, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11464568, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: hit
       value: 
@@ -18266,11 +18372,11 @@ Prefab:
     - target: {fileID: 11464568, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: Hero
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11430820, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 155562, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: m_Name
       value: Minion2 (5)
@@ -18502,11 +18608,11 @@ Prefab:
     - target: {fileID: 11464568, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: Hero
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11430820, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 155562, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: m_Name
       value: Minion2 (7)
@@ -19222,11 +19328,11 @@ Prefab:
     - target: {fileID: 11464568, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: Hero
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11430820, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 155562, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: m_Name
       value: Minion2 (19)
@@ -19589,11 +19695,11 @@ Prefab:
     - target: {fileID: 11464568, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: Hero
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11430820, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 155562, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: m_Name
       value: Minion2 (18)
@@ -19683,11 +19789,11 @@ Prefab:
     - target: {fileID: 11464568, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: Hero
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11430820, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 155562, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: m_Name
       value: Minion2 (9)
@@ -19859,163 +19965,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
   m_IsPrefabParent: 0
---- !u!1001 &1144760962
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400456, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 12.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 400456, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.355
-      objectReference: {fileID: 0}
-    - target: {fileID: 400456, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 400456, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400456, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400456, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400456, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400456, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 11476310, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-      propertyPath: ManaSlider
-      value: 
-      objectReference: {fileID: 62027029}
-    - target: {fileID: 11476310, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-      propertyPath: VieSlider
-      value: 
-      objectReference: {fileID: 1975951054}
-    - target: {fileID: 11476310, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-      propertyPath: DamageImage
-      value: 
-      objectReference: {fileID: 1436698798}
-    - target: {fileID: 11461544, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-      propertyPath: ClefsTexte
-      value: 
-      objectReference: {fileID: 1756817153}
-    - target: {fileID: 11461544, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-      propertyPath: ArgentTexte
-      value: 
-      objectReference: {fileID: 1587605151}
-    - target: {fileID: 11461544, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-      propertyPath: PotionSanteTexte
-      value: 
-      objectReference: {fileID: 809450316}
-    - target: {fileID: 11461544, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-      propertyPath: PotionManaTexte
-      value: 
-      objectReference: {fileID: 105285421}
-    - target: {fileID: 11456344, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-      propertyPath: XPSlider
-      value: 
-      objectReference: {fileID: 1595362577}
-    - target: {fileID: 8247926, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11461544, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-      propertyPath: sourceSonore
-      value: 
-      objectReference: {fileID: 1680132624}
-    - target: {fileID: 11461544, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-      propertyPath: sonPotion
-      value: 
-      objectReference: {fileID: 8300000, guid: 80b2ab16434be3540be4444ec7ba34cb, type: 3}
-    - target: {fileID: 11461544, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-      propertyPath: sonBoire
-      value: 
-      objectReference: {fileID: 8300000, guid: aa21c32b3baa20a439b01c461eaff258, type: 3}
-    - target: {fileID: 11461544, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-      propertyPath: sonOr
-      value: 
-      objectReference: {fileID: 8300000, guid: 5bd7d1e60c0ea3144a441c8986991177, type: 3}
-    - target: {fileID: 11476310, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-      propertyPath: projectileFeu
-      value: 
-      objectReference: {fileID: 178704, guid: a70e913cc134dc540bf8854502947ec1, type: 2}
-    - target: {fileID: 11476310, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-      propertyPath: projectileElectrique
-      value: 
-      objectReference: {fileID: 138682, guid: 4d1444fa553faa34cb3bcf5fd3d7674e, type: 2}
-    - target: {fileID: 113178, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 125060, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11430886, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-      propertyPath: XPSlider
-      value: 
-      objectReference: {fileID: 1595362577}
-    - target: {fileID: 8279072, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400470, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-      propertyPath: controllerNakiya
-      value: 
-      objectReference: {fileID: 1144760965}
-    - target: {fileID: 11400470, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-      propertyPath: controllerKaseem
-      value: 
-      objectReference: {fileID: 1144760964}
-    - target: {fileID: 11400470, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-      propertyPath: controllerKayden
-      value: 
-      objectReference: {fileID: 1144760963}
-    - target: {fileID: 9512766, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: a032dff28f4c6ae458f33dc389a1d70f, type: 2}
-    - target: {fileID: 11476310, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-      propertyPath: animateur
-      value: 
-      objectReference: {fileID: 1144760964}
-    - target: {fileID: 11430886, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-      propertyPath: experienceJoueur
-      value: 80
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
-  m_IsPrefabParent: 0
---- !u!95 &1144760963 stripped
-Animator:
-  m_PrefabParentObject: {fileID: 9512766, guid: e9a07119597bbb74db009a9a14b10939,
-    type: 2}
-  m_PrefabInternal: {fileID: 1144760962}
---- !u!95 &1144760964 stripped
-Animator:
-  m_PrefabParentObject: {fileID: 9525122, guid: e9a07119597bbb74db009a9a14b10939,
-    type: 2}
-  m_PrefabInternal: {fileID: 1144760962}
---- !u!95 &1144760965 stripped
-Animator:
-  m_PrefabParentObject: {fileID: 9516782, guid: e9a07119597bbb74db009a9a14b10939,
-    type: 2}
-  m_PrefabInternal: {fileID: 1144760962}
 --- !u!1 &1146494887 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
@@ -20713,11 +20662,11 @@ Prefab:
     - target: {fileID: 11464568, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: Hero
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11430820, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 155562, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: m_Name
       value: Minion2 (4)
@@ -20779,11 +20728,11 @@ Prefab:
     - target: {fileID: 11464568, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: Hero
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11430820, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 155562, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: m_Name
       value: Minion2 (23)
@@ -20924,11 +20873,11 @@ Prefab:
     - target: {fileID: 11464568, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: Hero
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11430820, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 155562, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: m_Name
       value: Minion2 (28)
@@ -21680,11 +21629,11 @@ Prefab:
     - target: {fileID: 11464568, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: Hero
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11430820, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 155562, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: m_Name
       value: Minion2 (6)
@@ -21835,11 +21784,11 @@ Prefab:
     - target: {fileID: 11464568, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: Hero
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11430820, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 155562, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: m_Name
       value: Minion2 (15)
@@ -23017,11 +22966,11 @@ Prefab:
     - target: {fileID: 11464568, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: Hero
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11430820, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 155562, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: m_Name
       value: Minion2 (26)
@@ -23146,11 +23095,11 @@ Prefab:
     - target: {fileID: 11464568, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: Hero
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11430820, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 155562, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: m_Name
       value: Minion2 (12)
@@ -27070,11 +27019,11 @@ Prefab:
     - target: {fileID: 11464568, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: Hero
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11430820, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 155562, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: m_Name
       value: Minion2 (31)
@@ -27178,11 +27127,11 @@ Prefab:
     - target: {fileID: 11464568, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: Hero
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11430820, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 155562, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: m_Name
       value: Minion2 (1)
@@ -27346,7 +27295,7 @@ GameObject:
   - 114: {fileID: 1595362575}
   - 114: {fileID: 1595362574}
   m_Layer: 5
-  m_Name: ManaSlider
+  m_Name: sliderXP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27812,11 +27761,11 @@ Prefab:
     - target: {fileID: 11464568, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: Hero
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11430820, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 155562, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: m_Name
       value: Minion2 (8)
@@ -28944,7 +28893,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
 --- !u!1 &1680392176 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}
@@ -29033,11 +28982,11 @@ Prefab:
     - target: {fileID: 11464568, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: Hero
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11430820, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 155562, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: m_Name
       value: Minion2 (20)
@@ -30606,11 +30555,11 @@ Prefab:
     - target: {fileID: 11464568, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: Hero
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11430820, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 155562, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: m_Name
       value: Minion2 (25)
@@ -32248,11 +32197,11 @@ Prefab:
     - target: {fileID: 11464568, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: Hero
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11430820, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 155562, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: m_Name
       value: Minion2 (27)
@@ -33692,11 +33641,11 @@ Prefab:
     - target: {fileID: 11464568, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: Hero
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11430820, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 155562, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: m_Name
       value: Minion2 (11)
@@ -34294,11 +34243,11 @@ Prefab:
     - target: {fileID: 11464568, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: Hero
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11430820, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 155562, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: m_Name
       value: Minion2 (32)
@@ -34970,11 +34919,11 @@ Prefab:
     - target: {fileID: 11464568, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: Hero
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11430820, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 155562, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: m_Name
       value: Minion2 (33)
@@ -35597,11 +35546,11 @@ Prefab:
     - target: {fileID: 11464568, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: Hero
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 11430820, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: cible
       value: 
-      objectReference: {fileID: 451925439}
+      objectReference: {fileID: 39610698}
     - target: {fileID: 155562, guid: 278bb5d3110bb4645a5b3f5e6d9af1d5, type: 2}
       propertyPath: m_Name
       value: Minion2 (10)
