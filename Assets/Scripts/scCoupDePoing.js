@@ -6,7 +6,7 @@
  * @var degat
  */
 
-public var degat:float = 10f;
+public var degat:float = 25f;
 
 function Start () {
 
@@ -18,17 +18,17 @@ function Update () {
 	{
 		if (PlayerPrefs.GetInt('niveau') == 2)
 		{
-			degat = 20; 
+			degat = 30; 
 		}
 		if (PlayerPrefs.GetInt('niveau') == 3) 
 		{
-			degat = 40;
+			degat = 50;
 		}
 
 	}
 	else 
 	{
-		degat = 10; 
+		degat = 25; 
 	}
 
 }

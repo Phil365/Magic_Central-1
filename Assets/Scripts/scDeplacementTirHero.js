@@ -198,7 +198,7 @@ var flashColour : Color = new Color(1f,0f,0f,0.1f);
  * @var estMort
  */
 
-private var estMort: boolean;
+private var estMort: boolean = false;
 
  /*
  * Vérification des dmgs
@@ -491,13 +491,14 @@ public function PrendDamage(quantite:int)
 
 	if(Viedisponible <= 0 && !estMort)
 	{
+		
 		Mort();
 	}
 }
 
 function Mort()
 {
-	animateur.setBool('mort', true);
+	animateur.SetBool('mort', true);
 	yield WaitForSeconds (3);
 	Application.LoadLevel (8);
 	estMort=true;
@@ -508,9 +509,10 @@ function Mort()
 function coupPoing()
 {
 	animateur.SetBool('attaque', true);
+	yield WaitForSeconds(0.8); // le temps de l'animation divisé en 2
 	//instancier la hitbox
 	coupDePoing.SetActive(true);
-	yield WaitForSeconds(1.2); // le temps de l'animation
+	yield WaitForSeconds(0.4); // le temps de l'animation divisé en 2
 	animateur.SetBool('attaque', false);
 	//retire la hitbox
 	coupDePoing.SetActive(false);
