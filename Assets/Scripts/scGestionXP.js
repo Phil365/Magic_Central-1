@@ -62,7 +62,8 @@ function Update ()
 	{
 		for (var i = 0; i <=1; i++) {
 			niveauJoueur=2;
-			XPSlider.value = 0; 
+			XPSlider.value = 0;
+			XPSlider.maxValue = 400; 
 			PlayerPrefs.SetInt("niveau", niveauJoueur);
 			check = false;
 
