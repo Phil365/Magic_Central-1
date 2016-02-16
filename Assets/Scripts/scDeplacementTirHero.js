@@ -224,6 +224,7 @@ private var heroEnregistrer:int;
 
 public var coupDePoing:GameObject;
 
+
  /*
  * Source : https://unity3d.com/learn/tutorials/projects/survival-shooter/player-character?playlist=17144
  * Rotation suivant l'endroit du curseur de la souris
@@ -234,31 +235,8 @@ function Start ()
 
 	scGestionPerso = GetComponent.<scGestionPersonnageChoisi>();
 	verifNiveau = true;
-	
- 	 if (PlayerPrefs.HasKey("heroChoisi"))
-	 {
-		 heroEnregistrer = PlayerPrefs.GetInt('heroChoisi');
-
-		 switch(heroEnregistrer){
-		 	case "1":
-		 	animateur = scGestionPerso.controllerChoisi;
-		 	break;
-
-		 	case "2":
-		 	animateur = scGestionPerso.controllerChoisi;
-		 	break;
-
-		 	case "3":
-		 	animateur = scGestionPerso.controllerChoisi;
-		 	break;
-		 }
-
-	 }
-	 else 
-	 {
-	 	heroEnregistrer = 1;
-	 	animateur = scGestionPerso.controllerChoisi;
-	 }
+	animateur = this.gameObject.GetComponentInChildren(Animator);
+ 	 
 
  //Time.timeScale = 1;
 	 while(loopHandle)
@@ -311,9 +289,7 @@ function FixedUpdate ()
     var haut:float = Input.GetAxisRaw ("Horizontal");
     var bas:float = Input.GetAxisRaw ("Vertical");
 
-    
     Deplacer(haut, bas);
-
 
 }
 
@@ -425,16 +401,19 @@ function Tourner ()
 					// Nakiya
 					if (heroEnregistrer == 1) 
 					{
-						animateur.SetBool('attaque', true);
+						
 						nouveauProjectile = Instantiate(projectileFeu, position, transform.rotation);
 						nouveauProjectile.GetComponent.<Rigidbody>().AddForce(joueurSouris * force);
+						bouleDeFeu();
 					}
 					//Kaseem
 					if (heroEnregistrer == 2) 
 					{
-						animateur.SetBool('attaque', true);
+
 						nouveauProjectile = Instantiate(projectileElectrique, position, transform.rotation);
 						nouveauProjectile.GetComponent.<Rigidbody>().AddForce(joueurSouris * force);
+						electricite();
+
 					}
 					//Kayden
 					if (heroEnregistrer == 3) 
@@ -516,4 +495,17 @@ function coupPoing()
 	animateur.SetBool('attaque', false);
 	//retire la hitbox
 	coupDePoing.SetActive(false);
+}
+
+function electricite() {
+
+	animateur.SetBool('attaque', true);
+	yield WaitForSeconds(2); // le temps de l'animation
+	animateur.SetBool('attaque', false);
+}
+
+function bouleDeFeu() {
+	animateur.SetBool('attaque', true);
+	yield WaitForSeconds(2); // le temps de l'animation
+	animateur.SetBool('attaque', false);
 }
