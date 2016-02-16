@@ -76,7 +76,7 @@ public var chaseSpeed : float = 3.0;
  * @var attackDistance
  */
 
-public var attackDistance : float = 3.0;
+public var attackDistance : float = 2;
 
 /*
  * Temps entre les attaques
@@ -112,18 +112,11 @@ private var attaquePuissantePossible : boolean;
 
 private var timer:float;
 
-/*
- * agent du NavMesh
- * @access public
- * @var agent
- */      
-
-public var agent:NavMeshAgent; 
 
 /*
- * agent du NavMesh
+ * Mesh du boss
  * @access public
- * @var agent
+ * @var bossMesh
  */      
 
 public var bossMesh:GameObject; 
@@ -169,8 +162,34 @@ private var nouvelleAoe:GameObject;
 public var animateur:Animator;
 
 
-function Start () {
+/*
+ * Distance où l'ennemi stoppe
+ * @access public
+ * @var stop
+ */   
 
+ public var distanceMin = 2;
+
+  /*
+ * gameObject hit 
+ * @access private
+ * @var hit
+ */
+
+public var hit : GameObject;
+
+
+ /*
+ * gameObject hit 
+ * @access private
+ * @var hit
+ */
+
+private var nouveauHit : GameObject;
+
+
+function Start () {
+	 //agent = GetComponent.<NavMeshAgent>();
 	 santeHero = hero.GetComponent.<scDeplacementTirHero>();
 	 attaqueInvisiblePossible = true;
 	 attaquePuissantePossible = true; 
@@ -192,7 +211,8 @@ function gestionStates()
 {
     var distanceToTarget = (cible.position - transform.position).sqrMagnitude;
 
-    if ((distanceToTarget <= attackDistance*attackDistance)&&(timer > attaqueCooldown))
+
+    if ((distanceToTarget <= attackDistance))
     {
         state = aiState.AttaqueBasique;
     }
@@ -201,10 +221,7 @@ function gestionStates()
     {
         state = aiState.Courrir;
     }
-    else
-    {
-        state = aiState.Attente;
-    }
+
 
     if ((vieBoss <= 150)&&(attaqueInvisiblePossible==true)&&(timer > attaqueCooldown)) 
     {
@@ -245,18 +262,22 @@ function priseDecisions () {
 
 function Attente() 
 {
-	//Mettre de Idle
+
 }
 
 function Courrir() 
 {
 	animateur.SetBool('run', true);
-	agent.gameObject.transform.LookAt(cible.transform);
-	agent.SetDestination(cible.transform.position);
+	transform.LookAt(cible.position);
+	if(Vector3.Distance(transform.position, cible.position)>=distanceMin)
+	{
+		transform.position+=transform.forward*chaseSpeed*Time.deltaTime;
+	}
 }
 
 function attaque() 
 {
+	Debug.Log("PUNCH");
 	timer= 0f;
 	degatBoss =10;
 	animateur.SetBool('punch', true);
@@ -265,6 +286,7 @@ function attaque()
 		santeHero.SendMessageUpwards("PrendDamage" , degatBoss, SendMessageOptions.DontRequireReceiver );
 
 	}
+	animateur.SetBool('punch', false);
 }
 
 
@@ -273,7 +295,9 @@ function attaquePuissante()
 	timer= 0f;
 	degatBoss = 35;
 	animateur.SetBool('magicAttack', true);
-	nouvelleAoe = Instantiate(aoeBoss, cible.transform.position, transform.rotation);
+	yield WaitForSeconds(2);
+	nouvelleAoe = Instantiate(aoeBoss, hero.transform.position, transform.rotation);
+	animateur.SetBool('magicAttack', false);
 
 	if(santeHero.Viedisponible>0)
 	{
@@ -289,18 +313,19 @@ function attaqueInvisible()
 	timer= 0f;
 	degatBoss = 25;
 	// On instantie de la fumée à l'endroit ou le boss va disparaître
-	nouvelleFumee = Instantiate(fumee, agent.transform.position, transform.rotation);
+	nouvelleFumee = Instantiate(fumee, transform.position, transform.rotation);
 	//On désactive le mesh renderer pour rendre le boss invisible
 	bossMesh.GetComponent(SkinnedMeshRenderer).enabled = false;
 	yield WaitForSeconds(1);
 	//Déplacement du boss sur le hero après une seconde
-	agent.transform.position = cible.transform.position;
+	transform.position = cible.position;
 	yield WaitForSeconds(1);
 	// On instantie de la fumée à l'endroit ou le boss va apparaître
-	nouvelleFumee = Instantiate(fumee, agent.transform.position, transform.rotation);
+	nouvelleFumee = Instantiate(fumee, transform.position, transform.rotation);
 	//On reactive le mesh renderer pour rendre le boss visible
 	bossMesh.GetComponent(SkinnedMeshRenderer).enabled = true;
 	animateur.SetBool('punch', true);
+
 
 	if(santeHero.Viedisponible>0)
 	{
@@ -315,5 +340,6 @@ function attaqueInvisible()
 function diminuerVieBoss (nbDegat:int) {
 
 	vieBoss-=nbDegat;
+	nouveauHit = Instantiate(hit, transform.position, transform.rotation);
 
 }
