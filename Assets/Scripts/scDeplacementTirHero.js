@@ -1,4 +1,6 @@
 ﻿import UnityEngine.UI;
+@script RequireComponent(Animator)
+
  /*
  * Viedisponible pour le heros
  * @access public
@@ -101,6 +103,22 @@ public var projectileFeu:GameObject;
 
 private var nouveauProjectile:GameObject;
 
+/*
+ * animator des héros
+ * @access public
+ * @var animateur
+ */
+
+public var animateur:Animator; 
+
+/*
+ * Fait référence au script de Gestion des persos
+ * @access public
+ * @var scGestionPerso
+ */
+
+ private var scGestionPerso:scGestionPersonnageChoisi;
+
  /*
  * force appliquée au projectile
  * @access public
@@ -138,13 +156,31 @@ private var heroEnregistrer:int;
 function Start ()
  {
 
+	scGestionPerso = GetComponent.<scGestionPersonnageChoisi>();
+	
  	 if (PlayerPrefs.HasKey("heroChoisi"))
 	 {
 		 heroEnregistrer = PlayerPrefs.GetInt('heroChoisi');
+
+		 switch(heroEnregistrer){
+		 	case "1":
+		 	animateur = scGestionPerso.controllerNakiya;
+		 	break;
+
+		 	case "2":
+		 	animateur = scGestionPerso.controllerKaseem;
+		 	break;
+
+		 	case "3":
+		 	animateur = scGestionPerso.controllerKayden;
+		 	break;
+		 }
+
 	 }
 	 else 
 	 {
 	 	heroEnregistrer = 1;
+	 	animateur = scGestionPerso.controllerNakiya;
 	 }
 
  //Time.timeScale = 1;
@@ -170,6 +206,7 @@ function Start ()
 		}
 
 	 }
+
 
  }
 
@@ -244,8 +281,11 @@ function Deplacer (haut : float, bas : float)
     deplacement.Set (haut, 0f, bas);
 
     deplacement = deplacement.normalized * vitesse * Time.deltaTime;
-
+    var vitessePerso:float = deplacement.magnitude;
     // Déplacement du hero
+    Debug.Log(vitessePerso);
+    animateur.SetFloat('court', vitessePerso);
+
     joueurRigidbody.MovePosition (transform.position + deplacement);
 
 
@@ -287,19 +327,22 @@ function Tourner ()
 					// Nakiya
 					if (heroEnregistrer == 1) 
 					{
+						animateur.SetBool('attaque', true);
 						nouveauProjectile = Instantiate(projectileFeu, position, transform.rotation);
 						nouveauProjectile.GetComponent.<Rigidbody>().AddForce(joueurSouris * force);
 					}
 					//Kaseem
 					if (heroEnregistrer == 2) 
 					{
+						animateur.SetBool('attaque', true);
 						nouveauProjectile = Instantiate(projectileElectrique, position, transform.rotation);
 						nouveauProjectile.GetComponent.<Rigidbody>().AddForce(joueurSouris * force);
 					}
 					//Kayden
 					if (heroEnregistrer == 3) 
 					{
-						Debug.Log("Coup de poing");
+						animateur.SetBool('attaque', true);
+						//Debug.Log("Coup de poing");
 						//instancier hitbox ici
 					}
 
@@ -359,8 +402,10 @@ public function PrendDamage(quantite:int)
 
 function Mort()
 {
-Application.LoadLevel (8);
-estMort=true;
-//playerAudio.clip = deathclip;
-//playerAudio.Play ();
+	animateur.setBool('mort', true);
+	yield WaitForSeconds (3);
+	Application.LoadLevel (8);
+	estMort=true;
+	//playerAudio.clip = deathclip;
+	//playerAudio.Play ();
 }

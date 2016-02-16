@@ -12323,10 +12323,41 @@ Prefab:
       propertyPath: sourceSonore
       value: 
       objectReference: {fileID: 1959125794}
+    - target: {fileID: 8279072, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400470, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: controllerNakiya
+      value: 
+      objectReference: {fileID: 1617820521}
+    - target: {fileID: 11400470, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: controllerKaseem
+      value: 
+      objectReference: {fileID: 1617820520}
+    - target: {fileID: 11400470, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: controllerKayden
+      value: 
+      objectReference: {fileID: 1617820519}
     m_RemovedComponents:
     - {fileID: 11430886, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
   m_IsPrefabParent: 0
+--- !u!95 &1617820519 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9512766, guid: e9a07119597bbb74db009a9a14b10939,
+    type: 2}
+  m_PrefabInternal: {fileID: 1617820518}
+--- !u!95 &1617820520 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9525122, guid: e9a07119597bbb74db009a9a14b10939,
+    type: 2}
+  m_PrefabInternal: {fileID: 1617820518}
+--- !u!95 &1617820521 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9516782, guid: e9a07119597bbb74db009a9a14b10939,
+    type: 2}
+  m_PrefabInternal: {fileID: 1617820518}
 --- !u!1001 &1619254559
 Prefab:
   m_ObjectHideFlags: 0
