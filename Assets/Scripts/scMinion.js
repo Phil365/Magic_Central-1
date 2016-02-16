@@ -122,7 +122,7 @@ function Start () {
 function Update () {
 	if (vieMinion <=0) {
 
-		scGestionXP.SendMessageUpwards("augmenterExperience", xpGagnee , SendMessageOptions.DontRequireReceiver);
+		
 		scAgentMinion.SendMessageUpwards("stopAgent", SendMessageOptions.DontRequireReceiver);
 		mourir();
 	
@@ -140,6 +140,7 @@ function mourir() {
 	animateur.SetBool('mort', true);
 	yield WaitForSeconds (2.6);
 	Destroy(this.gameObject);
+	scGestionXP.SendMessageUpwards("augmenterExperience", xpGagnee , SendMessageOptions.DontRequireReceiver);
 
 	//Si l'ennemi meurt on définit l'objet gagné aléatoirement
 		var hasard = Random.Range(1, 6);

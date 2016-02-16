@@ -212,7 +212,7 @@ function gestionStates()
     var distanceToTarget = (cible.position - transform.position).sqrMagnitude;
 
 
-    if ((distanceToTarget <= attackDistance))
+    if ((distanceToTarget <= attackDistance)&&(timer > attaqueCooldown))
     {
         state = aiState.AttaqueBasique;
     }

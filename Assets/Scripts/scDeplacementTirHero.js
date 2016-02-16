@@ -135,16 +135,84 @@ private var force:int=100;
 
 private var loopHandle: boolean = true;
 
+
+ /*
+ * Vérification du niveau
+ * @access public
+ * @var verifNiveau
+ */
+
+private var verifNiveau: boolean;
+
+ /*
+ * Référence au script de gestion d'inventaire
+ * @access public
+ * @var gestionPotion
+ */
+
 private var gestionPotion:scGestionInventaire;
+
+ /*
+ * Nombre de potions de mana
+ * @access public
+ * @var manatotal
+ */
+
 private var manatotal:int=0;
+
+ /*
+ * Nombre de potions de vie
+ * @access public
+ * @var vieTotal
+ */
+
 private var vieTotal:int=0;
+
+ /*
+ * Image des dégats
+ * @access public
+ * @var DamageImage
+ */
+
 var DamageImage:UI.Image;
-//var deathclip : AudioClip;
+
+ /*
+ * Vitesse du clignotement des dégats
+ * @access public
+ * @var flashSpeed
+ */
+
 var flashSpeed : float=5f;
+
+ /*
+ * Couleur des dmgs
+ * @access public
+ * @var flashColour
+ */
+
 var flashColour : Color = new Color(1f,0f,0f,0.1f);
-//private var playerAudio:AudioSource;
+
+ /*
+ * Vérification de la vie du hero
+ * @access public
+ * @var estMort
+ */
+
 private var estMort: boolean;
+
+ /*
+ * Vérification des dmgs
+ * @access public
+ * @var endommage
+ */
+
 private var endommage : boolean;
+
+ /*
+ * playerPrefs du héros enregistré
+ * @access public
+ * @var heroEnregistrer
+ */
 
 private var heroEnregistrer:int;
 
@@ -157,6 +225,7 @@ function Start ()
  {
 
 	scGestionPerso = GetComponent.<scGestionPersonnageChoisi>();
+	verifNiveau = true;
 	
  	 if (PlayerPrefs.HasKey("heroChoisi"))
 	 {
@@ -190,19 +259,25 @@ function Start ()
 	  yield WaitForSeconds(2);
 	 }
 
-	     // Mise en place des HP et points de mana en fonction du niveau.
+	  // Mise en place des HP et points de mana en fonction du niveau au Start.
 	 if (PlayerPrefs.HasKey("niveau"))
 	 {
 		if (PlayerPrefs.GetInt('niveau') == 2)
 		{
 			Viedisponible = 200;
-			Manadisponible = 120; 
+			Manadisponible = 120;
+			ManaSlider.MaxValue = Manadisponible;
+            VieSlider.MaxValue = Viedisponible;
+
 		}
+
 		// lvl 3
 		if (PlayerPrefs.GetInt('niveau') == 3) 
 		{
 			Viedisponible = 300;
-			Manadisponible = 200; 
+			Manadisponible = 200;
+			ManaSlider.MaxValue = Manadisponible;
+            VieSlider.MaxValue = Viedisponible;
 		}
 
 	 }
@@ -245,11 +320,11 @@ function Update(){
   }else {
   	DamageImage.color = Color.Lerp(DamageImage.color, Color.clear, flashSpeed * Time.deltaTime);
   }
- if(Input.GetKeyDown (KeyCode.E) && manatotal>0 && Manadisponible<60){
+ if(Input.GetKeyDown (KeyCode.E) && manatotal>0 && Manadisponible < ManaSlider.maxValue){
     Manadisponible+=20;
    	gestionPotion.augmenterPotionMana(-1);
     }
-     if(Input.GetKeyDown (KeyCode.Q) && vieTotal>0 && Viedisponible<100){
+     if(Input.GetKeyDown (KeyCode.Q) && vieTotal>0 && Viedisponible < VieSlider.maxValue){
     Viedisponible+=20;
    	gestionPotion.augmenterPotionVie(-1);
     }
@@ -261,16 +336,30 @@ function Update(){
     }
 
 
-    	 // Mise en place des HP et points de mana en fonction du niveau.
+     // Mise en place des HP et points de mana en fonction du niveau dans le update au cas ou 
+     // le hero lvl up dans le niveau
 	 if (PlayerPrefs.HasKey("niveau"))
-	{
-		if (PlayerPrefs.GetInt('niveau') == 2)
+	 {
+		if ((PlayerPrefs.GetInt('niveau') == 2)&&(verifNiveau == true))
 		{
 			Viedisponible = 200;
-			Manadisponible = 120; 
+			Manadisponible = 120;
+			ManaSlider.maxValue = Manadisponible;
+            VieSlider.maxValue = Viedisponible;
+			verifNiveau = false; 
 		}
 
-	}
+		// lvl 3
+		if ((PlayerPrefs.GetInt('niveau') == 3)&&(verifNiveau == true)) 
+		{
+			Viedisponible = 300;
+			Manadisponible = 200;
+			ManaSlider.maxValue = Manadisponible;
+            VieSlider.maxValue = Viedisponible;
+			verifNiveau = false; 
+		}
+
+	 }
 
 }
 
@@ -315,6 +404,7 @@ function Tourner ()
 
         // Set the player's rotation to this new rotation.
         joueurRigidbody.MoveRotation(nouvelleRotation);
+
    if (Input.GetButtonDown('Fire1'))
         {
 			if(Manadisponible>=10){
@@ -360,14 +450,15 @@ function Tourner ()
     }
 }
 function regenMana(){
-	if(Manadisponible < 60){
+	if(Manadisponible < ManaSlider.maxValue)
+	{
 
-	Manadisponible += 10;
+		Manadisponible += 10;
 	}
 
-	else if(Manadisponible >= 61){
-
-	Manadisponible = 60;
+	else if(Manadisponible >= ManaSlider.maxValue)
+	{
+		Manadisponible = ManaSlider.maxValue;
 	}
 
 }
@@ -390,7 +481,7 @@ public function PrendDamage(quantite:int)
 
 	Viedisponible -= quantite;
 	VieSlider.value = Viedisponible;
-//playerAudio.play();
+
 
 	if(Viedisponible <= 0 && !estMort)
 	{
@@ -402,7 +493,7 @@ public function PrendDamage(quantite:int)
 
 function Mort()
 {
-	animateur.setBool('mort', true);
+	//animateur.setBool('mort', true);
 	yield WaitForSeconds (3);
 	Application.LoadLevel (8);
 	estMort=true;
