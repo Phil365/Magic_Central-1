@@ -20180,12 +20180,29 @@ Prefab:
       propertyPath: ArgentTexte
       value: 
       objectReference: {fileID: 832752355}
+    - target: {fileID: 11413252, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: sourceSonore
+      value: 
+      objectReference: {fileID: 1909905505}
+    - target: {fileID: 112932, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 131226, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1909905504 stripped
 Transform:
   m_PrefabParentObject: {fileID: 490686, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+  m_PrefabInternal: {fileID: 1909905503}
+--- !u!82 &1909905505 stripped
+AudioSource:
+  m_PrefabParentObject: {fileID: 8204890, guid: e9a07119597bbb74db009a9a14b10939,
+    type: 2}
   m_PrefabInternal: {fileID: 1909905503}
 --- !u!1001 &1910318090
 Prefab:
