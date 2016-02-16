@@ -19,7 +19,7 @@ var state : aiState;
  * @var vieBoss
  */   
 
-public var vieBoss:int = 200;
+public var vieBoss:int = 800;
 
 /*
  * Dégats du boss
@@ -87,6 +87,14 @@ public var attackDistance : float = 2;
 public var attaqueCooldown : float = 5f;
 
 /*
+ * Temps entre les attaques corps a corps
+ * @access public
+ * @var attaqueCooldown
+ */
+
+public var attaqueCooldownCorpsACorps : float =1f;
+
+/*
  * Bool pour attaque invisible
  * @access private
  * @var attaqueInvisiblePossible
@@ -110,7 +118,17 @@ private var attaquePuissantePossible : boolean;
  * @var timer
  */   
 
-private var timer:float;
+private var timerAttaque:float;
+
+
+/*
+ * Timer
+ * @access private
+ * @var timer2
+ */   
+
+private var timerAttaque2:float;
+
 
 
 /*
@@ -199,7 +217,8 @@ function Start () {
 
 function Update () {
 
-	timer += Time.deltaTime;
+	timerAttaque += Time.deltaTime;
+	timerAttaque2 += Time.deltaTime;
 
 	 gestionStates();
 	 priseDecisions();
@@ -212,23 +231,23 @@ function gestionStates()
     var distanceToTarget = (cible.position - transform.position).sqrMagnitude;
 
 
-    if ((distanceToTarget <= attackDistance)&&(timer > attaqueCooldown))
-    {
-        state = aiState.AttaqueBasique;
-    }
-
-    else if(distanceToTarget <= chaseDistance*chaseDistance) 
+    if(distanceToTarget <= chaseDistance*chaseDistance) 
     {
         state = aiState.Courrir;
     }
 
 
-    if ((vieBoss <= 150)&&(attaqueInvisiblePossible==true)&&(timer > attaqueCooldown)) 
+    if ((distanceToTarget <= attackDistance)&&(timerAttaque > attaqueCooldownCorpsACorps))
+    {
+        state = aiState.AttaqueBasique;
+    }
+  
+    if ((vieBoss <= 400)&&(attaqueInvisiblePossible==true)&&(timerAttaque2 > attaqueCooldown)) 
     {
     	state = aiState.AttaqueInvisible;
     }
 
-    if ((vieBoss <= 100)&&(attaquePuissantePossible==true)&&(timer > attaqueCooldown)) 
+    if ((vieBoss <= 250)&&(attaquePuissantePossible==true)&&(timerAttaque2 > attaqueCooldown)) 
     {
     	state = aiState.AttaquePuissante;
     }
@@ -277,41 +296,42 @@ function Courrir()
 
 function attaque() 
 {
-	Debug.Log("PUNCH");
-	timer= 0f;
-	degatBoss =10;
 	animateur.SetBool('punch', true);
+	timerAttaque= 0f;
+	degatBoss =5;
 	if(santeHero.Viedisponible>0)
 	{
 		santeHero.SendMessageUpwards("PrendDamage" , degatBoss, SendMessageOptions.DontRequireReceiver );
 
 	}
-	animateur.SetBool('punch', false);
+	animateur.SetBool('run', true);
+
 }
 
 
 function attaquePuissante() 
 {
-	timer= 0f;
-	degatBoss = 35;
+	timerAttaque2= 0f;
+	degatBoss = 90;
 	animateur.SetBool('magicAttack', true);
 	yield WaitForSeconds(2);
 	nouvelleAoe = Instantiate(aoeBoss, hero.transform.position, transform.rotation);
 	animateur.SetBool('magicAttack', false);
+	attaquePuissantePossible = false;
 
 	if(santeHero.Viedisponible>0)
 	{
 		santeHero.SendMessageUpwards("PrendDamage" , degatBoss, SendMessageOptions.DontRequireReceiver );
 
 	}
-	attaquePuissantePossible = false;
+
 }
 
 
 function attaqueInvisible() 
 {
-	timer= 0f;
-	degatBoss = 25;
+	timerAttaque2= 0f;
+	degatBoss = 55;
 	// On instantie de la fumée à l'endroit ou le boss va disparaître
 	nouvelleFumee = Instantiate(fumee, transform.position, transform.rotation);
 	//On désactive le mesh renderer pour rendre le boss invisible
