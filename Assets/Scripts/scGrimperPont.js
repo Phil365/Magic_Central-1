@@ -8,7 +8,7 @@ function Update () {
 
 }
 
-/*fonction pour surélever le perso lorquil traverse un pont*/
+/*fonction pour surélever le perso lorsqu'il traverse un pont au niveau 3*/
 
 function OnTriggerEnter(heros:Collider) {
 	if (heros.tag == "Hero") {
