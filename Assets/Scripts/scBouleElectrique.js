@@ -41,6 +41,10 @@ private var cam : Camera;
 private var planes : Plane[];
 
 
+
+
+
+
 // Source du code ayant servit de modele  : http://docs.unity3d.com/ScriptReference/GeometryUtility.TestPlanesAABB.html
 
 function Start () {
@@ -92,12 +96,15 @@ function OnTriggerEnter (autre : Collider) {
 	if (autre.gameObject.tag == 'ennemi') {
 
 		autre.gameObject.SendMessageUpwards("diminuerVie", degat, SendMessageOptions.DontRequireReceiver);
+		Destroy(this.gameObject);
+
 	}
 
 
 	if (autre.gameObject.tag == 'boss') {
 
 		autre.gameObject.SendMessageUpwards("diminuerVieBoss", degat, SendMessageOptions.DontRequireReceiver);
+		Destroy(this.gameObject);
 	}
 
 

@@ -70,6 +70,23 @@ public var Hero:GameObject;
  */   
 public var animateur:Animator;
 
+ /*
+ * gameObject hit 
+ * @access private
+ * @var hit
+ */
+
+public var hit : GameObject;
+
+
+ /*
+ * gameObject hit 
+ * @access private
+ * @var hit
+ */
+
+private var nouveauHit : GameObject;
+
 
 
 function Start () {
@@ -105,7 +122,7 @@ function Start () {
 function Update () {
 	if (vieMinion <=0) {
 
-		scGestionXP.SendMessageUpwards("augmenterExperience", xpGagnee , SendMessageOptions.DontRequireReceiver);
+		
 		scAgentMinion.SendMessageUpwards("stopAgent", SendMessageOptions.DontRequireReceiver);
 		mourir();
 	
@@ -114,6 +131,8 @@ function Update () {
 
 function diminuerVie(nbDegat:float) {
 	vieMinion-=nbDegat;
+	nouveauHit = Instantiate(hit, transform.position, transform.rotation);
+
 }
 
 function mourir() {
@@ -121,6 +140,7 @@ function mourir() {
 	animateur.SetBool('mort', true);
 	yield WaitForSeconds (2.6);
 	Destroy(this.gameObject);
+	scGestionXP.SendMessageUpwards("augmenterExperience", xpGagnee , SendMessageOptions.DontRequireReceiver);
 
 	//Si l'ennemi meurt on définit l'objet gagné aléatoirement
 		var hasard = Random.Range(1, 6);

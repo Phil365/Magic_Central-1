@@ -19,7 +19,7 @@ var state : aiState;
  * @var vieBoss
  */   
 
-public var vieBoss:int = 200;
+public var vieBoss:int = 800;
 
 /*
  * Dégats du boss
@@ -76,7 +76,7 @@ public var chaseSpeed : float = 3.0;
  * @var attackDistance
  */
 
-public var attackDistance : float = 3.0;
+public var attackDistance : float = 2;
 
 /*
  * Temps entre les attaques
@@ -85,6 +85,14 @@ public var attackDistance : float = 3.0;
  */
 
 public var attaqueCooldown : float = 5f;
+
+/*
+ * Temps entre les attaques corps a corps
+ * @access public
+ * @var attaqueCooldown
+ */
+
+public var attaqueCooldownCorpsACorps : float =1f;
 
 /*
  * Bool pour attaque invisible
@@ -110,20 +118,23 @@ private var attaquePuissantePossible : boolean;
  * @var timer
  */   
 
-private var timer:float;
+private var timerAttaque:float;
+
 
 /*
- * agent du NavMesh
- * @access public
- * @var agent
- */      
+ * Timer
+ * @access private
+ * @var timer2
+ */   
 
-public var agent:NavMeshAgent; 
+private var timerAttaque2:float;
+
+
 
 /*
- * agent du NavMesh
+ * Mesh du boss
  * @access public
- * @var agent
+ * @var bossMesh
  */      
 
 public var bossMesh:GameObject; 
@@ -169,8 +180,34 @@ private var nouvelleAoe:GameObject;
 public var animateur:Animator;
 
 
-function Start () {
+/*
+ * Distance où l'ennemi stoppe
+ * @access public
+ * @var stop
+ */   
 
+ public var distanceMin = 2;
+
+  /*
+ * gameObject hit 
+ * @access private
+ * @var hit
+ */
+
+public var hit : GameObject;
+
+
+ /*
+ * gameObject hit 
+ * @access private
+ * @var hit
+ */
+
+private var nouveauHit : GameObject;
+
+
+function Start () {
+	 //agent = GetComponent.<NavMeshAgent>();
 	 santeHero = hero.GetComponent.<scDeplacementTirHero>();
 	 attaqueInvisiblePossible = true;
 	 attaquePuissantePossible = true; 
@@ -180,7 +217,8 @@ function Start () {
 
 function Update () {
 
-	timer += Time.deltaTime;
+	timerAttaque += Time.deltaTime;
+	timerAttaque2 += Time.deltaTime;
 
 	 gestionStates();
 	 priseDecisions();
@@ -192,26 +230,24 @@ function gestionStates()
 {
     var distanceToTarget = (cible.position - transform.position).sqrMagnitude;
 
-    if ((distanceToTarget <= attackDistance*attackDistance)&&(timer > attaqueCooldown))
-    {
-        state = aiState.AttaqueBasique;
-    }
 
-    else if(distanceToTarget <= chaseDistance*chaseDistance) 
+    if(distanceToTarget <= chaseDistance*chaseDistance) 
     {
         state = aiState.Courrir;
     }
-    else
-    {
-        state = aiState.Attente;
-    }
 
-    if ((vieBoss <= 150)&&(attaqueInvisiblePossible==true)&&(timer > attaqueCooldown)) 
+
+    if ((distanceToTarget <= attackDistance)&&(timerAttaque > attaqueCooldownCorpsACorps))
+    {
+        state = aiState.AttaqueBasique;
+    }
+  
+    if ((vieBoss <= 400)&&(attaqueInvisiblePossible==true)&&(timerAttaque2 > attaqueCooldown)) 
     {
     	state = aiState.AttaqueInvisible;
     }
 
-    if ((vieBoss <= 100)&&(attaquePuissantePossible==true)&&(timer > attaqueCooldown)) 
+    if ((vieBoss <= 250)&&(attaquePuissantePossible==true)&&(timerAttaque2 > attaqueCooldown)) 
     {
     	state = aiState.AttaquePuissante;
     }
@@ -245,62 +281,71 @@ function priseDecisions () {
 
 function Attente() 
 {
-	//Mettre de Idle
+
 }
 
 function Courrir() 
 {
 	animateur.SetBool('run', true);
-	agent.gameObject.transform.LookAt(cible.transform);
-	agent.SetDestination(cible.transform.position);
+	transform.LookAt(cible.position);
+	if(Vector3.Distance(transform.position, cible.position)>=distanceMin)
+	{
+		transform.position+=transform.forward*chaseSpeed*Time.deltaTime;
+	}
 }
 
 function attaque() 
 {
-	timer= 0f;
-	degatBoss =10;
 	animateur.SetBool('punch', true);
+	timerAttaque= 0f;
+	degatBoss =5;
 	if(santeHero.Viedisponible>0)
 	{
 		santeHero.SendMessageUpwards("PrendDamage" , degatBoss, SendMessageOptions.DontRequireReceiver );
 
 	}
+	animateur.SetBool('run', true);
+
 }
 
 
 function attaquePuissante() 
 {
-	timer= 0f;
-	degatBoss = 35;
+	timerAttaque2= 0f;
+	degatBoss = 90;
 	animateur.SetBool('magicAttack', true);
-	nouvelleAoe = Instantiate(aoeBoss, cible.transform.position, transform.rotation);
+	yield WaitForSeconds(2);
+	nouvelleAoe = Instantiate(aoeBoss, hero.transform.position, transform.rotation);
+	animateur.SetBool('magicAttack', false);
+	attaquePuissantePossible = false;
 
 	if(santeHero.Viedisponible>0)
 	{
 		santeHero.SendMessageUpwards("PrendDamage" , degatBoss, SendMessageOptions.DontRequireReceiver );
 
 	}
-	attaquePuissantePossible = false;
+
 }
 
 
 function attaqueInvisible() 
 {
-	timer= 0f;
-	degatBoss = 25;
+	timerAttaque2= 0f;
+	degatBoss = 55;
 	// On instantie de la fumée à l'endroit ou le boss va disparaître
-	nouvelleFumee = Instantiate(fumee, agent.transform.position, transform.rotation);
+	nouvelleFumee = Instantiate(fumee, transform.position, transform.rotation);
 	//On désactive le mesh renderer pour rendre le boss invisible
 	bossMesh.GetComponent(SkinnedMeshRenderer).enabled = false;
 	yield WaitForSeconds(1);
 	//Déplacement du boss sur le hero après une seconde
-	agent.transform.position = cible.transform.position;
+	transform.position = cible.position;
 	yield WaitForSeconds(1);
 	// On instantie de la fumée à l'endroit ou le boss va apparaître
-	nouvelleFumee = Instantiate(fumee, agent.transform.position, transform.rotation);
+	nouvelleFumee = Instantiate(fumee, transform.position, transform.rotation);
 	//On reactive le mesh renderer pour rendre le boss visible
 	bossMesh.GetComponent(SkinnedMeshRenderer).enabled = true;
 	animateur.SetBool('punch', true);
+
 
 	if(santeHero.Viedisponible>0)
 	{
@@ -315,5 +360,6 @@ function attaqueInvisible()
 function diminuerVieBoss (nbDegat:int) {
 
 	vieBoss-=nbDegat;
+	nouveauHit = Instantiate(hit, transform.position, transform.rotation);
 
 }

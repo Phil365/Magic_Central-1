@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 99f2c7a56c0204c9aa05212fad967bc3
-timeCreated: 1455153960
+timeCreated: 1455607436
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -14,6 +14,48 @@ ModelImporter:
     100012: group2
     100014: //RootNode
     100016: pasted__group
+    100018: chibiBaseMesh:Chibi_basemesh1
+    100020: mixamorig:chibiBaseMesh:Head
+    100022: mixamorig:chibiBaseMesh:HeadTop_End
+    100024: mixamorig:chibiBaseMesh:Hips
+    100026: mixamorig:chibiBaseMesh:LeftArm
+    100028: mixamorig:chibiBaseMesh:LeftFoot
+    100030: mixamorig:chibiBaseMesh:LeftForeArm
+    100032: mixamorig:chibiBaseMesh:LeftHand
+    100034: mixamorig:chibiBaseMesh:LeftHandIndex1
+    100036: mixamorig:chibiBaseMesh:LeftHandIndex2
+    100038: mixamorig:chibiBaseMesh:LeftHandIndex3
+    100040: mixamorig:chibiBaseMesh:LeftHandIndex4
+    100042: mixamorig:chibiBaseMesh:LeftHandThumb1
+    100044: mixamorig:chibiBaseMesh:LeftHandThumb2
+    100046: mixamorig:chibiBaseMesh:LeftHandThumb3
+    100048: mixamorig:chibiBaseMesh:LeftHandThumb4
+    100050: mixamorig:chibiBaseMesh:LeftLeg
+    100052: mixamorig:chibiBaseMesh:LeftShoulder
+    100054: mixamorig:chibiBaseMesh:LeftToe_End
+    100056: mixamorig:chibiBaseMesh:LeftToeBase
+    100058: mixamorig:chibiBaseMesh:LeftUpLeg
+    100060: mixamorig:chibiBaseMesh:Neck
+    100062: mixamorig:chibiBaseMesh:RightArm
+    100064: mixamorig:chibiBaseMesh:RightFoot
+    100066: mixamorig:chibiBaseMesh:RightForeArm
+    100068: mixamorig:chibiBaseMesh:RightHand
+    100070: mixamorig:chibiBaseMesh:RightHandIndex1
+    100072: mixamorig:chibiBaseMesh:RightHandIndex2
+    100074: mixamorig:chibiBaseMesh:RightHandIndex3
+    100076: mixamorig:chibiBaseMesh:RightHandIndex4
+    100078: mixamorig:chibiBaseMesh:RightHandThumb1
+    100080: mixamorig:chibiBaseMesh:RightHandThumb2
+    100082: mixamorig:chibiBaseMesh:RightHandThumb3
+    100084: mixamorig:chibiBaseMesh:RightHandThumb4
+    100086: mixamorig:chibiBaseMesh:RightLeg
+    100088: mixamorig:chibiBaseMesh:RightShoulder
+    100090: mixamorig:chibiBaseMesh:RightToe_End
+    100092: mixamorig:chibiBaseMesh:RightToeBase
+    100094: mixamorig:chibiBaseMesh:RightUpLeg
+    100096: mixamorig:chibiBaseMesh:Spine
+    100098: mixamorig:chibiBaseMesh:Spine1
+    100100: mixamorig:chibiBaseMesh:Spine2
     400000: chibiBaseMesh2:Chibi_basemesh
     400002: chibiBaseMesh:Chibi_basemesh
     400004: chibiBaseMesh:Chibi_basemesh 1
@@ -23,10 +65,55 @@ ModelImporter:
     400012: group2
     400014: //RootNode
     400016: pasted__group
+    400018: chibiBaseMesh:Chibi_basemesh1
+    400020: mixamorig:chibiBaseMesh:Head
+    400022: mixamorig:chibiBaseMesh:HeadTop_End
+    400024: mixamorig:chibiBaseMesh:Hips
+    400026: mixamorig:chibiBaseMesh:LeftArm
+    400028: mixamorig:chibiBaseMesh:LeftFoot
+    400030: mixamorig:chibiBaseMesh:LeftForeArm
+    400032: mixamorig:chibiBaseMesh:LeftHand
+    400034: mixamorig:chibiBaseMesh:LeftHandIndex1
+    400036: mixamorig:chibiBaseMesh:LeftHandIndex2
+    400038: mixamorig:chibiBaseMesh:LeftHandIndex3
+    400040: mixamorig:chibiBaseMesh:LeftHandIndex4
+    400042: mixamorig:chibiBaseMesh:LeftHandThumb1
+    400044: mixamorig:chibiBaseMesh:LeftHandThumb2
+    400046: mixamorig:chibiBaseMesh:LeftHandThumb3
+    400048: mixamorig:chibiBaseMesh:LeftHandThumb4
+    400050: mixamorig:chibiBaseMesh:LeftLeg
+    400052: mixamorig:chibiBaseMesh:LeftShoulder
+    400054: mixamorig:chibiBaseMesh:LeftToe_End
+    400056: mixamorig:chibiBaseMesh:LeftToeBase
+    400058: mixamorig:chibiBaseMesh:LeftUpLeg
+    400060: mixamorig:chibiBaseMesh:Neck
+    400062: mixamorig:chibiBaseMesh:RightArm
+    400064: mixamorig:chibiBaseMesh:RightFoot
+    400066: mixamorig:chibiBaseMesh:RightForeArm
+    400068: mixamorig:chibiBaseMesh:RightHand
+    400070: mixamorig:chibiBaseMesh:RightHandIndex1
+    400072: mixamorig:chibiBaseMesh:RightHandIndex2
+    400074: mixamorig:chibiBaseMesh:RightHandIndex3
+    400076: mixamorig:chibiBaseMesh:RightHandIndex4
+    400078: mixamorig:chibiBaseMesh:RightHandThumb1
+    400080: mixamorig:chibiBaseMesh:RightHandThumb2
+    400082: mixamorig:chibiBaseMesh:RightHandThumb3
+    400084: mixamorig:chibiBaseMesh:RightHandThumb4
+    400086: mixamorig:chibiBaseMesh:RightLeg
+    400088: mixamorig:chibiBaseMesh:RightShoulder
+    400090: mixamorig:chibiBaseMesh:RightToe_End
+    400092: mixamorig:chibiBaseMesh:RightToeBase
+    400094: mixamorig:chibiBaseMesh:RightUpLeg
+    400096: mixamorig:chibiBaseMesh:Spine
+    400098: mixamorig:chibiBaseMesh:Spine1
+    400100: mixamorig:chibiBaseMesh:Spine2
     2300000: chibiBaseMesh:Chibi_basemesh
     3300000: chibiBaseMesh:Chibi_basemesh
     4300000: chibiBaseMesh:Chibi_basemesh
+    4300002: chibiBaseMesh:Chibi_basemesh1
+    7400000: mixamo.com
     9500000: //RootNode
+    13700000: chibiBaseMesh:Chibi_basemesh1
   materials:
     importMaterials: 1
     materialName: 0

@@ -1,4 +1,8 @@
-﻿#pragma strict
+﻿/*
+* S'occupe de tous les téléporteurs du jeu
+ */
+
+#pragma strict
 
 function Start () {
 }
@@ -7,6 +11,7 @@ function Update () {
 
 }
 
+// Gère la téléportation au niveau du HUB
 function OnTriggerEnter(trigg:Collider) 
 
 {
@@ -50,7 +55,7 @@ function OnTriggerEnter(trigg:Collider)
 	//Téléportation du personnage d'une étage à l'autre selon les niveaux
 
 
-	//Niveau 4
+	//Niveau 4, gestion des étages
 
 		if (trigg.gameObject.tag == "teleportNiveau4_2Etage") 
 	{
@@ -63,14 +68,14 @@ function OnTriggerEnter(trigg:Collider)
 
 	}
 
-	//Niveau 2
+	//Niveau 2, gestion des étages
 
 	    if (trigg.gameObject.tag == "teleportNiveau2Etage") 
     {
          this.transform.position = Vector3(-94.36, 1, 237.96);
     }
 
-	// Niveau 3
+	// Niveau 3, gestion des étages
 
 	if (trigg.gameObject.tag == "teleportNiveau3Etage") 
     {
