@@ -32,6 +32,8 @@ public var ContinuerTexte: Text;
 
 public var panneauAvertissement: GameObject;
 
+ 
+
 function Start () {
 	//Time.timeScale = 1;
 	ChoisirPerso.SetActive(false); // on ne peut pas choisir de perso sans avoir fait nouvelle partit
@@ -73,9 +75,11 @@ function Lancer () {
 	Application.LoadLevel (1);
 }
 function Nouvelle (){ //quand on clique sur nouvelle partit
-
-
-	panneauAvertissement.SetActive(true);
+if (continuerBouton.interactable==true){
+panneauAvertissement.SetActive(true);
 	//affiche le panneau d'Avertissement
+}else Jouez();
+
+	
 
 }
