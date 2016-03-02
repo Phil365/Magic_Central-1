@@ -24,9 +24,78 @@ public var hero2: GameObject;
 
 public var hero3: GameObject;
 
+/*
+ * Affichage particule feu
+ * @access public
+ * @var particuleFeu
+ */   
+
+public var particuleFeu: GameObject;
+
+/*
+ * Affichage particule Électrique
+ * @access public
+ * @var particuleÉlectrique
+ */   
+
+public var particuleElectrique: GameObject;
+
+/*
+ * Affichage particule Combat
+ * @access public
+ * @var particuleCombat
+ */   
+
+public var particuleCombat: GameObject;
+
+/*
+ * Référence au slider de mana
+ * @access public
+ * @var ManaSlider
+ */                               
+var ManaSlider: Slider;    
+/*
+ * Référence au slider de VieSlider
+ * @access public
+ * @var VieSlider
+ */                               
+var VieSlider: Slider;    
+/*
+ * Référence au slider de VitesseSlider
+ * @access public
+ * @var VitsseSlider
+ */                               
+var VitesseSlider: Slider;    
+/*
+ * Référence au slider de DifficulteSlider
+ * @access public
+ * @var DifficulteSlider
+ */                               
+var DifficulteSlider: Slider;
+/*
+ * Texte décrivant l'attaque
+ * @access public
+ * @var attaqueTexte
+ */       
+public var attaqueTexte: Text;
+
+
 private var heroChoisi : int = 1; // par défaut le héros 1 est sélectionner si utilisateur ne sélectionne personne 
 function Start () {
-hero1.SetActive(true);
+	if (PlayerPrefs.HasKey("heroChoisi")){
+
+	if(PlayerPrefs.GetInt('heroChoisi')==1){ChoisiHero1();}
+	if(PlayerPrefs.GetInt('heroChoisi')==2){ChoisiHero2();}
+	if(PlayerPrefs.GetInt('heroChoisi')==3){ChoisiHero3();}
+	}else{hero1.SetActive(true);}
+	ManaSlider.value = 5;
+    VieSlider.value = 10;
+    VitesseSlider.value = 10;
+    DifficulteSlider.value = 6;
+    particuleFeu.SetActive(true); //particule qui correspond au boule de feu
+    particuleElectrique.SetActive(false); //particule qui correspond aux éclairs
+    particuleCombat.SetActive(false); //particule qui correspond au corps a corps
+    attaqueTexte.text = 'Boule de feu';
 }
 
 function Update () {
@@ -42,6 +111,14 @@ function ChoisiHero1(){ //choisi le premier héro et désactive les autres
 	hero1.SetActive(true);
 	hero2.SetActive(false);
 	hero3.SetActive(false);
+	ManaSlider.value = 5;
+    VieSlider.value = 10;
+    VitesseSlider.value = 10;
+    DifficulteSlider.value = 6;
+    particuleFeu.SetActive(true); //particule qui correspond au boule de feu
+    particuleElectrique.SetActive(false); //particule qui correspond aux éclairs
+    particuleCombat.SetActive(false); //particule qui correspond au corps a corps
+    attaqueTexte.text = 'Boule de feu';
 }
 
 function ChoisiHero2(){
@@ -51,6 +128,14 @@ function ChoisiHero2(){
 	hero1.SetActive(false);
 	hero2.SetActive(true);
 	hero3.SetActive(false);
+	ManaSlider.value = 2;
+    VieSlider.value = 6;
+    VitesseSlider.value = 8;
+    DifficulteSlider.value = 8;
+    particuleFeu.SetActive(false); //particule qui correspond au boule de feu
+    particuleElectrique.SetActive(true); //particule qui correspond aux éclairs
+    particuleCombat.SetActive(false); //particule qui correspond au corps a corps
+    attaqueTexte.text = 'Boule electrique';
 }
 
 function ChoisiHero3(){
@@ -60,4 +145,12 @@ function ChoisiHero3(){
 	hero1.SetActive(false);
 	hero2.SetActive(false);
 	hero3.SetActive(true);
+	ManaSlider.value = 8;
+    VieSlider.value = 6;
+    VitesseSlider.value = 4;
+    DifficulteSlider.value = 10;
+    particuleFeu.SetActive(false); //particule qui correspond au boule de feu
+    particuleElectrique.SetActive(false); //particule qui correspond aux éclairs
+    particuleCombat.SetActive(true); //particule qui correspond au corps a corps
+    attaqueTexte.text = 'Corps a corps';
 }
