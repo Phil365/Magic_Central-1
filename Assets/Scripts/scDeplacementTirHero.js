@@ -236,7 +236,6 @@ private var checkHeroActif : boolean = true;
 
 function Start ()
  {
-
 	scGestionPerso = GetComponent.<scGestionPersonnageChoisi>();
 	verifNiveau = true;
 
@@ -302,13 +301,14 @@ function FixedUpdate ()
 
 function Update(){
 
-	if(checkHeroActif == true) 
-	{
+	//if(checkHeroActif == true) 
+	//{	
+	//	Debug.Log(this.gameObject.GetComponentInChildren(Animator));
 		animateur = this.gameObject.GetComponentInChildren(Animator);
 		checkHeroActif = false;
-	}
+	//}
 
-	Debug.Log(animateur);
+
 
   Tourner();
 

@@ -104,7 +104,7 @@ function Start () {
 	nbPotionsMana=  PlayerPrefs.GetInt('nbPotionsMana'); //va chercher le nb de Potions de Mana
 	nbClefs=  PlayerPrefs.GetInt('Clefs'); //va chercher le nb de clefs
 //	scOuvrirPorte = Trigger.GetComponent.<scOuvrirPorte>();
-sourceSonore.volume= PlayerPrefs.GetFloat("Volume"); //Place le niveau du volume des playerprefs dans la variable du slider
+	sourceSonore.volume= PlayerPrefs.GetFloat("Volume"); //Place le niveau du volume des playerprefs dans la variable du slider
 }
 
 function Awake ()

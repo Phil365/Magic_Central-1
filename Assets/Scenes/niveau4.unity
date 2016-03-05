@@ -14502,8 +14502,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 1959125795}
   - 82: {fileID: 1959125794}
+  - 114: {fileID: 1959125796}
   m_Layer: 0
-  m_Name: Audio Source
+  m_Name: sourceAmbiance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14595,6 +14596,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 15
+--- !u!114 &1959125796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1959125793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 659a067b0ae077b47a30248cceb0f4c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sourceAmbiance: {fileID: 1959125794}
 --- !u!4 &1979469041 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: e91cb704dcc6b234a85201b337a3027d, type: 3}

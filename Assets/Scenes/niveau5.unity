@@ -747,8 +747,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 60415178}
   - 82: {fileID: 60415177}
+  - 114: {fileID: 60415179}
   m_Layer: 0
-  m_Name: Audio Source
+  m_Name: sourceAmbiance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -840,6 +841,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
+--- !u!114 &60415179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 60415176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 659a067b0ae077b47a30248cceb0f4c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sourceAmbiance: {fileID: 60415177}
 --- !u!1001 &63540071
 Prefab:
   m_ObjectHideFlags: 0
