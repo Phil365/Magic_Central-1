@@ -19,15 +19,23 @@ public var ChoisirPerso: GameObject;
 public var lancerBouton: Button;
 
 /*
- *  Bouton lancer la partie
- * @access public
- * @var lancerBouton
- */   
-public var ContinuerTexte: Text;
-/*
  * Texte continuer sur le bouton
  * @access public
  * @var ContinuerTexte
+ */   
+
+public var ContinuerTexte: Text;
+/*
+ * Logo du jeux a désactiver lorsque avertissement apparait
+ * @access public
+ * @var Logo
+ */   
+
+public var Logo: GameObject;
+/*
+ * Texte pour avertir que le joueur va perdre sa sauvegarde
+ * @access public
+ * @var panneauAvertissement
  */   
 
 public var panneauAvertissement: GameObject;
@@ -58,13 +66,21 @@ function Update () {
 function Jouez () {//fonction pour supprimer les players pref désactiver le panneau d'avertisement et choisir le perso
 
 	panneauAvertissement.SetActive(false);
+	Logo.SetActive(true);
 	ChoisirPerso.SetActive(true);
-	PlayerPrefs.DeleteAll();//suprime tout les playerpref
-
+	//PlayerPrefs.DeleteAll();//suprime tout les playerpref
+	PlayerPrefs.DeleteKey("heroChoisi");//suprime playerpref
+	PlayerPrefs.DeleteKey("nbPotionsVie");//suprime playerpref
+	PlayerPrefs.DeleteKey("nbPotionsMana");//suprime playerpref
+	PlayerPrefs.DeleteKey("Clefs");//suprime playerpref
+	PlayerPrefs.DeleteKey("experienceJoueur");//suprime playerpref
+	PlayerPrefs.DeleteKey("niveau");//suprime playerpref
+	PlayerPrefs.DeleteKey("Or");//suprime playerpref
 }
 
 function Annuler () {
 	panneauAvertissement.SetActive(false);
+	Logo.SetActive(true);
 }
 
 function Continuer () {
@@ -77,6 +93,7 @@ function Lancer () {
 function Nouvelle (){ //quand on clique sur nouvelle partit
 if (continuerBouton.interactable==true){
 panneauAvertissement.SetActive(true);
+Logo.SetActive(false);
 	//affiche le panneau d'Avertissement
 }else Jouez();
 

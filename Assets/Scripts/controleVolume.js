@@ -4,25 +4,42 @@
  * @var sliderVolume
  */          
 
-public var sliderVolume: float = 1.0; 
+ /*
+ * Référence au slider de mana
+ * @access public
+ * @var ManaSlider
+ */                               
+var SonSlider: Slider;    
+/*
+ * Référence à l'audioSource
+ * @access public
+ * @var musique
+ */   
+public var musique:AudioSource;
 
 function Start() {
 
 	if (PlayerPrefs.HasKey("Volume")) //Vérifie si les playerprefs sont initialisées au départ
     {
-   
-        sliderVolume = PlayerPrefs.GetFloat("Volume"); //Place le niveau du volume des playerprefs dans la variable du slider
-
+        SonSlider.value = PlayerPrefs.GetFloat("Volume"); //Place le niveau du volume des playerprefs dans la variable du slider
     }
-
 }
 
-function OnGUI() {
+function Volume() {
+	musique.mute = false;
+	volume=SonSlider.value;
+	PlayerPrefs.SetFloat("Volume", volume); //Met à jour les playerprefs au changement de volume du slider
+}
+function Mute () {
 
-	sliderVolume = GUI.HorizontalSlider (Rect (1070,760,100, 60), sliderVolume, 0.0, 1.0); //Crée le slider du volume
-	GetComponent.<AudioSource>().volume=sliderVolume; //Joins la valeur du volume de la musique dans la variable du slider
+	if(musique.mute) { //Si la musique est assourdie
+		musique.mute = false; //La musique n'est plus assourdie
+	}
 
-	PlayerPrefs.SetFloat("Volume", sliderVolume); //Met à jour les playerprefs au changement de volume du slider
+	else {
+		musique.mute = true; //Sinon, la musique est assourdie.
+		PlayerPrefs.SetFloat("Volume", 0); //Met à jour les playerprefs au changement de volume du slider
+	}
 
 }
 
