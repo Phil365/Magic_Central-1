@@ -418,7 +418,7 @@ function Tourner ()
 					if (heroEnregistrer == 1) 
 					{
 						
-						nouveauProjectile = Instantiate(projectileFeu, position, transform.rotation);
+						nouveauProjectile = Instantiate(projectileFeu, position, projectileFeu.transform.rotation);
 						nouveauProjectile.GetComponent.<Rigidbody>().AddForce(joueurSouris * force);
 						bouleDeFeu();
 					}
