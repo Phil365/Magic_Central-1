@@ -34,13 +34,18 @@ private var degatUp:int;
 var XPSlider: Slider; 
 
 
+/*
+ * GameObject de level up
+ * @access public
+ * @var fxlevelup
+ */   
 
+public var fxlevelup: GameObject;
                               
 private var check: boolean = true;  
 private var check2: boolean = true;  
 
-
-
+private var positionModif:Vector3;
 
 function Start () {
 
@@ -62,6 +67,8 @@ function Update ()
 	{
 		for (var i = 0; i <=1; i++) {
 			niveauJoueur=2;
+			positionModif = Vector3(transform.position.x, 0, transform.position.z);
+			Instantiate(this.fxlevelup, positionModif, fxlevelup.transform.rotation);
 			XPSlider.value = 0;
 			XPSlider.maxValue = 400; 
 			PlayerPrefs.SetInt("niveau", niveauJoueur);
@@ -74,6 +81,8 @@ function Update ()
 	{
 		for (var y = 0; y <=1; y++) {
 			niveauJoueur=3;
+			positionModif = Vector3(transform.position.x, 0, transform.position.z);
+			Instantiate(this.fxlevelup, positionModif, fxlevelup.transform.rotation);
 			XPSlider.value = 0; 
 			PlayerPrefs.SetInt("niveau", niveauJoueur);
 			check2 = false;

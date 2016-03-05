@@ -41463,6 +41463,10 @@ Prefab:
       propertyPath: m_Center.y
       value: -0.34
       objectReference: {fileID: 0}
+    - target: {fileID: 11475142, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: fxlevelup
+      value: 
+      objectReference: {fileID: 100230, guid: ffe14b8af93d5fb4d9072db25fc03014, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
   m_IsPrefabParent: 0
