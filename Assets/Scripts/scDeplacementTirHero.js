@@ -230,12 +230,19 @@ public var coupDePoing:GameObject;
  */
 private var checkHeroActif : boolean = true; 
  /*
+ * Particule quand le personnage apparait dans un niveau
+ * @access public
+ * @var effetspawn
+ */
+
+public var effetspawn:GameObject;
+ /*
  * Source : https://unity3d.com/learn/tutorials/projects/survival-shooter/player-character?playlist=17144
  * Rotation suivant l'endroit du curseur de la souris
  */
 
 function Start ()
- {
+ {	Instantiate(effetspawn, transform.position, effetspawn.transform.rotation);//instantie particule quand le personnage spawn dans un niveau
 	scGestionPerso = GetComponent.<scGestionPersonnageChoisi>();
 	verifNiveau = true;
 
