@@ -9482,6 +9482,14 @@ Prefab:
       propertyPath: decalage.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11438814, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: sourceSonore
+      value: 
+      objectReference: {fileID: 447797678}
+    - target: {fileID: 11438814, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: sonBoire
+      value: 
+      objectReference: {fileID: 8300000, guid: 80b2ab16434be3540be4444ec7ba34cb, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
   m_IsPrefabParent: 0

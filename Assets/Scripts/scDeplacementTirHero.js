@@ -259,6 +259,22 @@ public var maCamera: Camera;
  * Rotation suivant l'endroit du curseur de la souris
  */
 
+ /*
+ * Source des effets sonores 
+ * @access public
+ * @var sourceSonore
+ */
+
+ public var sourceSonore:AudioSource;
+
+ /*
+ * Effets sonores 
+ * @access public
+ * @var sonOr sonBoire
+ */
+
+public var sonBoire:AudioClip;
+
 function Start ()
  {	Instantiate(effetspawn, transform.position, effetspawn.transform.rotation);//instantie particule quand le personnage spawn dans un niveau
 	scGestionPerso = GetComponent.<scGestionPersonnageChoisi>();

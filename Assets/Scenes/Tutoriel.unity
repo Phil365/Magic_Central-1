@@ -41918,6 +41918,14 @@ Prefab:
       propertyPath: AttaqueCurseur
       value: 
       objectReference: {fileID: 2800000, guid: f7134c28f740dc94a937693794bb6b68, type: 3}
+    - target: {fileID: 11438814, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: sourceSonore
+      value: 
+      objectReference: {fileID: 1988494659}
+    - target: {fileID: 11438814, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: sonBoire
+      value: 
+      objectReference: {fileID: 8300000, guid: 80b2ab16434be3540be4444ec7ba34cb, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
   m_IsPrefabParent: 0

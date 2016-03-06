@@ -93,7 +93,7 @@ private var gestionMana:scDeplacementTirHero;
  */
 
 public var sonOr:AudioClip;
-public var sonBoire:AudioClip;
+
 public var sonPotion:AudioClip;
 
 function Start () {
