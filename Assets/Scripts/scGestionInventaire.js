@@ -93,7 +93,13 @@ private var gestionMana:scDeplacementTirHero;
  */
 
 public var sonOr:AudioClip;
+ /*
+ * Particule quand le personnage ramasse un objet
+ * @access public
+ * @var effetRamasse
+ */
 
+public var effetRamasse:GameObject;
 public var sonPotion:AudioClip;
 
 function Start () {
@@ -178,6 +184,7 @@ function OnTriggerEnter (autre : Collider) {
 		sourceSonore.Play();
 		augmenterOr(25);
 		Destroy(autre.gameObject);
+		Instantiate(effetRamasse, transform.position, effetRamasse.transform.rotation);//instantie particule quand le personnage ramasse un item
 	}
 
 	if (autre.gameObject.tag == "Clef") {
@@ -185,6 +192,7 @@ function OnTriggerEnter (autre : Collider) {
 		Destroy(autre.gameObject);
 		PlayerPrefs.SetInt("Clefs", nbClefs);
 //		scOuvrirPorte.SendMessageUpwards("augmenterClefs", nbClefs , SendMessageOptions.DontRequireReceiver);
+		Instantiate(effetRamasse, transform.position, effetRamasse.transform.rotation);//instantie particule quand le personnage ramasse un item
 	}
 
 	if (autre.gameObject.tag == "potionVie") {
@@ -193,16 +201,16 @@ function OnTriggerEnter (autre : Collider) {
 			sourceSonore.Play();
 			augmenterPotionVie(1);
 			Destroy(autre.gameObject);
-		}
-	}
+			Instantiate(effetRamasse, transform.position, effetRamasse.transform.rotation);//instantie particule quand le personnage ramasse un item
+	}}
 	if (autre.gameObject.tag == "potionMana") {
 		if (nbPotionsMana <= nbPotionsManaMax){
 			sourceSonore.clip = sonPotion;
 			sourceSonore.Play();
 			augmenterPotionMana(1);
 			Destroy(autre.gameObject);
-		}
+			Instantiate(effetRamasse, transform.position, effetRamasse.transform.rotation);//instantie particule quand le personnage ramasse un item
 
 	}
-
+	}
 }
