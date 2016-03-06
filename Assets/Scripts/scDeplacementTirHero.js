@@ -361,10 +361,14 @@ function Update(){
   	DamageImage.color = Color.Lerp(DamageImage.color, Color.clear, flashSpeed * Time.deltaTime);
   }
  if(Input.GetKeyDown (KeyCode.E) && manatotal>0 && Manadisponible < ManaSlider.maxValue){
+ 	sourceSonore.clip = sonBoire;
+	sourceSonore.Play();
     Manadisponible+=20;
    	gestionPotion.augmenterPotionMana(-1);
     }
      if(Input.GetKeyDown (KeyCode.Q) && vieTotal>0 && Viedisponible < VieSlider.maxValue){
+     sourceSonore.clip = sonBoire;
+	 sourceSonore.Play();
     Viedisponible+=20;
    	gestionPotion.augmenterPotionVie(-1);
     }
