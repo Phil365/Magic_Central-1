@@ -11,7 +11,7 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: DefaultCompany
   productName: Magic Central
-  defaultCursor: {fileID: 0}
+  defaultCursor: {fileID: 2800000, guid: 6ede4c2365d3716469b1ca40ad5b3400, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_ShowUnitySplashScreen: 1
   m_VirtualRealitySplashScreen: {fileID: 0}

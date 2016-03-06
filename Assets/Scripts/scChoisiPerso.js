@@ -80,6 +80,7 @@ public var descriptionKaseem: GameObject;
 public var descriptionKayden: GameObject;
 
 
+
 private var heroChoisi : int = 1; // par défaut le héros 1 est sélectionner si utilisateur ne sélectionne personne 
 function Start () {
 	if (PlayerPrefs.HasKey("heroChoisi")){
@@ -97,12 +98,16 @@ function Start () {
     particuleElectrique.SetActive(false); //particule qui correspond aux éclairs
     particuleCombat.SetActive(false); //particule qui correspond au corps a corps
 	}
+
 }
 
 function Update () {
+
 	if(Input.GetMouseButton(0)){
 	transform.Rotate(new Vector3(0.0f,Input.GetAxis('Mouse X'),0.0f)); //permet de faire une rotation sur le héros 
 	}
+
+
 }
 
 function ChoisiHero1(){ //choisi le premier héro et désactive les autres
