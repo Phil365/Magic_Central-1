@@ -236,6 +236,24 @@ private var checkHeroActif : boolean = true;
  */
 
 public var effetspawn:GameObject;
+/*
+ * Curseur d'attaque
+ * @access public
+ * @var AttaqueCurseur
+ */       
+public var AttaqueCurseur: Texture2D;
+/*
+ * offset pour le curseur
+ * @access public
+ * @var decalage
+ */       
+public var decalage: Vector2 = Vector2.zero;
+/*
+ * Variable pour la caméra a utiliser pour le raycast du curseur
+ * @access public
+ * @var maCamera
+ */       
+public var maCamera: Camera;
  /*
  * Source : https://unity3d.com/learn/tutorials/projects/survival-shooter/player-character?playlist=17144
  * Rotation suivant l'endroit du curseur de la souris
@@ -281,7 +299,7 @@ function Start ()
 
 	 }
 
-
+	 	this.maCamera = GetComponent.<Camera>();//ajout de la camera dans la variable 
  }
 
 function Awake ()
@@ -366,8 +384,15 @@ function Update(){
 		}
 
 	 }
-
-}
+	 	var ray: Ray = maCamera.ScreenPointToRay(Input.mousePosition);//variable pour le raycast et la souris
+		var layerMask = 1 << 10; // inclusion des layers des ennemis
+		var infoCible:RaycastHit;// info de la cible
+		if(Physics.Raycast(ray, infoCible, Mathf.Infinity, layerMask)){//si le curseur est sur l'ennemis
+			Cursor.SetCursor(AttaqueCurseur,decalage, CursorMode.Auto);//change le curseur en arme
+			}else{
+			Cursor.SetCursor(null,decalage, CursorMode.Auto);//curseur deviens par défaut
+			}
+		}
 
 
 function Deplacer (haut : float, bas : float)
