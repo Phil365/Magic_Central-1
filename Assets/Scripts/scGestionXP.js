@@ -42,11 +42,15 @@ var XPSlider: Slider;
 
 public var fxlevelup: GameObject;
                               
-private var check: boolean = true;  
-private var check2: boolean = true;  
+private var check: boolean; 
+private var check2: boolean;  
 
 private var positionModif:Vector3;
-
+function Awake() 
+{
+	check = true;
+	check2 = true;
+}
 function Start () {
 
 
