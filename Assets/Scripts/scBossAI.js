@@ -4,7 +4,7 @@
  * @access private
  * @var aiState
  */   
-enum aiState {Attente, Courrir, AttaqueBasique, AttaquePuissante, AttaqueInvisible}
+enum aiState {Attente, Courrir, AttaqueBasique, AttaquePuissante, AttaqueInvisible, Mourir}
 
 /*
  * variable state
@@ -225,6 +225,7 @@ function Update () {
 }
 
 
+// Function qui gere les states qui sont ensuite utilisés par la fonction priseDecisions
 
 function gestionStates()
 {
@@ -254,9 +255,11 @@ function gestionStates()
 
     if (vieBoss <= 0) 
     {
-    	Destroy(this.gameObject);
+    	state = aiState.Mourir;
     }
 }
+
+// Function qui prends les decisions concernant l'appel des fonctions de l'AI
 
 function priseDecisions () {
     switch (state) {
@@ -275,6 +278,10 @@ function priseDecisions () {
         case aiState.AttaqueInvisible :
             attaqueInvisible();
             break;
+        case aiState.Mourir :
+            mourir();
+            break;
+
 
     }
 }
@@ -362,4 +369,11 @@ function diminuerVieBoss (nbDegat:int) {
 	vieBoss-=nbDegat;
 	nouveauHit = Instantiate(hit, transform.position, transform.rotation);
 
+}
+
+
+function mourir () 
+{
+	    Destroy(this.gameObject);
+    	Application.LoadLevel(9);
 }
