@@ -60,7 +60,7 @@ function Start () {
 	messageQuatre = "Comment se fait-il que je ne vous ai jamais vus?";
 	messageCinq = "On est secrets!";
 	messageSix = "Je vois. Avez-vous une piste?";
-	messageSept = "Tout ce qu’on sait, c’est que le coupable s’est enfui par un des téléporteurs. Il connaissait donc l’existence de Magic Central… Possiblement une connaissance de l’un des membres. Puisque c’était très secret…";
+	messageSept = "Tout ce qu’on sait, c’est que le coupable s’est enfui par un des teleporteurs. Il connaissait donc l’existence de Magic Central… Possiblement une connaissance de l’un des membres. Puisque c’etait tres secret…";
 	messageHuit = "On trouvera bien ce meurtrier. Il paiera pour son crime!";
 	nmbMax = 8;
 	}
@@ -68,7 +68,7 @@ function Start () {
 	else if (Application.loadedLevel == 4) {
 	messageUn = "Nom de code! Nom de code! GrizzlyJaune07!";
 	messageDeux = "En tout cas, t’es moins brillant que le blanc de ta capuche.";
-	messageTrois = "Ça doit être ça. Mais assez brillant pour savoir qu’un suspect est passé par là.";
+	messageTrois = "Ça doit être ça. Mais assez brillant pour savoir qu’un suspect est passe par là.";
 	messageQuatre = "Ah bon? Il ressemble à quoi?";
 	messageCinq = "Je sais pas.";
 	messageSix = "Bravo, c’est bien.";
@@ -80,21 +80,21 @@ function Start () {
 	else if (Application.loadedLevel == 5) {
 	messageUn = "C’est quoi cet endroit? C’est si humide et sale!";
 	messageDeux = "C’est la nature.";
-	messageTrois = "Quelle idée de nous envoyer ici… Ma capuche est fichue!";
+	messageTrois = "Quelle idee de nous envoyer ici… Ma capuche est fichue!";
 	messageQuatre = "Une petite nature, dans la nature.";
-	messageCinq = "Bon, ça va… Au moins elle n’est pas brûlée comme celle de mon collègue.";
-	messageSix = "Comment ça, brûlée?";
-	messageSept = "J’en sais rien. Il était couvert d’une sorte de… Poussière. Et il toussait tellement qu’il n’arrivait pas à parler. Mais selon ses gesticulations, je crois qu’il a trouvé quelque chose. Il est revenu de cette direction!";
+	messageCinq = "Bon, ça va… Au moins elle n’est pas brulee comme celle de mon collegue.";
+	messageSix = "Comment ça, brulee?";
+	messageSept = "J’en sais rien. Il etait couvert d’une sorte de… Poussiere. Et il toussait tellement qu’il n’arrivait pas à parler. Mais selon ses gesticulations, je crois qu’il a trouve quelque chose. Il est revenu de cette direction!";
 	messageHuit = "J’y vais.";
 	nmbMax = 9;
 	}
 
 	else if (Application.loadedLevel == 6) {
-	messageUn = "Hé… C’est quoi ce bordel? Pourquoi ils m’engagent si c’est que pour me faire devancer à chaque coup? J’vais le coincer moi-même, ce mec!";
+	messageUn = "He… C’est quoi ce bordel? Pourquoi ils m’engagent si c’est que pour me faire devancer à chaque coup? J’vais le coincer moi-même, ce mec!";
 	messageDeux = "Bah alors, vas-y.";
-	messageTrois = "Après mûre réflexion… Je devrais… Rapporter cette information confidentielle à Magic Central. Je risquerais de me faire voir et tu sais… On est secrets.";
+	messageTrois = "Apres mure reflexion… Je devrais… Rapporter cette information confidentielle à Magic Central. Je risquerais de me faire voir et tu sais… On est secrets.";
 	messageQuatre = "C’est bien ce que je pensais.";
-	messageCinq = "Attends! J’ai vu quelqu’un rentrer ici, un peu plus tôt… Grand, cagoule noire… Tu sais, il a l’air très fort… Si j’étais toi, je m’assurerais d’être prêt, si tu vois ce que je veux dire.";
+	messageCinq = "Attends! J’ai vu quelqu’un rentrer ici, un peu plus tôt… Grand, cagoule noire… Tu sais, il a l’air tres fort… Si j’etais toi, je m’assurerais d’être prêt, si tu vois ce que je veux dire.";
 	messageSix = "C’est bon, merci!";
 	nmbMax = 6;
 	}
