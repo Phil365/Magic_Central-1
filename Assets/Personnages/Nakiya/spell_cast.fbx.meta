@@ -102,7 +102,10 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     animationImportErrors: 
-    animationImportWarnings: 
+    animationImportWarnings: "\nClip 'mixamo.com' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar to
+      improve retargeting quality.\n\t'mixamorig:chibiBaseMesh:Spine2' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     animationCompression: 3
@@ -111,7 +114,119 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: mixamo.com
+      takeName: mixamo.com
+      firstFrame: 0
+      lastFrame: 34
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 1
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:LeftUpLeg
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:LeftUpLeg/mixamorig:chibiBaseMesh:LeftLeg
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:LeftUpLeg/mixamorig:chibiBaseMesh:LeftLeg/mixamorig:chibiBaseMesh:LeftFoot
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:LeftUpLeg/mixamorig:chibiBaseMesh:LeftLeg/mixamorig:chibiBaseMesh:LeftFoot/mixamorig:chibiBaseMesh:LeftToeBase
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:LeftUpLeg/mixamorig:chibiBaseMesh:LeftLeg/mixamorig:chibiBaseMesh:LeftFoot/mixamorig:chibiBaseMesh:LeftToeBase/mixamorig:chibiBaseMesh:LeftToe_End
+        weight: 0
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:RightUpLeg
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:RightUpLeg/mixamorig:chibiBaseMesh:RightLeg
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:RightUpLeg/mixamorig:chibiBaseMesh:RightLeg/mixamorig:chibiBaseMesh:RightFoot
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:RightUpLeg/mixamorig:chibiBaseMesh:RightLeg/mixamorig:chibiBaseMesh:RightFoot/mixamorig:chibiBaseMesh:RightToeBase
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:RightUpLeg/mixamorig:chibiBaseMesh:RightLeg/mixamorig:chibiBaseMesh:RightFoot/mixamorig:chibiBaseMesh:RightToeBase/mixamorig:chibiBaseMesh:RightToe_End
+        weight: 0
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:LeftShoulder
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:LeftShoulder/mixamorig:chibiBaseMesh:LeftArm
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:LeftShoulder/mixamorig:chibiBaseMesh:LeftArm/mixamorig:chibiBaseMesh:LeftForeArm
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:LeftShoulder/mixamorig:chibiBaseMesh:LeftArm/mixamorig:chibiBaseMesh:LeftForeArm/mixamorig:chibiBaseMesh:LeftHand
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:LeftShoulder/mixamorig:chibiBaseMesh:LeftArm/mixamorig:chibiBaseMesh:LeftForeArm/mixamorig:chibiBaseMesh:LeftHand/mixamorig:chibiBaseMesh:LeftHandIndex1
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:LeftShoulder/mixamorig:chibiBaseMesh:LeftArm/mixamorig:chibiBaseMesh:LeftForeArm/mixamorig:chibiBaseMesh:LeftHand/mixamorig:chibiBaseMesh:LeftHandIndex1/mixamorig:chibiBaseMesh:LeftHandIndex2
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:LeftShoulder/mixamorig:chibiBaseMesh:LeftArm/mixamorig:chibiBaseMesh:LeftForeArm/mixamorig:chibiBaseMesh:LeftHand/mixamorig:chibiBaseMesh:LeftHandIndex1/mixamorig:chibiBaseMesh:LeftHandIndex2/mixamorig:chibiBaseMesh:LeftHandIndex3
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:LeftShoulder/mixamorig:chibiBaseMesh:LeftArm/mixamorig:chibiBaseMesh:LeftForeArm/mixamorig:chibiBaseMesh:LeftHand/mixamorig:chibiBaseMesh:LeftHandIndex1/mixamorig:chibiBaseMesh:LeftHandIndex2/mixamorig:chibiBaseMesh:LeftHandIndex3/mixamorig:chibiBaseMesh:LeftHandIndex4
+        weight: 0
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:LeftShoulder/mixamorig:chibiBaseMesh:LeftArm/mixamorig:chibiBaseMesh:LeftForeArm/mixamorig:chibiBaseMesh:LeftHand/mixamorig:chibiBaseMesh:LeftHandThumb1
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:LeftShoulder/mixamorig:chibiBaseMesh:LeftArm/mixamorig:chibiBaseMesh:LeftForeArm/mixamorig:chibiBaseMesh:LeftHand/mixamorig:chibiBaseMesh:LeftHandThumb1/mixamorig:chibiBaseMesh:LeftHandThumb2
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:LeftShoulder/mixamorig:chibiBaseMesh:LeftArm/mixamorig:chibiBaseMesh:LeftForeArm/mixamorig:chibiBaseMesh:LeftHand/mixamorig:chibiBaseMesh:LeftHandThumb1/mixamorig:chibiBaseMesh:LeftHandThumb2/mixamorig:chibiBaseMesh:LeftHandThumb3
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:LeftShoulder/mixamorig:chibiBaseMesh:LeftArm/mixamorig:chibiBaseMesh:LeftForeArm/mixamorig:chibiBaseMesh:LeftHand/mixamorig:chibiBaseMesh:LeftHandThumb1/mixamorig:chibiBaseMesh:LeftHandThumb2/mixamorig:chibiBaseMesh:LeftHandThumb3/mixamorig:chibiBaseMesh:LeftHandThumb4
+        weight: 0
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:Neck
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:Neck/mixamorig:chibiBaseMesh:Head
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:Neck/mixamorig:chibiBaseMesh:Head/mixamorig:chibiBaseMesh:HeadTop_End
+        weight: 0
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:RightShoulder
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:RightShoulder/mixamorig:chibiBaseMesh:RightArm
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:RightShoulder/mixamorig:chibiBaseMesh:RightArm/mixamorig:chibiBaseMesh:RightForeArm
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:RightShoulder/mixamorig:chibiBaseMesh:RightArm/mixamorig:chibiBaseMesh:RightForeArm/mixamorig:chibiBaseMesh:RightHand
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:RightShoulder/mixamorig:chibiBaseMesh:RightArm/mixamorig:chibiBaseMesh:RightForeArm/mixamorig:chibiBaseMesh:RightHand/mixamorig:chibiBaseMesh:RightHandIndex1
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:RightShoulder/mixamorig:chibiBaseMesh:RightArm/mixamorig:chibiBaseMesh:RightForeArm/mixamorig:chibiBaseMesh:RightHand/mixamorig:chibiBaseMesh:RightHandIndex1/mixamorig:chibiBaseMesh:RightHandIndex2
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:RightShoulder/mixamorig:chibiBaseMesh:RightArm/mixamorig:chibiBaseMesh:RightForeArm/mixamorig:chibiBaseMesh:RightHand/mixamorig:chibiBaseMesh:RightHandIndex1/mixamorig:chibiBaseMesh:RightHandIndex2/mixamorig:chibiBaseMesh:RightHandIndex3
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:RightShoulder/mixamorig:chibiBaseMesh:RightArm/mixamorig:chibiBaseMesh:RightForeArm/mixamorig:chibiBaseMesh:RightHand/mixamorig:chibiBaseMesh:RightHandIndex1/mixamorig:chibiBaseMesh:RightHandIndex2/mixamorig:chibiBaseMesh:RightHandIndex3/mixamorig:chibiBaseMesh:RightHandIndex4
+        weight: 0
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:RightShoulder/mixamorig:chibiBaseMesh:RightArm/mixamorig:chibiBaseMesh:RightForeArm/mixamorig:chibiBaseMesh:RightHand/mixamorig:chibiBaseMesh:RightHandThumb1
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:RightShoulder/mixamorig:chibiBaseMesh:RightArm/mixamorig:chibiBaseMesh:RightForeArm/mixamorig:chibiBaseMesh:RightHand/mixamorig:chibiBaseMesh:RightHandThumb1/mixamorig:chibiBaseMesh:RightHandThumb2
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:RightShoulder/mixamorig:chibiBaseMesh:RightArm/mixamorig:chibiBaseMesh:RightForeArm/mixamorig:chibiBaseMesh:RightHand/mixamorig:chibiBaseMesh:RightHandThumb1/mixamorig:chibiBaseMesh:RightHandThumb2/mixamorig:chibiBaseMesh:RightHandThumb3
+        weight: 1
+      - path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:RightShoulder/mixamorig:chibiBaseMesh:RightArm/mixamorig:chibiBaseMesh:RightForeArm/mixamorig:chibiBaseMesh:RightHand/mixamorig:chibiBaseMesh:RightHandThumb1/mixamorig:chibiBaseMesh:RightHandThumb2/mixamorig:chibiBaseMesh:RightHandThumb3/mixamorig:chibiBaseMesh:RightHandThumb4
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
