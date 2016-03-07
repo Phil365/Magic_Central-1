@@ -49,11 +49,11 @@ AvatarMask:
   - m_Path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:RightUpLeg/mixamorig:chibiBaseMesh:RightLeg/mixamorig:chibiBaseMesh:RightFoot/mixamorig:chibiBaseMesh:RightToeBase/mixamorig:chibiBaseMesh:RightToe_End
     m_Weight: 0
   - m_Path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:LeftShoulder
     m_Weight: 1
   - m_Path: mixamorig:chibiBaseMesh:Hips/mixamorig:chibiBaseMesh:Spine/mixamorig:chibiBaseMesh:Spine1/mixamorig:chibiBaseMesh:Spine2/mixamorig:chibiBaseMesh:LeftShoulder/mixamorig:chibiBaseMesh:LeftArm

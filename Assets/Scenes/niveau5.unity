@@ -20452,11 +20452,11 @@ Prefab:
     - target: {fileID: 11438814, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
       propertyPath: sonBoire
       value: 
-      objectReference: {fileID: 8300000, guid: 80b2ab16434be3540be4444ec7ba34cb, type: 3}
+      objectReference: {fileID: 8300000, guid: aa21c32b3baa20a439b01c461eaff258, type: 3}
     - target: {fileID: 11413252, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
       propertyPath: effetRamasse
       value: 
-      objectReference: {fileID: 153820, guid: 6e3d1d95ccbadd5429d3ea58334e6071, type: 2}
+      objectReference: {fileID: 100000, guid: 3156817f64ec68948ad6bb26569b9ef5, type: 2}
     - target: {fileID: 11413252, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
       propertyPath: ClefsTexte
       value: 
@@ -20465,6 +20465,10 @@ Prefab:
       propertyPath: panneauEscape
       value: 
       objectReference: {fileID: 1998536366}
+    - target: {fileID: 11413252, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
+      propertyPath: sonPotion
+      value: 
+      objectReference: {fileID: 8300000, guid: 80b2ab16434be3540be4444ec7ba34cb, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
   m_IsPrefabParent: 0

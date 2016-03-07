@@ -593,7 +593,7 @@ function electricite() {
 
 function bouleDeFeu() {
 	animateur.SetBool('attaque', true);
-	yield WaitForSeconds(2); // le temps de l'animation
+	yield WaitForSeconds(1); // le temps de l'animation
 	animateur.SetBool('attaque', false);
 }
 //fermer le panneau de vente de potions
