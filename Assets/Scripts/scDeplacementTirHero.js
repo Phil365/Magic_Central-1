@@ -274,6 +274,18 @@ public var maCamera: Camera;
  */
 
 public var sonBoire:AudioClip;
+/*
+ * Contient le UI panneau quand on presse Escape
+ * @access public
+ * @var panneauEscape
+ */
+public var panneauEscape:GameObject;
+/*
+ * Si menu escape est ouvert on ne peut pas tirer
+ * @access private
+ * @var peutTirer
+ */
+private var peutTirer : boolean = true; 
 
 function Start ()
  {	Instantiate(effetspawn, transform.position, effetspawn.transform.rotation);//instantie particule quand le personnage spawn dans un niveau
@@ -412,6 +424,12 @@ function Update(){
 			}else{
 			Cursor.SetCursor(null,decalage, CursorMode.Auto);//curseur deviens par défaut
 			}
+			if(Input.GetKeyDown (KeyCode.Escape)){
+			//Application.LoadLevel (0);
+			Time.timeScale = 0;
+			panneauEscape.SetActive(true);
+    		peutTirer=false;//désactive le tir du héro Si menu escape est ouvert
+			}
 		}
 
 
@@ -456,7 +474,7 @@ function Tourner ()
         joueurRigidbody.MoveRotation(nouvelleRotation);
 
    if (Input.GetButtonDown('Fire1'))
-        {
+        {if(peutTirer==true){
 			if(Manadisponible>=10){
 				if(this.projectileElectrique){
 					// Vecteur qui part de la position du joueur
@@ -497,7 +515,7 @@ function Tourner ()
 		        	}
 		        	ManaSlider.value = Manadisponible;
 				}	
-			}
+			}}else{}
 		}
 
 
@@ -577,4 +595,22 @@ function bouleDeFeu() {
 	animateur.SetBool('attaque', true);
 	yield WaitForSeconds(2); // le temps de l'animation
 	animateur.SetBool('attaque', false);
+}
+//fermer le panneau de vente de potions
+function retourneMenu() 
+{		
+			Time.timeScale = 1;
+			panneauEscape.SetActive(false);
+    		peutTirer=true;//désactive le tir du héro 
+    		Application.LoadLevel (0);
+}
+function quitteJeux() 
+{
+Application.Quit();
+}
+function annuler() 
+{
+			Time.timeScale = 1;
+			panneauEscape.SetActive(false);
+    		peutTirer=true;//active le tir du héro
 }
