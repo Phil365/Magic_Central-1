@@ -3603,7 +3603,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 167452}
   m_LocalRotation: {x: 0, y: -0.055807862, z: 0, w: -0.9984416}
-  m_LocalPosition: {x: 33.280403, y: -1.055, z: 40.563637}
+  m_LocalPosition: {x: 12.94, y: 1.209, z: 16.2}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 491954}
@@ -4005,7 +4005,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 7411168be29e64c95afbd6c54abc5919, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -4050,8 +4050,8 @@ MonoBehaviour:
   PotionManaTexte: {fileID: 0}
   sourceSonore: {fileID: 8204890}
   sonOr: {fileID: 8300000, guid: 5bd7d1e60c0ea3144a441c8986991177, type: 3}
-  effetRamasse: {fileID: 153820, guid: 6e3d1d95ccbadd5429d3ea58334e6071, type: 2}
-  sonPotion: {fileID: 8300000, guid: aa21c32b3baa20a439b01c461eaff258, type: 3}
+  effetRamasse: {fileID: 100000, guid: 3156817f64ec68948ad6bb26569b9ef5, type: 2}
+  sonPotion: {fileID: 8300000, guid: 80b2ab16434be3540be4444ec7ba34cb, type: 3}
 --- !u!114 &11429648
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4087,7 +4087,7 @@ MonoBehaviour:
   mana: 60
   projectileElectrique: {fileID: 138682, guid: 4d1444fa553faa34cb3bcf5fd3d7674e, type: 2}
   projectileFeu: {fileID: 156012, guid: aebd8ca59555a454f95d9907c2d8e442, type: 2}
-  animateur: {fileID: 9522698}
+  animateur: {fileID: 0}
   DamageImage: {fileID: 0}
   flashSpeed: 5
   flashColour: {r: 1, g: 0, b: 0, a: 0.1}
@@ -4097,7 +4097,7 @@ MonoBehaviour:
   decalage: {x: 0, y: 0}
   maCamera: {fileID: 0}
   sourceSonore: {fileID: 8204890}
-  sonBoire: {fileID: 8300000, guid: 80b2ab16434be3540be4444ec7ba34cb, type: 3}
+  sonBoire: {fileID: 8300000, guid: aa21c32b3baa20a439b01c461eaff258, type: 3}
   panneauEscape: {fileID: 0}
 --- !u!114 &11469486
 MonoBehaviour:
