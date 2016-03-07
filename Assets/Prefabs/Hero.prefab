@@ -320,7 +320,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &113656
 GameObject:
   m_ObjectHideFlags: 1
@@ -622,7 +622,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &131366
 GameObject:
   m_ObjectHideFlags: 1
@@ -3447,7 +3447,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 112932}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.276, z: 0}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
   m_LocalScale: {x: 9.047629, y: 9.047629, z: 9.047629}
   m_Children:
   - {fileID: 494510}
@@ -3603,7 +3603,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 167452}
   m_LocalRotation: {x: 0, y: -0.055807862, z: 0, w: -0.9984416}
-  m_LocalPosition: {x: 12.94, y: 1.209, z: 16.2}
+  m_LocalPosition: {x: 33.280403, y: -1.055, z: 40.563637}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 491954}
@@ -3618,7 +3618,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 131226}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.276, z: 0}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
   m_LocalScale: {x: 9.047629, y: 9.047629, z: 9.047629}
   m_Children:
   - {fileID: 468192}
@@ -3810,7 +3810,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 168110}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.276, z: 0}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
   m_LocalScale: {x: 9.047629, y: 9.047629, z: 9.047629}
   m_Children:
   - {fileID: 400246}
@@ -4048,9 +4048,9 @@ MonoBehaviour:
   ArgentTexte: {fileID: 0}
   PotionSanteTexte: {fileID: 0}
   PotionManaTexte: {fileID: 0}
-  sourceSonore: {fileID: 0}
+  sourceSonore: {fileID: 8204890}
   sonOr: {fileID: 8300000, guid: 5bd7d1e60c0ea3144a441c8986991177, type: 3}
-  sonBoire: {fileID: 8300000, guid: 80b2ab16434be3540be4444ec7ba34cb, type: 3}
+  effetRamasse: {fileID: 153820, guid: 6e3d1d95ccbadd5429d3ea58334e6071, type: 2}
   sonPotion: {fileID: 8300000, guid: aa21c32b3baa20a439b01c461eaff258, type: 3}
 --- !u!114 &11429648
 MonoBehaviour:
@@ -4063,13 +4063,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 085ffcf461c95f2488a75e765aaf48f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Nakiya: {fileID: 0}
-  controllerNakiya: {fileID: 0}
-  Kaseem: {fileID: 0}
-  controllerKaseem: {fileID: 0}
-  Kayden: {fileID: 0}
-  controllerKayden: {fileID: 0}
-  controllerChoisi: {fileID: 0}
+  Nakiya: {fileID: 168110}
+  Kaseem: {fileID: 112932}
+  Kayden: {fileID: 131226}
   heroEnregistrer: 1
 --- !u!114 &11438814
 MonoBehaviour:
@@ -4090,12 +4086,19 @@ MonoBehaviour:
   vie: 100
   mana: 60
   projectileElectrique: {fileID: 138682, guid: 4d1444fa553faa34cb3bcf5fd3d7674e, type: 2}
-  projectileFeu: {fileID: 178704, guid: a70e913cc134dc540bf8854502947ec1, type: 2}
+  projectileFeu: {fileID: 156012, guid: aebd8ca59555a454f95d9907c2d8e442, type: 2}
   animateur: {fileID: 9522698}
   DamageImage: {fileID: 0}
   flashSpeed: 5
   flashColour: {r: 1, g: 0, b: 0, a: 0.1}
   coupDePoing: {fileID: 103648}
+  effetspawn: {fileID: 126012, guid: 7c9cd5ba07a192745a6202ad83c74022, type: 2}
+  AttaqueCurseur: {fileID: 2800000, guid: f7134c28f740dc94a937693794bb6b68, type: 3}
+  decalage: {x: 0, y: 0}
+  maCamera: {fileID: 0}
+  sourceSonore: {fileID: 8204890}
+  sonBoire: {fileID: 8300000, guid: 80b2ab16434be3540be4444ec7ba34cb, type: 3}
+  panneauEscape: {fileID: 0}
 --- !u!114 &11469486
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4133,6 +4136,7 @@ MonoBehaviour:
   experienceJoueur: 0
   niveauJoueur: 0
   XPSlider: {fileID: 0}
+  fxlevelup: {fileID: 100230, guid: ffe14b8af93d5fb4d9072db25fc03014, type: 2}
 --- !u!136 &13666812
 CapsuleCollider:
   m_ObjectHideFlags: 1
