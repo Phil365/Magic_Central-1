@@ -100,3 +100,7 @@ Logo.SetActive(false);
 	
 
 }
+
+function Quitter () {
+Application.Quit();
+}
