@@ -305,7 +305,7 @@ function attaque()
 {
 	animateur.SetBool('punch', true);
 	timerAttaque= 0f;
-	degatBoss =5;
+	degatBoss =15;
 	if(santeHero.Viedisponible>0)
 	{
 		santeHero.SendMessageUpwards("PrendDamage" , degatBoss, SendMessageOptions.DontRequireReceiver );

@@ -67,21 +67,24 @@ function Start () {
 
 function Update () 
 {
-	if ((experienceJoueur >= 100)&&(check==true)) 
+	if ((experienceJoueur >= 200)&&(check==true)) 
 	{
 		for (var i = 0; i <=1; i++) {
 			niveauJoueur=2;
 			positionModif = Vector3(transform.position.x, 0, transform.position.z);
-			Instantiate(this.fxlevelup, positionModif, fxlevelup.transform.rotation);
 			XPSlider.value = 0;
 			XPSlider.maxValue = 400; 
 			PlayerPrefs.SetInt("niveau", niveauJoueur);
 			check = false;
+			if ((experienceJoueur >= 100)&&(experienceJoueur <= 120))
+			{
+				Instantiate(this.fxlevelup, positionModif, fxlevelup.transform.rotation);
+			}
 
 		}
 	}
 
-	if ((experienceJoueur >= 400)&&(check2==true)) 
+	if ((experienceJoueur >= 500)&&(check2==true)) 
 	{
 		for (var y = 0; y <=1; y++) {
 			niveauJoueur=3;
@@ -90,6 +93,10 @@ function Update ()
 			XPSlider.value = 0; 
 			PlayerPrefs.SetInt("niveau", niveauJoueur);
 			check2 = false;
+			if ((experienceJoueur >= 400)&&(experienceJoueur <= 420))
+			{
+				Instantiate(this.fxlevelup, positionModif, fxlevelup.transform.rotation);
+			}
 
 		}
 	}
