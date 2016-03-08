@@ -45,9 +45,9 @@ private var nbPotion=1;
 public var personnage:GameObject;
 
 /*
- * prix de la potion de mana
+ * acces au script gestion inventaire
  * @access private
- * @var prixPotionMana
+ * @var gestionInventaire
  */
 
 private var gestionInventaire:scGestionInventaire;
