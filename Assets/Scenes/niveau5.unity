@@ -7493,7 +7493,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22458764, guid: 6a1e397df85dc2445a73c60ebf910ce0, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22497860, guid: 6a1e397df85dc2445a73c60ebf910ce0, type: 2}
       propertyPath: m_AnchorMax.x
@@ -20432,7 +20432,7 @@ Prefab:
     - target: {fileID: 11438814, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
       propertyPath: projectileFeu
       value: 
-      objectReference: {fileID: 156012, guid: aebd8ca59555a454f95d9907c2d8e442, type: 2}
+      objectReference: {fileID: 122784, guid: aebd8ca59555a454f95d9907c2d8e442, type: 2}
     - target: {fileID: 11438814, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
       propertyPath: effetspawn
       value: 

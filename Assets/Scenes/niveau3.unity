@@ -30502,7 +30502,7 @@ Prefab:
     - target: {fileID: 11438814, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
       propertyPath: projectileFeu
       value: 
-      objectReference: {fileID: 156012, guid: aebd8ca59555a454f95d9907c2d8e442, type: 2}
+      objectReference: {fileID: 122784, guid: aebd8ca59555a454f95d9907c2d8e442, type: 2}
     - target: {fileID: 11438814, guid: e9a07119597bbb74db009a9a14b10939, type: 2}
       propertyPath: effetspawn
       value: 
