@@ -8,7 +8,7 @@ function Update () {
 
 }
 
-/*fonction pour surélever le perso lorsqu'il traverse un pont au niveau 3*/
+/* fonction pour faire une rotation du personnage en X lorsqu'il traverse le pont final au niveau 4 */
 
 function OnTriggerEnter(heros:Collider) {
 	if (heros.tag == "Hero") {
