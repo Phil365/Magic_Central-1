@@ -72,7 +72,7 @@ function OnTriggerEnter(trigg:Collider)
 
 	    if (trigg.gameObject.tag == "teleportNiveau2Etage") 
     {
-         this.transform.position = Vector3(-94.36, 1, 237.96);
+         this.transform.position = Vector3(-94.36, 1.15, 237.96);
     }
 
 	// Niveau 3, gestion des étages
