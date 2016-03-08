@@ -59,12 +59,12 @@ function OnTriggerEnter(trigg:Collider)
 
 		if (trigg.gameObject.tag == "teleportNiveau4_2Etage") 
 	{
-		this.transform.position = new Vector3(69,2,156);
+		this.transform.position = new Vector3(68.81,1.21,158.56);
 	}
 
 		if (trigg.gameObject.tag == "teleportNiveau4_1Etage") 
 	{
-		this.transform.position = new Vector3(136,2,160);
+		this.transform.position = new Vector3(137,1.21,162.57);
 
 	}
 
