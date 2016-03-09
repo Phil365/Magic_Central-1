@@ -96,23 +96,23 @@ function Start () {
 	scAgentMinion = this.gameObject.GetComponent.<scAgentMinion>();
 
 
-		 if (Application.loadedLevel == 3) 
+		 if (Application.loadedLevel == 4) 
 		 {
 		 	xpGagnee = 10;
 		 }
-		 if (Application.loadedLevel == 4) 
+		 if (Application.loadedLevel == 5) 
 		 {
 		 	xpGagnee = 20;
 		 }
-		 if (Application.loadedLevel == 5) 
+		 if (Application.loadedLevel == 6) 
 		 {
 		 	xpGagnee = 30;
 		 }
-		 if (Application.loadedLevel == 6) 
+		 if (Application.loadedLevel == 7) 
 		 {
 		 	xpGagnee = 40;
 		 }
-		 if (Application.loadedLevel == 7) 
+		 if (Application.loadedLevel == 8) 
 		 {
 		 	xpGagnee = 50;
 		 }

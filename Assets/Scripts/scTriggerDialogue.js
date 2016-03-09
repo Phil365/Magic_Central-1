@@ -113,7 +113,7 @@ function Start () {
 	numMessage = 0; // Initialise le numero d'ordre du message à 0
 
 
-	if (Application.loadedLevel == 3) { // Si nous sommes au niveau 1...
+	if (Application.loadedLevel == 4) { // Si nous sommes au niveau 1...
 	messageUn = "Hop!";
 	messageDeux = "Euh… T’es qui, au juste?";
 	messageTrois = "Nous sommes les espions secrets de Magic Central. Nous sommes ici pour trouver de l’information sur la mort du grand chef!";
@@ -125,7 +125,7 @@ function Start () {
 	nmbMax = 8; // Il n'y a pas plus de 8 messages, donc le maximum de messages possible est 8.
 	}
 
-	else if (Application.loadedLevel == 4) { // Si nous sommes au niveau 2...
+	else if (Application.loadedLevel == 5) { // Si nous sommes au niveau 2...
 	messageUn = "Nom de code! Nom de code! GrizzlyJaune07!";
 	messageDeux = "En tout cas, t’es moins brillant que le blanc de ta capuche.";
 	messageTrois = "Ça doit être ça. Mais assez brillant pour savoir qu’un suspect est passe par là.";
@@ -137,7 +137,7 @@ function Start () {
 	nmbMax = 8; // Il n'y a pas plus de 8 messages, donc le maximum de messages possible est 8.
 	}
 
-	else if (Application.loadedLevel == 5) { // Si nous sommes au niveau 3...
+	else if (Application.loadedLevel == 6) { // Si nous sommes au niveau 3...
 	messageUn = "C’est quoi cet endroit? C’est si humide et sale!";
 	messageDeux = "C’est la nature.";
 	messageTrois = "Quelle idee de nous envoyer ici… Ma capuche est fichue!";
@@ -149,7 +149,7 @@ function Start () {
 	nmbMax = 8; // Il n'y a pas plus de 8 messages, donc le maximum de messages possible est 8.
 	}
 
-	else if (Application.loadedLevel == 6) { // Si nous sommes au niveau 4...
+	else if (Application.loadedLevel == 7) { // Si nous sommes au niveau 4...
 	messageUn = "He… C’est quoi ce bordel? Pourquoi ils m’engagent si c’est que pour me faire devancer à chaque coup? J’vais le coincer moi-même, ce mec!";
 	messageDeux = "Bah alors, vas-y.";
 	messageTrois = "Apres mure reflexion… Je devrais… Rapporter cette information confidentielle à Magic Central. Je risquerais de me faire voir et tu sais… On est secrets.";
@@ -159,7 +159,7 @@ function Start () {
 	nmbMax = 6; // Il n'y a pas plus de 6 messages, donc le maximum de messages possible est 6.
 	}
 
-	else if (Application.loadedLevel == 7) { // Si nous sommes au niveau 5...
+	else if (Application.loadedLevel == 8) { // Si nous sommes au niveau 5...
 	messageUn = "Dong… Ding… Ding Dong… Bing… Mae…";
 	messageDeux = "Tu dis quoi?";
 	messageTrois = "Chut…";

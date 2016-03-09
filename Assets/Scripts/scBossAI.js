@@ -375,5 +375,5 @@ function diminuerVieBoss (nbDegat:int) {
 function mourir () 
 {
 	    Destroy(this.gameObject);
-    	Application.LoadLevel(9);
+    	Application.LoadLevel(10);
 }

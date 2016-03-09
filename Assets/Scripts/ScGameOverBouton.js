@@ -14,7 +14,7 @@ function Update () {
 
 }
 function Rejouez () {
-Application.LoadLevel (0); //Charge la scène du menu
+Application.LoadLevel (2); //Charge la scène du menu
 }
 
 function Quitter () {
@@ -22,5 +22,5 @@ Application.Quit(); //Ferme le jeu
 }
 
 function Credits () {
-Application.LoadLevel (10); //Charge la scène du menu
+Application.LoadLevel (12); //Charge la scène du menu
 }

@@ -566,7 +566,7 @@ function Mort()
 {
 	animateur.SetBool('mort', true);
 	yield WaitForSeconds (3);
-	Application.LoadLevel (8);
+	Application.LoadLevel (9);
 	estMort=true;
 	//playerAudio.clip = deathclip;
 	//playerAudio.Play ();
@@ -602,7 +602,7 @@ function retourneMenu()
 			Time.timeScale = 1;
 			panneauEscape.SetActive(false);
     		peutTirer=true;//désactive le tir du héro 
-    		Application.LoadLevel (0);
+    		Application.LoadLevel (1);
 }
 function quitteJeux() 
 {
