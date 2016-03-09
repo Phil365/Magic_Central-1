@@ -14,7 +14,10 @@ function Update () {
 
 if (textureFilm.isPlaying == false) // si la video est terminée
 {
-	Application.LoadLevel (1); //Charge la scène du menu
+	Application.LoadLevel (0); //Charge la scène du menu
+}
+if(Input.GetKeyDown (KeyCode.Escape)){
+Application.LoadLevel (1); //Charge la scène du menu
 }
 
 }
