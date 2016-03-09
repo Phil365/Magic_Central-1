@@ -84,11 +84,11 @@ function Annuler () {
 }
 
 function Continuer () {
-	Application.LoadLevel (1);
+	Application.LoadLevel (2);
 }
 
 function Lancer () {
-	Application.LoadLevel (1);
+	Application.LoadLevel (2);
 }
 function Nouvelle (){ //quand on clique sur nouvelle partit
 if (continuerBouton.interactable==true){
