@@ -2805,7 +2805,7 @@ RectTransform:
   m_RootOrder: 6
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -54, y: 68.4}
+  m_AnchoredPosition: {x: -10, y: 68.4}
   m_SizeDelta: {x: 275.23, y: 143.13}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &447246448
@@ -3477,8 +3477,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Kaseem, grand gaillard aux cheveux blonds, est un ing\xE9nieur hydroelectrique,
-    quelque part aux \xC9tats-Unis."
+  m_Text: Kaseem, grand gaillard aux cheveux blonds, est un ingenieur hydroelectrique,
+    quelque part aux Etats-Unis.
 --- !u!222 &653474923
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7713,8 +7713,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Nakiya est une jeune femme aux longs cheveux noirs et au teint p\xE2le,
-    ayant la capacit\xE9 de manipuler le feu."
+  m_Text: Nakiya est une jeune femme aux longs cheveux noirs et au teint pale, ayant
+    la capacite de manipuler le feu.
 --- !u!222 &1993330889
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8044,8 +8044,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Cet homme, au teint basan\xE9 et aux cheveux bruns, malgr\xE9 sa petite
-    taille, poss\xE8de une force incroyable."
+  m_Text: Cet homme, au teint basane et aux cheveux bruns, malgre sa petite taille,
+    possede une force incroyable.
 --- !u!222 &2102823148
 CanvasRenderer:
   m_ObjectHideFlags: 0

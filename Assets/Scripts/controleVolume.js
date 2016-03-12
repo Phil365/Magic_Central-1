@@ -1,14 +1,9 @@
 /*
  * Permet de seter le volume au max au debut du jeu
  * @access public
- * @var sliderVolume
+ * @var SonSlider
  */          
-
- /*
- * Référence au slider de mana
- * @access public
- * @var ManaSlider
- */                               
+                              
 var SonSlider: Slider;    
 /*
  * Référence à l'audioSource
@@ -22,6 +17,8 @@ function Start() {
 	if (PlayerPrefs.HasKey("Volume")) //Vérifie si les playerprefs sont initialisées au départ
     {
         SonSlider.value = PlayerPrefs.GetFloat("Volume"); //Place le niveau du volume des playerprefs dans la variable du slider
+    } else {
+    	SonSlider.value = 1;
     }
 }
 
